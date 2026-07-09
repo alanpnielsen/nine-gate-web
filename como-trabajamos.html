@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nine Gate — Metodología de implementación.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Nine Gate — Cómo trabajamos</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <style>
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 32px;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover {
+      opacity: 0.8;
+    }
+    .como__header-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .como-page {
+      padding: 140px 0 80px;
+    }
+    .como__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .como-step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 16px;
+      text-align: center;
+      transition: border-color 0.25s ease, transform 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .como-step:hover {
+      border-color: var(--border-strong);
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(255, 177, 0, 0.06), 0 0 60px rgba(255, 177, 0, 0.03);
+    }
+    .como-step::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.04) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .como-step:hover::before {
+      opacity: 1;
+    }
+    .como-step > * {
+      position: relative;
+      z-index: 1;
+    }
+    .como-step__tag {
+      display: inline-block;
+      font-size: 0.55rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent-glow);
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+    .como-step__num {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: rgba(255, 177, 0, 0.35);
+      line-height: 1;
+      margin-bottom: 6px;
+      letter-spacing: -0.03em;
+    }
+    .como-step__title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .como-step__desc {
+      font-size: 0.68rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 1024px) {
+      .como__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .como__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .como__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html">
+        <img src="4-A.png" alt="Nine Gate" class="nav__logo-img" width="auto" height="40">
+      </a>
+      <div class="nav__center" id="navMenu">
+        <div class="nav__links">
+          <a href="index.html#servicios" data-i18n="nav-servicios">Servicios</a>
+          <a href="soluciones.html" data-i18n="nav-soluciones">Soluciones</a>
+          <a href="como-trabajamos.html" data-i18n="nav-como">Cómo trabajamos</a>
+          <a href="index.html#casos" data-i18n="nav-casos">Casos de uso</a>
+          <a href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+        </div>
+      </div>
+      <div class="nav__right">
+        <button class="lang-toggle lang-toggle--nav" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
+        <a href="contacto.html" class="btn btn--nav" data-i18n="nav-empezar">Empezar</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container como-page">
+    <div class="como__header-wrap">
+      <a href="index.html" class="back-link">&larr; Volver al inicio</a>
+      <div class="section__header" data-r>
+        <span class="tag">Implementación</span>
+        <h2 class="section__title">Así convertimos un proceso manual en un <span class="text--yellow">sistema funcionando</span></h2>
+        <p class="section__desc">Diseñamos el flujo, el estado, las reglas y la operación antes de pasar a producción.</p>
+      </div>
+    </div>
+    <div class="como__grid" data-r>
+      <div class="como-step">
+        <div class="como-step__tag">BRIEF</div>
+        <div class="como-step__num">01</div>
+        <h3 class="como-step__title">Brief</h3>
+        <p class="como-step__desc">Mapeamos conversaciones y tareas reales</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">FLOW MAP</div>
+        <div class="como-step__num">02</div>
+        <h3 class="como-step__title">Flow map</h3>
+        <p class="como-step__desc">Detectamos reglas, datos y excepciones</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">STATE SCHEMA</div>
+        <div class="como-step__num">03</div>
+        <h3 class="como-step__title">State schema</h3>
+        <p class="como-step__desc">Diseñamos el estado del proceso</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">N8N</div>
+        <div class="como-step__num">04</div>
+        <h3 class="como-step__title">n8n</h3>
+        <p class="como-step__desc">Creamos el workflow en n8n</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">DATABASE</div>
+        <div class="como-step__num">05</div>
+        <h3 class="como-step__title">Database</h3>
+        <p class="como-step__desc">Integramos bases, APIs y paneles</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">QA</div>
+        <div class="como-step__num">06</div>
+        <h3 class="como-step__title">QA</h3>
+        <p class="como-step__desc">Probamos con casos reales</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">MONITORING</div>
+        <div class="como-step__num">07</div>
+        <h3 class="como-step__title">Monitoring</h3>
+        <p class="como-step__desc">Activamos logs, monitoreo y handoff</p>
+      </div>
+      <div class="como-step">
+        <div class="como-step__tag">PRODUCTION</div>
+        <div class="como-step__num">08</div>
+        <h3 class="como-step__title">Production</h3>
+        <p class="como-step__desc">Iteramos con datos reales</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="4-A.png" alt="Nine Gate" class="footer__logo" width="auto" height="64">
+          <p data-i18n="footer-brand">Automatización inteligente para empresas.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-servicios">Servicios</h4>
+          <div class="footer__links">
+            <a href="index.html#servicios" data-i18n="footer-link-ia">Agentes de IA</a>
+            <a href="index.html#servicios" data-i18n="footer-link-auto">Automatización</a>
+            <a href="index.html#servicios" data-i18n="footer-link-int">Integraciones</a>
+            <a href="index.html#servicios" data-i18n="footer-link-cons">Consultoría</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-empresa">Empresa</h4>
+          <div class="footer__links">
+            <a href="index.html#casos" data-i18n="footer-link-casos">Casos de uso</a>
+            <a href="contacto.html" data-i18n="footer-link-contacto">Contacto</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-legal">Legal</h4>
+          <div class="footer__links">
+            <a href="privacidad.html" data-i18n="footer-link-priv">Privacidad</a>
+            <a href="terminos.html" data-i18n="footer-link-term">Términos</a>
+            <a href="cookies.html" data-i18n="footer-link-cookies">Cookies</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-redes">Redes</h4>
+          <div class="footer__social">
+            <a href="mailto:hola@ninegate.ai" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M22 6l-10 7L2 6"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom footer__bottom--flex">
+        <p data-i18n="footer-copy">&copy; 2026 Nine Gate. Todos los derechos reservados.</p>
+        <button class="lang-toggle" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

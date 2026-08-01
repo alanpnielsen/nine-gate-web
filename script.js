@@ -141,6 +141,7 @@ const translations = {
     'footer-link-term': 'T\u00E9rminos',
     'footer-link-cookies': 'Cookies',
     'footer-copy': '\u00A9 2026 Nine Gate. Todos los derechos reservados.',
+    'footer-credit': 'Hecho con',
     'lang-btn': 'EN',
     'serv-card1-title': 'Agentes de IA',
     'serv-card1-desc': 'Asistentes inteligentes para ventas, soporte y operaciones.',
@@ -216,6 +217,7 @@ const translations = {
     'footer-link-term': 'Terms',
     'footer-link-cookies': 'Cookies',
     'footer-copy': '\u00A9 2026 Nine Gate. All rights reserved.',
+    'footer-credit': 'Made with',
     'lang-btn': 'ES',
     'serv-card1-title': 'AI Agents',
     'serv-card1-desc': 'Intelligent assistants for sales, support and operations.',
@@ -296,6 +298,7 @@ function setLang(lang) {
   setText('footer-link-term', t['footer-link-term']);
   setText('footer-link-cookies', t['footer-link-cookies']);
   setText('footer-copy', t['footer-copy']);
+  setText('footer-credit', t['footer-credit']);
   setText('serv-card1-title', t['serv-card1-title']);
   setText('serv-card1-desc', t['serv-card1-desc']);
   setText('serv-card2-title', t['serv-card2-title']);

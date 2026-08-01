@@ -877,6 +877,19 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
 }
 
+.footer__credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.footer__credit-heart {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
 .lang-toggle {
   position: relative;
   display: inline-flex;

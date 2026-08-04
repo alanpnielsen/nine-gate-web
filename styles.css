@@ -1428,14 +1428,6 @@ img { max-width: 100%; display: block; }
   transform: translateY(-3px);
 }
 
-.usecase-card__icon {
-  transition: transform 0.3s var(--ease);
-}
-
-.usecase-card:hover .usecase-card__icon {
-  transform: scale(1.12);
-}
-
 .usecase-card::before {
   content: '';
   position: absolute;
@@ -1455,12 +1447,6 @@ img { max-width: 100%; display: block; }
 .usecase-card > * {
   position: relative;
   z-index: 1;
-}
-
-.usecase-card__icon {
-  font-size: 1.5rem;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .usecase-card__title {

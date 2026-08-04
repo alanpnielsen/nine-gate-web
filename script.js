@@ -1,6 +1,5 @@
 const toggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
-const nav = document.querySelector('.nav');
 
 if (toggle && navMenu) {
   toggle.addEventListener('click', () => {
@@ -14,47 +13,6 @@ if (toggle && navMenu) {
       navMenu.classList.remove('open');
     });
   });
-}
-
-/* Nav shadow on scroll */
-let lastScroll = 0;
-if (nav) {
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    nav.classList.toggle('nav--scrolled', y > 50);
-    lastScroll = y;
-  }, { passive: true });
-}
-
-/* Active section spy */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
-
-if (sections.length && navLinks.length) {
-  const sectionObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          const href = link.getAttribute('href');
-          link.classList.toggle('active', href === `#${id}`);
-        });
-      }
-    });
-  }, { threshold: 0.2, rootMargin: `-${parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 64}px 0px -50% 0px` });
-
-  sections.forEach(sec => sectionObserver.observe(sec));
-}
-
-/* Hero entrance animation — stagger nodes */
-const heroNodes = document.querySelectorAll('.hero__node');
-if (heroNodes.length) {
-  heroNodes.forEach((node, i) => {
-    node.style.transitionDelay = `${i * 0.08}s`;
-  });
-  setTimeout(() => {
-    heroNodes.forEach(node => node.classList.add('in'));
-  }, 300);
 }
 
 const revealElements = document.querySelectorAll('[data-r]');
@@ -145,8 +103,6 @@ const translations = {
     'hero-subtitle': 'Diseñamos agentes inteligentes, automatizaciones y sistemas de inteligencia artificial que reducen costos, aumentan productividad y permiten escalar operaciones.',
     'hero-cta1': 'Solicitar Diagnóstico',
     'hero-cta2': 'Ver Soluciones',
-    'hero-trust-auto': 'automatizaciones desplegadas',
-    'hero-trust-n8n': 'n8n Automation Specialists',
     'arch-tag': 'Arquitectura',
     'arch-title-before': 'EL BOT NO \u201CRESPONDE\u201D: ',
     'arch-title-accent': 'TRABAJA',
@@ -223,8 +179,6 @@ const translations = {
     'hero-subtitle': 'We design intelligent agents, automations and AI systems that reduce costs, increase productivity and scale operations.',
     'hero-cta1': 'Request Diagnosis',
     'hero-cta2': 'View Solutions',
-    'hero-trust-auto': 'automations deployed',
-    'hero-trust-n8n': 'n8n Automation Specialists',
     'arch-tag': 'Architecture',
     'arch-title-before': 'THE BOT DOESN\u2019T JUST \u201CREPLY\u201D: ',
     'arch-title-accent': 'IT WORKS',
@@ -306,8 +260,6 @@ function setLang(lang) {
   setText('hero-subtitle', t['hero-subtitle']);
   setText('hero-cta1', t['hero-cta1']);
   setText('hero-cta2', t['hero-cta2']);
-  setText('hero-trust-auto', t['hero-trust-auto']);
-  setText('hero-trust-n8n', t['hero-trust-n8n']);
   setText('arch-tag', t['arch-tag']);
   setText('arch-title-before', t['arch-title-before']);
   setText('arch-title-accent', t['arch-title-accent']);

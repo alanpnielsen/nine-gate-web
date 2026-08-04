@@ -1046,6 +1046,135 @@ img { max-width: 100%; display: block; }
   padding: 4px 10px;
 }
 
+/* ========== THEME TOGGLE ========== */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.25s var(--ease);
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.theme-toggle__icon {
+  display: none;
+}
+
+.theme-toggle__icon--dark {
+  display: block;
+}
+
+[data-theme="light"] .theme-toggle__icon--dark {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle__icon--light {
+  display: block;
+}
+
+/* ========== LIGHT MODE ========== */
+[data-theme="light"] {
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-alt: #F0F0F0;
+  --surface-hover: #E8E8E8;
+  --text: #111111;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.15);
+  --accent-soft: rgba(255, 177, 0, 0.08);
+  --accent-glow: rgba(255, 177, 0, 0.15);
+  --shadow-card: 0 1px 0 rgba(0, 0, 0, 0.04) inset, 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lift: 0 12px 40px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 177, 0, 0.1);
+  --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] body {
+  color: var(--text);
+}
+
+[data-theme="light"] .nav {
+  background: rgba(250, 250, 250, 0.85);
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .nav--scrolled {
+  background: rgba(250, 250, 250, 0.95);
+}
+
+[data-theme="light"] .section--alt {
+  background: var(--surface-alt);
+}
+
+[data-theme="light"] .service-card {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04) inset, 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .service-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .cta__box {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04) inset, 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .benefit-card {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .process-step {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .usecase-card {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .footer {
+  background: var(--surface-alt);
+}
+
+[data-theme="light"] .footer::before {
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+[data-theme="light"] .tag {
+  background: rgba(255, 177, 0, 0.06);
+}
+
+[data-theme="light"] .hero__visual-node {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04) inset, 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .float-wa__btn {
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25);
+}
+
+[data-theme="light"] .nav__center.open {
+  background: rgba(250, 250, 250, 0.95);
+}
+
+[data-theme="light"] ::selection {
+  background: rgba(255, 177, 0, 0.25);
+}
+
 /* ========== WHATSAPP FLOATING ========== */
 .float-wa {
   position: fixed;

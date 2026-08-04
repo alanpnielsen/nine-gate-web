@@ -350,3 +350,17 @@ if (langToggles.length) {
   });
   setLang(saved);
 }
+
+/* Theme toggle */
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+  const savedTheme = localStorage.getItem('nine-gate-theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  themeToggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('nine-gate-theme', next);
+  });
+}

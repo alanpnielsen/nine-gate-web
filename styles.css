@@ -845,9 +845,9 @@ img { max-width: 100%; display: block; }
 .cta__box::before {
   content: '';
   position: absolute;
-  inset: -1px;
+  inset: 0;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(255, 177, 0, 0.08), transparent 40%, rgba(56, 189, 248, 0.06) 70%, transparent);
+  background: radial-gradient(ellipse at center, rgba(255, 177, 0, 0.04) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
   opacity: 0;
@@ -855,24 +855,6 @@ img { max-width: 100%; display: block; }
 }
 
 .cta__box:hover::before {
-  opacity: 1;
-}
-
-.cta__box::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -25%;
-  width: 150%;
-  height: 200%;
-  background: radial-gradient(ellipse at center, rgba(255, 177, 0, 0.06) 0%, transparent 60%);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.cta__box:hover::after {
   opacity: 1;
 }
 

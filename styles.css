@@ -909,12 +909,10 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  max-width: 800px;
+  left: 0;
+  right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 177, 0, 0.2), rgba(255, 177, 0, 0.3), rgba(255, 177, 0, 0.2), transparent);
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 177, 0, 0.4) 15%, rgba(255, 177, 0, 0.6) 50%, rgba(255, 177, 0, 0.4) 85%, transparent 100%);
 }
 
 .footer__grid {

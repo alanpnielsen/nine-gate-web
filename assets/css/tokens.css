@@ -1,0 +1,256 @@
+/**
+ * Nine Gate — Design Tokens
+ * Single source of truth for all design decisions.
+ * Import this first in main.css
+ */
+
+/* ==========================================================================
+   COLOR PALETTE
+   ========================================================================== */
+
+:root {
+  /* ---- Core Backgrounds ---- */
+  --color-bg: #0A0A0B;               /* Primary background - near black */
+  --color-bg-elevated: #111113;      /* Elevated surfaces (dropdowns, modals) */
+  --color-surface: #18181B;          /* Cards, panels, containers */
+  --color-surface-hover: #1F1F23;    /* Interactive hover state */
+  --color-surface-active: #27272A;   /* Active/pressed state */
+
+  /* ---- Text Hierarchy ---- */
+  --color-text: #FAFAFA;             /* Primary text - near white */
+  --color-text-secondary: #A1A1AA;   /* Secondary text - zinc 400 */
+  --color-text-muted: #71717A;       /* Tertiary/muted text - zinc 500 */
+  --color-text-inverse: #0A0A0B;     /* Text on accent backgrounds */
+
+  /* ---- Brand - Nine Gate Amber/Yellow ---- */
+  --color-accent: #FFB100;           /* Primary brand color */
+  --color-accent-hover: #FFC107;     /* Hover state */
+  --color-accent-active: #E6A000;    /* Active/pressed */
+  --color-accent-muted: rgba(255, 177, 0, 0.12);  /* Subtle backgrounds */
+  --color-accent-glow: rgba(255, 177, 0, 0.18);   /* Glow effects */
+  --color-accent-strong: rgba(255, 177, 0, 0.35); /* Stronger glow */
+
+  /* ---- Semantic Colors ---- */
+  --color-success: #22C55E;          /* Green 500 */
+  --color-success-hover: #16A34A;
+  --color-success-muted: rgba(34, 197, 94, 0.12);
+  --color-success-glow: rgba(34, 197, 94, 0.18);
+
+  --color-error: #EF4444;            /* Red 500 */
+  --color-error-hover: #DC2626;
+  --color-error-muted: rgba(239, 68, 68, 0.12);
+  --color-error-glow: rgba(239, 68, 68, 0.18);
+
+  --color-info: #38BDF8;             /* Sky 400 */
+  --color-info-hover: #0EA5E9;
+  --color-info-muted: rgba(56, 189, 248, 0.12);
+  --color-info-glow: rgba(56, 189, 248, 0.18);
+
+  /* ---- Borders ---- */
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-strong: rgba(255, 255, 255, 0.10);
+  --color-border-focus: var(--color-accent);
+  --color-border-error: var(--color-error);
+
+  /* ---- WhatsApp Green ---- */
+  --color-wa: #25D366;
+  --color-wa-hover: #1DB956;
+  --color-wa-muted: rgba(37, 211, 102, 0.12);
+  --color-wa-glow: rgba(37, 211, 102, 0.25);
+
+  /* ==========================================================================
+     SPACING SCALE (4px base unit)
+     ========================================================================== */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-28: 112px;
+  --space-32: 128px;
+
+  /* ==========================================================================
+     BORDER RADIUS
+     ========================================================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     SHADOWS
+     ========================================================================== */
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.45);
+
+  --shadow-glow: 0 0 40px rgba(255, 177, 0, 0.15);
+  --shadow-glow-strong: 0 0 60px rgba(255, 177, 0, 0.25), 0 0 100px rgba(255, 177, 0, 0.12);
+  --shadow-glow-wa: 0 4px 20px rgba(37, 211, 102, 0.3);
+  --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 177, 0, 0.1);
+
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+
+  /* Font Families */
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Fluid Type Scale (clamp: min, preferred, max) */
+  /* Base: 16px viewport, scales with vw */
+  --text-xs: clamp(0.70rem, 0.65rem + 0.25vw, 0.75rem);     /* 11.2 - 12px */
+  --text-sm: clamp(0.825rem, 0.775rem + 0.25vw, 0.875rem);   /* 13.2 - 14px */
+  --text-base: clamp(0.95rem, 0.875rem + 0.375vw, 1.00rem);  /* 15.2 - 16px */
+  --text-lg: clamp(1.10rem, 1.00rem + 0.50vw, 1.25rem);      /* 17.6 - 20px */
+  --text-xl: clamp(1.30rem, 1.15rem + 0.75vw, 1.50rem);      /* 20.8 - 24px */
+  --text-2xl: clamp(1.60rem, 1.35rem + 1.25vw, 2.00rem);     /* 25.6 - 32px */
+  --text-3xl: clamp(2.00rem, 1.65rem + 1.75vw, 2.75rem);     /* 32 - 44px */
+  --text-4xl: clamp(2.50rem, 2.00rem + 2.50vw, 3.50rem);     /* 40 - 56px */
+  --text-5xl: clamp(3.50rem, 2.75rem + 3.75vw, 5.00rem);     /* 56 - 80px */
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.7;
+  --leading-loose: 1.8;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.04em;
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.08em;
+  --tracking-cap: 0.06em;
+
+  /* ==========================================================================
+     LAYOUT
+     ========================================================================== */
+
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+  --max-width-prose: 640px;
+
+  --nav-height: 72px;
+  --nav-height-mobile: 64px;
+
+  --section-space: clamp(80px, 10vw, 120px);
+  --section-space-sm: clamp(48px, 6vw, 80px);
+
+  /* Container padding */
+  --container-padding: clamp(20px, 4vw, 32px);
+  --container-padding-lg: clamp(32px, 5vw, 48px);
+
+  /* ==========================================================================
+     TRANSITIONS & ANIMATION
+     ========================================================================== */
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 400ms;
+
+  /* Stagger for entrance animations */
+  --stagger-base: 40ms;
+  --stagger-card: 60ms;
+
+  /* ==========================================================================
+     Z-INDEX SCALE
+     ========================================================================== */
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-toast: 800;
+  --z-nav: 1000;
+
+  /* ==========================================================================
+     BREAKPOINTS (for reference in JS/media queries)
+     ========================================================================== */
+
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+}
+
+/* ==========================================================================
+   REDUCED MOTION - Respect user preference
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --duration-slower: 0ms;
+    --stagger-base: 0ms;
+    --stagger-card: 0ms;
+  }
+}
+
+/* ==========================================================================
+   HIGH CONTRAST MODE SUPPORT
+   ========================================================================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: rgba(255, 255, 255, 0.2);
+    --color-border-strong: rgba(255, 255, 255, 0.4);
+    --color-text-secondary: #D4D4D8;
+    --color-text-muted: #A1A1AA;
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+  :root {
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-text: #000000;
+    --color-text-secondary: #333333;
+    --color-accent: #000000;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

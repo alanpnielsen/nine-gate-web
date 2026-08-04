@@ -1409,7 +1409,7 @@ img { max-width: 100%; display: block; }
 }
 
 .benefit-card:nth-child(3) .benefit-card__value {
-  font-size: 3.4rem;
+  font-size: 4rem;
 }
 
 .benefit-card__label {

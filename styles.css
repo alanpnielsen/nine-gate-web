@@ -1330,6 +1330,46 @@ img { max-width: 100%; display: block; }
   opacity: 0.2;
 }
 
+/* Architecture section light mode */
+[data-theme="light"] .arch-node__box {
+  background: color-mix(in srgb, var(--node-color, #38bdf8) 15%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--node-color, #38bdf8) 35%, transparent);
+}
+
+[data-theme="light"] .arch-node__box:hover {
+  background: color-mix(in srgb, var(--node-color, #38bdf8) 25%, transparent);
+  border-color: var(--node-color, #38bdf8);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--node-color, #38bdf8) 20%, transparent);
+}
+
+[data-theme="light"] .arch-node__short {
+  color: color-mix(in srgb, var(--node-color, #38bdf8) 90%, #000);
+}
+
+[data-theme="light"] .arch-node__box:hover .arch-node__short {
+  color: var(--node-color, #38bdf8);
+}
+
+[data-theme="light"] .arch-node__name {
+  color: #1A1A1A;
+}
+
+[data-theme="light"] .arch-node__desc {
+  color: #555555;
+}
+
+[data-theme="light"] .arch-flow__arrow {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .arch-flow__line {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .arch-flow.in .arch-flow__line {
+  background: rgba(0, 0, 0, 0.15);
+}
+
 /* ========== WHATSAPP FLOATING ========== */
 .float-wa {
   position: fixed;

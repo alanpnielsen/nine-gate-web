@@ -901,7 +901,20 @@ img { max-width: 100%; display: block; }
 /* ========== FOOTER ========== */
 .footer {
   padding: 56px 0 28px;
-  border-top: 1px solid var(--border);
+  border-top: none;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 177, 0, 0.2), rgba(255, 177, 0, 0.3), rgba(255, 177, 0, 0.2), transparent);
 }
 
 .footer__grid {

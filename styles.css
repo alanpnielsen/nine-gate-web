@@ -104,11 +104,12 @@ img { max-width: 100%; display: block; }
 }
 
 .section__title {
-  font-size: clamp(1.65rem, 3.2vw, 2.5rem);
-  font-weight: 600;
-  line-height: 1.18;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
   margin-bottom: 16px;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
+  color: var(--text);
 }
 
 .section__desc {

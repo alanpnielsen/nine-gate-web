@@ -1215,16 +1215,15 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
-/* CTA light */
+/* CTA light - only yellow border */
 [data-theme="light"] .cta__box {
   background: rgba(255, 255, 255, 0.95);
-  border: 2px solid rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 30px rgba(255, 177, 0, 0.12), 0 4px 24px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 4px 24px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .cta__box:hover {
-  border-color: rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 40px rgba(255, 177, 0, 0.18), 0 8px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 40px rgba(255, 177, 0, 0.25), 0 8px 40px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .cta__title {

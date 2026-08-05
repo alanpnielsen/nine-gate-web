@@ -1158,25 +1158,31 @@ img { max-width: 100%; display: block; }
 
 /* Cards light */
 [data-theme="light"] .service-card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 2px 8px rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 177, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 [data-theme="light"] .service-card:hover {
   background: #FFFFFF;
-  border-color: rgba(255, 177, 0, 0.25);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .service-card__icon-box {
-  background: rgba(255, 177, 0, 0.1);
-  border-color: rgba(255, 177, 0, 0.15);
+  background: rgba(255, 177, 0, 0.12);
+  border-color: rgba(255, 177, 0, 0.2);
 }
 
 [data-theme="light"] .benefit-card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 177, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .benefit-card:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .benefit-card__value {
@@ -1188,24 +1194,37 @@ img { max-width: 100%; display: block; }
 }
 
 [data-theme="light"] .process-step {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 177, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .process-step:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .usecase-card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 177, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 [data-theme="light"] .usecase-card:hover {
-  border-color: rgba(255, 177, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 /* CTA light */
 [data-theme="light"] .cta__box {
   background: rgba(255, 255, 255, 0.95);
-  border: 2px solid var(--accent);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 4px 24px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 30px rgba(255, 177, 0, 0.12), 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .cta__box:hover {
+  border-color: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 40px rgba(255, 177, 0, 0.18), 0 8px 40px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .cta__title {

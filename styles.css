@@ -1144,11 +1144,12 @@ img { max-width: 100%; display: block; }
 }
 
 [data-theme="light"] .section__title {
-  color: #0A0A0A;
+  color: #000000;
+  font-weight: 800;
 }
 
 [data-theme="light"] .section__desc {
-  color: var(--text-secondary);
+  color: #333333;
 }
 
 /* Tag light */

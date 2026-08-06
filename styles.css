@@ -1520,6 +1520,123 @@ img { max-width: 100%; display: block; }
   opacity: 1 !important;
 }
 
+/* ========== TICKER ========== */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.ticker::before,
+.ticker::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--surface) 0%, transparent 100%);
+}
+
+.ticker::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--surface) 0%, transparent 100%);
+}
+
+.ticker__track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 60s linear infinite;
+}
+
+.ticker__content {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.ticker__item {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  padding: 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.ticker__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(255, 177, 0, 0.5);
+  margin: 0 12px;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker__track {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticker {
+    padding: 16px 0;
+  }
+
+  .ticker__item {
+    font-size: 0.8rem;
+  }
+
+  .ticker__dot {
+    margin: 0 8px;
+  }
+
+  .ticker::before,
+  .ticker::after {
+    width: 60px;
+  }
+}
+
+/* Light mode ticker */
+[data-theme="light"] .ticker {
+  background: var(--surface-alt);
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .ticker::before {
+  background: linear-gradient(90deg, var(--surface-alt) 0%, transparent 100%);
+}
+
+[data-theme="light"] .ticker::after {
+  background: linear-gradient(270deg, var(--surface-alt) 0%, transparent 100%);
+}
+
+[data-theme="light"] .ticker__item {
+  color: #333333;
+}
+
 /* ========== ARCHITECTURE FLOW ========== */
 .arch-flow {
   position: relative;

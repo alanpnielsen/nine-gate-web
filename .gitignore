@@ -1,0 +1,152 @@
+# Nine Gate — .gitignore
+# Generated for the redesigned project structure
+
+# ============================================================================
+# DEPENDENCIES & BUILD ARTIFACTS
+# ============================================================================
+
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================================================================
+# ENVIRONMENT & SECRETS
+# ============================================================================
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.pem
+*.key
+*.crt
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# OS GENERATED
+# ============================================================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================================================
+# PROJECT SPECIFIC - SOURCE FILES (not committed in new architecture)
+# ============================================================================
+
+# Components source (partials)
+components/
+
+# Data source files
+data/
+
+# CSS source (modular)
+assets/css/
+
+# JavaScript source (modular)
+assets/js/
+
+# Build script
+build.js
+
+# Documentation
+REDESIGN_PLAN.md
+
+# ============================================================================
+# TEST & COVERAGE
+# ============================================================================
+
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+
+# ============================================================================
+# CACHE & TEMP
+# ============================================================================
+
+.cache/
+.temp/
+tmp/
+*.tmp
+*.cache
+
+# ============================================================================
+# DEPLOYMENT
+# ============================================================================
+
+.netlify/
+.vercel/
+.firebase/
+.serverless/
+*.tfstate
+*.tfstate.backup
+
+# ============================================================================
+# BACKUP FILES
+# ============================================================================
+
+*.bak
+*.backup
+*~
+*.orig
+
+# ============================================================================
+# EXCEPTIONS - KEEP THESE TRACKED
+# ============================================================================
+
+# HTML pages (output of build)
+!*.html
+
+# Root config files
+!package.json
+!package-lock.json
+!pnpm-lock.yaml
+!yarn.lock
+!tsconfig.json
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.prettierrc
+!.eslintrc*
+!.stylelintrc*
+
+# Assets that should be deployed
+!assets/images/
+!assets/fonts/
+!favicon.ico
+!favicon-*.png
+!apple-touch-icon.png
+!site.webmanifest
+!robots.txt
+!sitemap.xml
+!security.txt
+
+# ============================================================================
+# END
+# ============================================================================

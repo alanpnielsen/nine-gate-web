@@ -1818,8 +1818,8 @@ img { max-width: 100%; display: block; }
 }
 
 .benefit-card:hover {
-  box-shadow: 0 0 40px rgba(255, 177, 0, 0.1), 0 12px 32px rgba(0, 0, 0, 0.15);
-  border-color: rgba(255, 177, 0, 0.2);
+  box-shadow: 0 0 50px rgba(255, 177, 0, 0.18), 0 16px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 177, 0, 0.3);
   transform: translateY(-3px);
 }
 
@@ -1828,7 +1828,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.04) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.08) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
   opacity: 0;

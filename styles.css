@@ -1525,8 +1525,8 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   padding: 20px 0;
   background: var(--surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid rgba(255, 177, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 177, 0, 0.3);
   position: relative;
 }
 
@@ -1620,8 +1620,8 @@ img { max-width: 100%; display: block; }
 /* Light mode ticker */
 [data-theme="light"] .ticker {
   background: var(--surface-alt);
-  border-top-color: rgba(0, 0, 0, 0.1);
-  border-bottom-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(255, 177, 0, 0.35);
+  border-bottom-color: rgba(255, 177, 0, 0.35);
 }
 
 [data-theme="light"] .ticker::before {

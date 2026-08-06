@@ -1378,7 +1378,12 @@ img { max-width: 100%; display: block; }
 }
 
 [data-theme="light"] .arch-flow__arrow {
-  color: rgba(0, 0, 0, 0.15);
+  color: var(--accent);
+  opacity: 0.6;
+}
+
+[data-theme="light"] .arch-flow__arrow svg {
+  filter: drop-shadow(0 0 4px rgba(255, 177, 0, 0.3));
 }
 
 [data-theme="light"] .arch-flow__line {
@@ -1723,13 +1728,15 @@ img { max-width: 100%; display: block; }
 .arch-flow__arrow {
   display: flex;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.08);
+  color: var(--accent);
+  opacity: 0.5;
   transform: rotate(0deg);
 }
 
 .arch-flow__arrow svg {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(0 0 6px rgba(255, 177, 0, 0.4));
 }
 
 @media (min-width: 769px) {

@@ -1730,7 +1730,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   color: var(--accent);
   opacity: 0.5;
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 .arch-flow__arrow svg {
@@ -1764,9 +1764,9 @@ img { max-width: 100%; display: block; }
   }
 
   .arch-flow__arrow {
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
     align-items: center;
-    padding-top: 18px;
+    padding-top: 0;
   }
 }
 

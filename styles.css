@@ -1864,13 +1864,13 @@ img { max-width: 100%; display: block; }
 .ascend-dots {
   display: flex;
   align-items: flex-end;
-  gap: 5px;
-  height: 32px;
+  gap: 6px;
+  height: 40px;
 }
 
 .ascend-dots__dot {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background: var(--accent);
   opacity: 0.4;
@@ -1878,22 +1878,22 @@ img { max-width: 100%; display: block; }
 }
 
 .ascend-dots__dot--1 {
-  height: 7px;
+  height: 10px;
   opacity: 0.35;
 }
 
 .ascend-dots__dot--2 {
-  height: 10px;
+  height: 16px;
   opacity: 0.5;
 }
 
 .ascend-dots__dot--3 {
-  height: 14px;
+  height: 24px;
   opacity: 0.7;
 }
 
 .ascend-dots__dot--4 {
-  height: 18px;
+  height: 32px;
   opacity: 1;
 }
 

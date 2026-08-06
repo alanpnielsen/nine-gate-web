@@ -1904,7 +1904,7 @@ img { max-width: 100%; display: block; }
 .benefit-card__label {
   font-size: 0.78rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   line-height: 1.4;
   letter-spacing: -0.01em;
 }

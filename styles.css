@@ -1803,7 +1803,7 @@ img { max-width: 100%; display: block; }
 
 .benefit-card {
   text-align: center;
-  padding: 40px 24px 36px;
+  padding: 44px 24px 40px;
   border-radius: var(--radius-lg);
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1814,13 +1814,13 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 180px;
+  min-height: 200px;
 }
 
 .benefit-card:hover {
-  box-shadow: 0 0 40px rgba(255, 177, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.2);
-  border-color: rgba(255, 177, 0, 0.25);
-  transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(255, 177, 0, 0.1), 0 12px 32px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 177, 0, 0.2);
+  transform: translateY(-3px);
 }
 
 .benefit-card::before {
@@ -1828,7 +1828,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.05) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.04) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
   opacity: 0;
@@ -1845,32 +1845,66 @@ img { max-width: 100%; display: block; }
 }
 
 .benefit-card__value {
-  font-size: clamp(2.5rem, 5vw, 3.2rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.2rem, 4.5vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
   color: var(--accent);
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
+  height: 44px;
 }
 
-.benefit-card__value--symbol {
-  height: 48px;
+.benefit-card__value--indicator {
+  height: 44px;
 }
 
-.infinity-svg {
-  width: 72px;
-  height: 48px;
-  color: var(--accent);
+.ascend-dots {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 32px;
+}
+
+.ascend-dots__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.ascend-dots__dot--1 {
+  height: 7px;
+  opacity: 0.35;
+}
+
+.ascend-dots__dot--2 {
+  height: 10px;
+  opacity: 0.5;
+}
+
+.ascend-dots__dot--3 {
+  height: 14px;
+  opacity: 0.7;
+}
+
+.ascend-dots__dot--4 {
+  height: 18px;
+  opacity: 1;
+}
+
+.benefit-card:hover .ascend-dots__dot {
+  opacity: 1;
 }
 
 .benefit-card__label {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.4;
   letter-spacing: -0.01em;
 }

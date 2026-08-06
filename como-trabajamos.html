@@ -136,10 +136,14 @@
       margin: 0 auto 64px;
     }
 
+    .como-section__header .section__title {
+      color: var(--accent);
+    }
+
     .como-section__subtitle {
       font-size: 1.2rem;
       font-weight: 600;
-      color: var(--text);
+      color: var(--accent);
       margin-bottom: 16px;
       margin-top: 16px;
     }
@@ -415,8 +419,12 @@
       border-top-color: rgba(0, 0, 0, 0.1);
     }
 
+    [data-theme="light"] .como-section__header .section__title {
+      color: var(--accent);
+    }
+
     [data-theme="light"] .como-section__subtitle {
-      color: #000000;
+      color: var(--accent);
     }
   </style>
 </head>

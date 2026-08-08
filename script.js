@@ -290,6 +290,8 @@ function setLang(lang) {
   const t = translations[lang];
   if (!t) return;
 
+  document.documentElement.lang = lang;
+
   setText('nav-servicios', t['nav-servicios']);
   setText('nav-soluciones', t['nav-soluciones']);
   setText('nav-como', t['nav-como']);

@@ -97,6 +97,10 @@ const translations = {
     'nav-casos': 'Casos de uso',
     'nav-contacto': 'Contacto',
     'nav-empezar': 'Empezar',
+    'sol-tag': 'Soluciones',
+    'sol-title-before': 'Procesos ',
+    'sol-title-accent': 'concretos',
+    'sol-desc': 'Automatizaciones pensadas para operación real.',
     'hero-tag': 'Inteligencia Artificial para Empresas',
     'hero-title-before': 'Automatizamos procesos, conversaciones y decisiones empresariales ',
     'hero-title-accent': 'con IA.',
@@ -194,6 +198,10 @@ const translations = {
     'nav-casos': 'Use Cases',
     'nav-contacto': 'Contact',
     'nav-empezar': 'Get Started',
+    'sol-tag': 'Solutions',
+    'sol-title-before': 'Concrete ',
+    'sol-title-accent': 'processes',
+    'sol-desc': 'Automations designed for real operations.',
     'hero-tag': 'Artificial Intelligence for Business',
     'hero-title-before': 'We automate processes, conversations and business decisions ',
     'hero-title-accent': 'with AI.',
@@ -298,6 +306,10 @@ function setLang(lang) {
   setText('nav-casos', t['nav-casos']);
   setText('nav-contacto', t['nav-contacto']);
   setText('nav-empezar', t['nav-empezar']);
+  setText('sol-tag', t['sol-tag']);
+  setText('sol-title-before', t['sol-title-before']);
+  setText('sol-title-accent', t['sol-title-accent']);
+  setText('sol-desc', t['sol-desc']);
   setText('hero-tag', t['hero-tag']);
   setText('hero-title-before', t['hero-title-before']);
   setText('hero-title-accent', t['hero-title-accent']);

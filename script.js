@@ -188,6 +188,17 @@ const translations = {
     'footer-credit': 'Hecho con',
     'footer-opencode': 'con OpenCode',
     'lang-btn': 'EN',
+    'back-link': '\u2190 Volver al inicio',
+    'contact-title': 'Contacto',
+    'contact-desc': 'Si quer\u00E9s evaluar una automatizaci\u00F3n para tu empresa, escribinos y contanos qu\u00E9 proceso quer\u00E9s mejorar.',
+    'contact-email-title': 'Email',
+    'contact-wa-title': 'WhatsApp',
+    'contact-wa-btn': 'Escribir por WhatsApp',
+    'contact-prepare-title': 'C\u00F3mo preparar el diagn\u00F3stico',
+    'contact-prepare-desc': 'Para que podamos darte una propuesta precisa en menos de 24 horas, ayudanos con esto:',
+    'contact-prepare-1': 'Describ\u00ED el proceso manual que quer\u00E9s automatizar.',
+    'contact-prepare-2': 'Indic\u00E1 qu\u00E9 herramientas usa hoy tu equipo.',
+    'contact-prepare-3': 'Cont\u00E1 qu\u00E9 datos entran, qu\u00E9 decisiones se toman y qu\u00E9 salida esper\u00E1s.',
     'serv-card1-title': 'Agentes de IA',
     'serv-card1-desc': 'Asistentes inteligentes para ventas, soporte y operaciones.',
     'serv-card2-title': 'Automatizaci\u00F3n de Procesos',
@@ -329,6 +340,17 @@ const translations = {
     'footer-credit': 'Made with',
     'footer-opencode': 'with OpenCode',
     'lang-btn': 'ES',
+    'back-link': '\u2190 Back to home',
+    'contact-title': 'Contact',
+    'contact-desc': 'If you want to evaluate an automation for your company, write to us and tell us which process you want to improve.',
+    'contact-email-title': 'Email',
+    'contact-wa-title': 'WhatsApp',
+    'contact-wa-btn': 'Message us on WhatsApp',
+    'contact-prepare-title': 'How to prepare for the diagnosis',
+    'contact-prepare-desc': 'So we can give you an accurate proposal in less than 24 hours, help us with the following:',
+    'contact-prepare-1': 'Describe the manual process you want to automate.',
+    'contact-prepare-2': 'Tell us what tools your team currently uses.',
+    'contact-prepare-3': 'Share what data comes in, what decisions are made, and what output you expect.',
     'serv-card1-title': 'AI Agents',
     'serv-card1-desc': 'Intelligent assistants for sales, support and operations.',
     'serv-card2-title': 'Process Automation',
@@ -476,6 +498,17 @@ function setLang(lang) {
   setText('footer-copy', t['footer-copy']);
   setText('footer-credit', t['footer-credit']);
   setText('footer-opencode', t['footer-opencode']);
+  setText('back-link', t['back-link']);
+  setText('contact-title', t['contact-title']);
+  setText('contact-desc', t['contact-desc']);
+  setText('contact-email-title', t['contact-email-title']);
+  setText('contact-wa-title', t['contact-wa-title']);
+  setText('contact-wa-btn', t['contact-wa-btn']);
+  setText('contact-prepare-title', t['contact-prepare-title']);
+  setText('contact-prepare-desc', t['contact-prepare-desc']);
+  setText('contact-prepare-1', t['contact-prepare-1']);
+  setText('contact-prepare-2', t['contact-prepare-2']);
+  setText('contact-prepare-3', t['contact-prepare-3']);
   setText('sol-items-0-title', t['sol-items-0-title']);
   setText('sol-items-0-desc', t['sol-items-0-desc']);
   setText('sol-items-1-title', t['sol-items-1-title']);

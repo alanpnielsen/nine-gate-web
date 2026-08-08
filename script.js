@@ -28,6 +28,61 @@ const revealObserver = new IntersectionObserver(entries => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
+/* Architecture sequential node animation */
+(function() {
+  var flow = document.querySelector('.arch-flow');
+  if (!flow) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var boxes = flow.querySelectorAll('.arch-node__box');
+  var arrows = flow.querySelectorAll('.arch-flow__arrow');
+  var STEP_MS = 600;
+  var PAUSE_MS = 1800;
+  var cycleTimeout = null;
+  var stepTimeout = null;
+
+  function resetAll() {
+    boxes.forEach(function(b) { b.classList.remove('active'); });
+    arrows.forEach(function(a) { a.classList.remove('active', 'pulse'); });
+  }
+
+  function activateNode(i) {
+    if (i >= boxes.length) {
+      cycleTimeout = setTimeout(function() {
+        resetAll();
+        activateNode(0);
+      }, PAUSE_MS);
+      return;
+    }
+
+    boxes[i].classList.add('active');
+
+    if (i > 0) {
+      arrows[i - 1].classList.add('active');
+      arrows[i - 1].classList.remove('pulse');
+      void arrows[i - 1].offsetWidth;
+      arrows[i - 1].classList.add('pulse');
+    }
+
+    stepTimeout = setTimeout(function() {
+      boxes[i].classList.remove('active');
+      if (i > 0) arrows[i - 1].classList.remove('active');
+      activateNode(i + 1);
+    }, STEP_MS);
+  }
+
+  var seqObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        setTimeout(function() { activateNode(0); }, 800);
+        seqObserver.unobserve(flow);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  seqObserver.observe(flow);
+})();
+
 const counters = document.querySelectorAll('.hero__stat-num');
 
 function animateCounters() {

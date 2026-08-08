@@ -101,6 +101,46 @@ const translations = {
     'sol-title-before': 'Procesos ',
     'sol-title-accent': 'concretos',
     'sol-desc': 'Automatizaciones pensadas para operación real.',
+    'impl-tag': 'Implementación',
+    'impl-title-before': 'Así convertimos un proceso manual en un ',
+    'impl-title-accent': 'sistema funcionando',
+    'impl-desc': 'Diseñamos el flujo, el estado, las reglas y la operación antes de pasar a producción.',
+    'step-0-title': 'Brief',
+    'step-0-desc': 'Mapeamos conversaciones y tareas reales',
+    'step-1-title': 'Flow map',
+    'step-1-desc': 'Detectamos reglas, datos y excepciones',
+    'step-2-title': 'State schema',
+    'step-2-desc': 'Diseñamos el estado del proceso',
+    'step-3-title': 'n8n',
+    'step-3-desc': 'Creamos el workflow en n8n',
+    'step-4-title': 'Database',
+    'step-4-desc': 'Integramos bases, APIs y paneles',
+    'step-5-title': 'QA',
+    'step-5-desc': 'Probamos con casos reales',
+    'step-6-title': 'Monitoring',
+    'step-6-desc': 'Activamos logs, monitoreo y handoff',
+    'step-7-title': 'Production',
+    'step-7-desc': 'Iteramos con datos reales',
+    'how-title-before': 'Cómo',
+    'how-title-accent': 'Funciona',
+    'how-subtitle': 'Así se ve un proceso que se ejecuta solo.',
+    'how-desc': 'Un disparador pone todo en marcha. Los datos fluyen entre tus sistemas, la IA decide y las acciones se ejecutan automáticamente, sin intervención manual.',
+    'flow-0-title': 'Disparador',
+    'flow-0-desc': 'Email · Formulario · API',
+    'flow-1-title': 'Recopilar datos',
+    'flow-1-desc': 'CRM · Hojas · Docs',
+    'flow-2-title': 'Procesar con IA',
+    'flow-2-desc': 'Clasifica y decide',
+    'flow-3-title': 'Lógica de negocio',
+    'flow-3-desc': 'Reglas y condiciones',
+    'flow-4-title': 'Ejecutar acciones',
+    'flow-4-desc': 'Crear · Enviar · Actualizar',
+    'flow-5-title': 'Notificar equipo',
+    'flow-5-desc': 'Slack · Email · Panel',
+    'tag-entrada': 'Entrada',
+    'tag-ia': 'Inteligencia Artificial',
+    'tag-proceso': 'Proceso',
+    'tag-salida': 'Salida',
     'hero-tag': 'Inteligencia Artificial para Empresas',
     'hero-title-before': 'Automatizamos procesos, conversaciones y decisiones empresariales ',
     'hero-title-accent': 'con IA.',
@@ -202,6 +242,46 @@ const translations = {
     'sol-title-before': 'Concrete ',
     'sol-title-accent': 'processes',
     'sol-desc': 'Automations designed for real operations.',
+    'impl-tag': 'Implementation',
+    'impl-title-before': 'How we turn a manual process into a ',
+    'impl-title-accent': 'working system',
+    'impl-desc': 'We design the flow, state, rules and operations before going to production.',
+    'step-0-title': 'Brief',
+    'step-0-desc': 'We map real conversations and tasks',
+    'step-1-title': 'Flow map',
+    'step-1-desc': 'We detect rules, data and exceptions',
+    'step-2-title': 'State schema',
+    'step-2-desc': 'We design the process state',
+    'step-3-title': 'n8n',
+    'step-3-desc': 'We build the workflow in n8n',
+    'step-4-title': 'Database',
+    'step-4-desc': 'We integrate databases, APIs and dashboards',
+    'step-5-title': 'QA',
+    'step-5-desc': 'We test with real cases',
+    'step-6-title': 'Monitoring',
+    'step-6-desc': 'We activate logs, monitoring and handoff',
+    'step-7-title': 'Production',
+    'step-7-desc': 'We iterate with real data',
+    'how-title-before': 'How',
+    'how-title-accent': 'It Works',
+    'how-subtitle': 'This is what a self-running process looks like.',
+    'how-desc': 'A trigger sets everything in motion. Data flows between your systems, AI decides, and actions execute automatically, with no manual intervention.',
+    'flow-0-title': 'Trigger',
+    'flow-0-desc': 'Email · Form · API',
+    'flow-1-title': 'Collect Data',
+    'flow-1-desc': 'CRM · Sheets · Docs',
+    'flow-2-title': 'Process with AI',
+    'flow-2-desc': 'Classifies and decides',
+    'flow-3-title': 'Business Logic',
+    'flow-3-desc': 'Rules and conditions',
+    'flow-4-title': 'Execute Actions',
+    'flow-4-desc': 'Create · Send · Update',
+    'flow-5-title': 'Notify Team',
+    'flow-5-desc': 'Slack · Email · Dashboard',
+    'tag-entrada': 'Input',
+    'tag-ia': 'Artificial Intelligence',
+    'tag-proceso': 'Process',
+    'tag-salida': 'Output',
     'hero-tag': 'Artificial Intelligence for Business',
     'hero-title-before': 'We automate processes, conversations and business decisions ',
     'hero-title-accent': 'with AI.',
@@ -310,6 +390,46 @@ function setLang(lang) {
   setText('sol-title-before', t['sol-title-before']);
   setText('sol-title-accent', t['sol-title-accent']);
   setText('sol-desc', t['sol-desc']);
+  setText('impl-tag', t['impl-tag']);
+  setText('impl-title-before', t['impl-title-before']);
+  setText('impl-title-accent', t['impl-title-accent']);
+  setText('impl-desc', t['impl-desc']);
+  setText('step-0-title', t['step-0-title']);
+  setText('step-0-desc', t['step-0-desc']);
+  setText('step-1-title', t['step-1-title']);
+  setText('step-1-desc', t['step-1-desc']);
+  setText('step-2-title', t['step-2-title']);
+  setText('step-2-desc', t['step-2-desc']);
+  setText('step-3-title', t['step-3-title']);
+  setText('step-3-desc', t['step-3-desc']);
+  setText('step-4-title', t['step-4-title']);
+  setText('step-4-desc', t['step-4-desc']);
+  setText('step-5-title', t['step-5-title']);
+  setText('step-5-desc', t['step-5-desc']);
+  setText('step-6-title', t['step-6-title']);
+  setText('step-6-desc', t['step-6-desc']);
+  setText('step-7-title', t['step-7-title']);
+  setText('step-7-desc', t['step-7-desc']);
+  setText('how-title-before', t['how-title-before']);
+  setText('how-title-accent', t['how-title-accent']);
+  setText('how-subtitle', t['how-subtitle']);
+  setText('how-desc', t['how-desc']);
+  setText('flow-0-title', t['flow-0-title']);
+  setText('flow-0-desc', t['flow-0-desc']);
+  setText('flow-1-title', t['flow-1-title']);
+  setText('flow-1-desc', t['flow-1-desc']);
+  setText('flow-2-title', t['flow-2-title']);
+  setText('flow-2-desc', t['flow-2-desc']);
+  setText('flow-3-title', t['flow-3-title']);
+  setText('flow-3-desc', t['flow-3-desc']);
+  setText('flow-4-title', t['flow-4-title']);
+  setText('flow-4-desc', t['flow-4-desc']);
+  setText('flow-5-title', t['flow-5-title']);
+  setText('flow-5-desc', t['flow-5-desc']);
+  setText('tag-entrada', t['tag-entrada']);
+  setText('tag-ia', t['tag-ia']);
+  setText('tag-proceso', t['tag-proceso']);
+  setText('tag-salida', t['tag-salida']);
   setText('hero-tag', t['hero-tag']);
   setText('hero-title-before', t['hero-title-before']);
   setText('hero-title-accent', t['hero-title-accent']);

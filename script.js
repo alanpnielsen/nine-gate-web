@@ -181,6 +181,7 @@ const translations = {
     'footer-link-cons': 'Consultor\u00EDa',
     'footer-link-casos': 'Casos de uso',
     'footer-link-contacto': 'Contacto',
+    'footer-link-como': 'C\u00F3mo trabajamos',
     'footer-link-priv': 'Privacidad',
     'footer-link-term': 'T\u00E9rminos',
     'footer-link-cookies': 'Cookies',
@@ -333,6 +334,7 @@ const translations = {
     'footer-link-cons': 'Consulting',
     'footer-link-casos': 'Use Cases',
     'footer-link-contacto': 'Contact',
+    'footer-link-como': 'How we work',
     'footer-link-priv': 'Privacy',
     'footer-link-term': 'Terms',
     'footer-link-cookies': 'Cookies',
@@ -492,6 +494,7 @@ function setLang(lang) {
   setText('footer-link-cons', t['footer-link-cons']);
   setText('footer-link-casos', t['footer-link-casos']);
   setText('footer-link-contacto', t['footer-link-contacto']);
+  setText('footer-link-como', t['footer-link-como']);
   setText('footer-link-priv', t['footer-link-priv']);
   setText('footer-link-term', t['footer-link-term']);
   setText('footer-link-cookies', t['footer-link-cookies']);

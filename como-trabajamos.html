@@ -50,19 +50,18 @@
       border-radius: var(--radius-lg);
       padding: 24px 16px;
       text-align: center;
-      transition: border-color 0.25s ease, transform 0.25s ease;
+      transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
       position: relative;
-      overflow: hidden;
     }
     .como-step:hover {
-      border-color: var(--border-strong);
+      border-color: var(--accent);
       transform: translateY(-2px);
-      box-shadow: 0 0 30px rgba(255, 177, 0, 0.06), 0 0 60px rgba(255, 177, 0, 0.03);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.40), 0 0 100px rgba(255, 177, 0, 0.15);
     }
     .como-step::before {
       content: '';
       position: absolute;
-      inset: -1px;
+      inset: 0;
       border-radius: inherit;
       background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.04) 0%, transparent 60%);
       pointer-events: none;
@@ -72,6 +71,7 @@
     }
     .como-step:hover::before {
       opacity: 1;
+      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.22) 0%, transparent 60%);
     }
     .como-step > * {
       position: relative;

@@ -637,67 +637,68 @@
         <span class="tag" data-i18n="serv-audit-tag">Auditoría real</span>
         <h2 class="section__title"><span data-i18n="serv-audit-title-before">Recepción de información y </span><span class="text--yellow" data-i18n="serv-audit-title-accent">documentación duplicada</span></h2>
         <p class="section__desc" data-i18n="serv-audit-subtitle">Una sola fuente de verdad. Menos documentos repetidos, menos errores y más trazabilidad entre departamentos.</p>
-      </div>
-
-      <div class="serv-case__grid">
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-problem-title">Problema detectado</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-audit-problem-desc">En la auditoría real se detectó duplicidad documental entre departamentos y necesidad de usar plantillas comunes. Varias personas rellenaban datos parecidos en sitios distintos.</p>
-        </div>
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-what-title">Qué automatizamos</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-audit-what-desc">Sistema único de recepción documental, expedientes y plantillas corporativas conectado con automatizaciones.</p>
+        <div class="serv-case__toggle-row">
+          <button class="serv-case__toggle" onclick="this.closest('.serv-case').classList.toggle('serv-case--open')" data-i18n="serv-case-more">Ver más</button>
         </div>
       </div>
-
-      <div class="serv-case__flow">
-        <h3 class="serv-case__flow-title" data-i18n="serv-case-flow-title">Cómo funciona el flujo</h3>
-        <div class="serv-case__flow-steps">
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">01</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow1">El cliente envía formulario, email o documento.</span>
+      <div class="serv-case__body">
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-problem-title">Problema detectado</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-audit-problem-desc">En la auditoría real se detectó duplicidad documental entre departamentos y necesidad de usar plantillas comunes. Varias personas rellenaban datos parecidos en sitios distintos.</p>
           </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">02</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow2">n8n detecta la entrada.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">03</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow3">La IA extrae cliente, proyecto, fecha, tipo de documento, departamento y prioridad.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">04</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow4">El sistema comprueba si ya existe expediente.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">05</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow5">Si existe, adjunta la información. Si no, crea carpeta, registro y tarea.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">06</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow6">Se usan plantillas comunes para calidad, medioambiente, operaciones o proyectos.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">07</span>
-            <span class="serv-case__flow-text" data-i18n="serv-audit-flow7">Se avisa al departamento correspondiente y queda registro de qué falta.</span>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-what-title">Qué automatizamos</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-audit-what-desc">Sistema único de recepción documental, expedientes y plantillas corporativas conectado con automatizaciones.</p>
           </div>
         </div>
-      </div>
-
-      <div class="serv-case__grid">
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-data-title">Datos que se guardan</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-audit-data-desc">Cliente, proyecto, fecha, tipo documental, departamento, estado, responsable, archivo original, versión, campos pendientes y trazabilidad de cambios.</p>
+        <div class="serv-case__flow">
+          <h3 class="serv-case__flow-title" data-i18n="serv-case-flow-title">Cómo funciona el flujo</h3>
+          <div class="serv-case__flow-steps">
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">01</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow1">El cliente envía formulario, email o documento.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">02</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow2">n8n detecta la entrada.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">03</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow3">La IA extrae cliente, proyecto, fecha, tipo de documento, departamento y prioridad.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">04</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow4">El sistema comprueba si ya existe expediente.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">05</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow5">Si existe, adjunta la información. Si no, crea carpeta, registro y tarea.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">06</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow6">Se usan plantillas comunes para calidad, medioambiente, operaciones o proyectos.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">07</span>
+              <span class="serv-case__flow-text" data-i18n="serv-audit-flow7">Se avisa al departamento correspondiente y queda registro de qué falta.</span>
+            </div>
+          </div>
         </div>
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-control-title">Control humano</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-audit-control-desc">Validación de duplicados, campos obligatorios, naming automático de archivos y revisión humana cuando falten datos.</p>
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-data-title">Datos que se guardan</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-audit-data-desc">Cliente, proyecto, fecha, tipo documental, departamento, estado, responsable, archivo original, versión, campos pendientes y trazabilidad de cambios.</p>
+          </div>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-control-title">Control humano</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-audit-control-desc">Validación de duplicados, campos obligatorios, naming automático de archivos y revisión humana cuando falten datos.</p>
+          </div>
         </div>
-      </div>
-
-      <div class="serv-case__result">
-        <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
-        <p class="serv-case__result-desc" data-i18n="serv-audit-result-desc">Documentación más ordenada, menos copia manual y una base común para trabajar entre departamentos.</p>
+        <div class="serv-case__result">
+          <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
+          <p class="serv-case__result-desc" data-i18n="serv-audit-result-desc">Documentación más ordenada, menos copia manual y una base común para trabajar entre departamentos.</p>
+        </div>
       </div>
     </div>
   </div>

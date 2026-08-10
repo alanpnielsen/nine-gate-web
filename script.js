@@ -881,6 +881,7 @@ function setLang(lang) {
   const t = translations[lang];
   if (!t) return;
 
+  console.log('[i18n] Setting lang:', lang, '| meth-desc1:', t['meth-desc1']);
   document.documentElement.lang = lang;
 
   setText('nav-servicios', t['nav-servicios']);

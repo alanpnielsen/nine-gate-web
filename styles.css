@@ -1699,10 +1699,10 @@ img { max-width: 100%; display: block; }
 }
 
 .arch-node__box:hover {
-  border-color: var(--node-color, #38bdf8);
-  background: color-mix(in srgb, var(--node-color, #38bdf8) 25%, transparent);
-  box-shadow: 0 0 40px color-mix(in srgb, var(--node-color, #38bdf8) 40%, transparent), 0 0 80px color-mix(in srgb, var(--node-color, #38bdf8) 18%, transparent);
-  transform: translateY(-2px) scale(1.06);
+  border-color: var(--node-color, #38bdf8) !important;
+  background: color-mix(in srgb, var(--node-color, #38bdf8) 30%, transparent) !important;
+  box-shadow: 0 0 50px color-mix(in srgb, var(--node-color, #38bdf8) 50%, transparent), 0 0 100px color-mix(in srgb, var(--node-color, #38bdf8) 22%, transparent) !important;
+  transform: translateY(-2px) scale(1.08) !important;
 }
 
 .arch-node__short {
@@ -1749,9 +1749,9 @@ img { max-width: 100%; display: block; }
 /* Architecture sequential animation */
 .arch-node__box.active {
   border-color: var(--node-color, #38bdf8) !important;
-  background: color-mix(in srgb, var(--node-color, #38bdf8) 25%, transparent) !important;
-  box-shadow: 0 0 24px color-mix(in srgb, var(--node-color, #38bdf8) 40%, transparent), 0 0 48px color-mix(in srgb, var(--node-color, #38bdf8) 15%, transparent);
-  transform: scale(1.08);
+  background: color-mix(in srgb, var(--node-color, #38bdf8) 30%, transparent) !important;
+  box-shadow: 0 0 50px color-mix(in srgb, var(--node-color, #38bdf8) 50%, transparent), 0 0 100px color-mix(in srgb, var(--node-color, #38bdf8) 22%, transparent) !important;
+  transform: scale(1.08) !important;
 }
 
 .arch-node__box.active .arch-node__short {

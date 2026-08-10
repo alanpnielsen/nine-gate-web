@@ -275,9 +275,8 @@ const translations = {
     'serv-card3-desc': 'Conexi\u00F3n entre WhatsApp, CRM, ERP, APIs y herramientas internas.',
     'serv-card4-title': 'Consultor\u00EDa IA',
     'serv-card4-desc': 'Dise\u00F1o e implementaci\u00F3n de estrategias de Inteligencia Artificial.',
-    'serv-card5-title': 'Automatizaciones con IA',
-    'serv-card5-desc': 'Automatizaciones con IA para empresas que ya no pueden depender del trabajo manual.',
-    'serv-card5-detail': 'Dise\u00F1amos flujos que reciben llamadas, clasifican solicitudes, ordenan documentos, generan presupuestos, avisan al equipo y dejan trazabilidad.',
+    'serv-card5-title': 'Diagn\u00F3stico',
+    'serv-card5-desc': 'Llamada inicial gratuita. Identificamos los 3 procesos con m\u00E1s potencial.',
     'flow-step1': 'Llamada',
     'flow-step2': 'IA',
     'flow-step3': 'CRM',
@@ -650,9 +649,8 @@ const translations = {
     'serv-card3-desc': 'Connection between WhatsApp, CRM, ERP, APIs and internal tools.',
     'serv-card4-title': 'AI Consulting',
     'serv-card4-desc': 'Design and implementation of Artificial Intelligence strategies.',
-    'serv-card5-title': 'AI Automations',
-    'serv-card5-desc': 'AI automations for businesses that can no longer rely on manual work.',
-    'serv-card5-detail': 'We design flows that receive calls, classify requests, sort documents, generate quotes, notify the team and leave traceability.',
+    'serv-card5-title': 'Diagnosis',
+    'serv-card5-desc': 'Free initial call. We identify the 3 processes with the highest automation potential.',
     'flow-step1': 'Call',
     'flow-step2': 'AI',
     'flow-step3': 'CRM',
@@ -1054,7 +1052,6 @@ function setLang(lang) {
   setText('serv-card4-desc', t['serv-card4-desc']);
   setText('serv-card5-title', t['serv-card5-title']);
   setText('serv-card5-desc', t['serv-card5-desc']);
-  setText('serv-card5-detail', t['serv-card5-detail']);
   setText('flow-step1', t['flow-step1']);
   setText('flow-step2', t['flow-step2']);
   setText('flow-step3', t['flow-step3']);

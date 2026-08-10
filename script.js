@@ -328,6 +328,23 @@ const translations = {
     'serv-audit-data-desc': 'Cliente, proyecto, fecha, tipo documental, departamento, estado, responsable, archivo original, versi\u00F3n, campos pendientes y trazabilidad de cambios.',
     'serv-audit-control-desc': 'Validaci\u00F3n de duplicados, campos obligatorios, naming autom\u00E1tico de archivos y revisi\u00F3n humana cuando falten datos.',
     'serv-audit-result-desc': 'Documentaci\u00F3n m\u00E1s ordenada, menos copia manual y una base com\u00FAn para trabajar entre departamentos.',
+    'serv-data-tag': 'Datos estructurados',
+    'serv-data-price': 'Desde 1.890 \u20AC',
+    'serv-data-title-before': 'Partes de trabajo, control horario y ',
+    'serv-data-title-accent': 'administraci\u00F3n',
+    'serv-data-subtitle': 'Menos administraci\u00F3n repetida. Los datos nacen una vez y viajan al resto del sistema.',
+    'serv-data-problem-desc': 'En la auditor\u00EDa aparecieron control horario, reportes, partes de trabajo y facturaci\u00F3n como tareas repetitivas que consumen tiempo.',
+    'serv-data-what-desc': 'Generaci\u00F3n de partes, validaci\u00F3n de fichajes, reportes internos y preparaci\u00F3n de datos para facturaci\u00F3n.',
+    'serv-data-flow1': 'El empleado registra jornada, tarea o parte desde m\u00F3vil, formulario o app.',
+    'serv-data-flow2': 'El sistema valida proyecto, cliente, horas, descripci\u00F3n y responsable.',
+    'serv-data-flow3': 'n8n guarda la informaci\u00F3n en la herramienta correspondiente.',
+    'serv-data-flow4': 'Si faltan datos, devuelve aviso autom\u00E1tico.',
+    'serv-data-flow5': 'Si est\u00E1 completo, genera PDF o registro interno.',
+    'serv-data-flow6': 'Si procede, env\u00EDa datos a facturaci\u00F3n o ERP.',
+    'serv-data-flow7': 'Direcci\u00F3n recibe resumen semanal de horas, partes pendientes y desviaciones.',
+    'serv-data-data-desc': 'Empleado, fecha, proyecto, cliente, horas, tarea, estado, validaci\u00F3n, parte generado, responsable y observaciones.',
+    'serv-data-control-desc': 'No se factura autom\u00E1ticamente sin revisi\u00F3n. El sistema prepara datos y avisa al responsable.',
+    'serv-data-result-desc': 'Menos tiempo administrativo y mejor visibilidad de horas, partes pendientes y trabajos listos para facturar.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -570,6 +587,23 @@ const translations = {
     'serv-audit-data-desc': 'Client, project, date, document type, department, status, responsible person, original file, version, pending fields and change traceability.',
     'serv-audit-control-desc': 'Duplicate validation, required fields, automatic file naming and human review when data is missing.',
     'serv-audit-result-desc': 'More organized documentation, less manual copying and a common base for working between departments.',
+    'serv-data-tag': 'Structured data',
+    'serv-data-price': 'From €1,890',
+    'serv-data-title-before': 'Work reports, time tracking and ',
+    'serv-data-title-accent': 'administration',
+    'serv-data-subtitle': 'Less repetitive administration. Data is born once and travels to the rest of the system.',
+    'serv-data-problem-desc': 'The audit revealed time tracking, reports, work reports and invoicing as repetitive tasks that consume time.',
+    'serv-data-what-desc': 'Report generation, timesheet validation, internal reports and data preparation for invoicing.',
+    'serv-data-flow1': 'The employee records workday, task or report from mobile, form or app.',
+    'serv-data-flow2': 'The system validates project, client, hours, description and responsible person.',
+    'serv-data-flow3': 'n8n saves the information in the corresponding tool.',
+    'serv-data-flow4': 'If data is missing, it returns an automatic alert.',
+    'serv-data-flow5': 'If complete, it generates PDF or internal record.',
+    'serv-data-flow6': 'If applicable, it sends data to invoicing or ERP.',
+    'serv-data-flow7': 'Management receives weekly summary of hours, pending reports and deviations.',
+    'serv-data-data-desc': 'Employee, date, project, client, hours, task, status, validation, generated report, responsible person and observations.',
+    'serv-data-control-desc': 'No automatic invoicing without review. The system prepares data and notifies the responsible person.',
+    'serv-data-result-desc': 'Less administrative time and better visibility of hours, pending reports and jobs ready to invoice.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -838,6 +872,23 @@ function setLang(lang) {
   setText('serv-audit-data-desc', t['serv-audit-data-desc']);
   setText('serv-audit-control-desc', t['serv-audit-control-desc']);
   setText('serv-audit-result-desc', t['serv-audit-result-desc']);
+  setText('serv-data-tag', t['serv-data-tag']);
+  setText('serv-data-price', t['serv-data-price']);
+  setText('serv-data-title-before', t['serv-data-title-before']);
+  setText('serv-data-title-accent', t['serv-data-title-accent']);
+  setText('serv-data-subtitle', t['serv-data-subtitle']);
+  setText('serv-data-problem-desc', t['serv-data-problem-desc']);
+  setText('serv-data-what-desc', t['serv-data-what-desc']);
+  setText('serv-data-flow1', t['serv-data-flow1']);
+  setText('serv-data-flow2', t['serv-data-flow2']);
+  setText('serv-data-flow3', t['serv-data-flow3']);
+  setText('serv-data-flow4', t['serv-data-flow4']);
+  setText('serv-data-flow5', t['serv-data-flow5']);
+  setText('serv-data-flow6', t['serv-data-flow6']);
+  setText('serv-data-flow7', t['serv-data-flow7']);
+  setText('serv-data-data-desc', t['serv-data-data-desc']);
+  setText('serv-data-control-desc', t['serv-data-control-desc']);
+  setText('serv-data-result-desc', t['serv-data-result-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

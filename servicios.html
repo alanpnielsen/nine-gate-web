@@ -395,6 +395,21 @@
     .serv-case--open .serv-case__body {
       display: block;
     }
+    .serv-case__tag-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .serv-case__price {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: rgba(255, 177, 0, 0.1);
+      border: 1px solid rgba(255, 177, 0, 0.2);
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
     @media (max-width: 768px) {
       .serv-case__grid {
         grid-template-columns: 1fr;
@@ -698,6 +713,79 @@
         <div class="serv-case__result">
           <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
           <p class="serv-case__result-desc" data-i18n="serv-audit-result-desc">Documentación más ordenada, menos copia manual y una base común para trabajar entre departamentos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="serv-case serv-case--pricing" data-r>
+      <div class="serv-case__header">
+        <div class="serv-case__tag-row">
+          <span class="tag" data-i18n="serv-data-tag">Datos estructurados</span>
+          <span class="serv-case__price" data-i18n="serv-data-price">Desde 1.890 €</span>
+        </div>
+        <h2 class="section__title"><span data-i18n="serv-data-title-before">Partes de trabajo, control horario y </span><span class="text--yellow" data-i18n="serv-data-title-accent">administración</span></h2>
+        <p class="section__desc" data-i18n="serv-data-subtitle">Menos administración repetida. Los datos nacen una vez y viajan al resto del sistema.</p>
+        <div class="serv-case__toggle-row">
+          <button class="serv-case__toggle" onclick="this.closest('.serv-case').classList.toggle('serv-case--open')" data-i18n="serv-case-more">Ver más</button>
+        </div>
+      </div>
+      <div class="serv-case__body">
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-problem-title">Problema detectado</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-data-problem-desc">En la auditoría aparecieron control horario, reportes, partes de trabajo y facturación como tareas repetitivas que consumen tiempo.</p>
+          </div>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-what-title">Qué automatizamos</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-data-what-desc">Generación de partes, validación de fichajes, reportes internos y preparación de datos para facturación.</p>
+          </div>
+        </div>
+        <div class="serv-case__flow">
+          <h3 class="serv-case__flow-title" data-i18n="serv-case-flow-title">Cómo funciona el flujo</h3>
+          <div class="serv-case__flow-steps">
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">01</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow1">El empleado registra jornada, tarea o parte desde móvil, formulario o app.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">02</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow2">El sistema valida proyecto, cliente, horas, descripción y responsable.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">03</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow3">n8n guarda la información en la herramienta correspondiente.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">04</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow4">Si faltan datos, devuelve aviso automático.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">05</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow5">Si está completo, genera PDF o registro interno.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">06</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow6">Si procede, envía datos a facturación o ERP.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">07</span>
+              <span class="serv-case__flow-text" data-i18n="serv-data-flow7">Dirección recibe resumen semanal de horas, partes pendientes y desviaciones.</span>
+            </div>
+          </div>
+        </div>
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-data-title">Datos que se guardan</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-data-data-desc">Empleado, fecha, proyecto, cliente, horas, tarea, estado, validación, parte generado, responsable y observaciones.</p>
+          </div>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-control-title">Control humano</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-data-control-desc">No se factura automáticamente sin revisión. El sistema prepara datos y avisa al responsable.</p>
+          </div>
+        </div>
+        <div class="serv-case__result">
+          <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
+          <p class="serv-case__result-desc" data-i18n="serv-data-result-desc">Menos tiempo administrativo y mejor visibilidad de horas, partes pendientes y trabajos listos para facturar.</p>
         </div>
       </div>
     </div>

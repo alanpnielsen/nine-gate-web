@@ -486,6 +486,8 @@ const translations = {
     'serv-list-title-before': 'Servicios de automatizaci\u00F3n para ',
     'serv-list-title-accent': 'empresas',
     'serv-list-desc': 'Listado consolidado de servicios Nine Gate: auditor\u00EDa, automatizaciones, formaci\u00F3n y acompa\u00F1amiento.',
+    'serv-item0-title': 'Diagn\u00F3stico',
+    'serv-item0-desc': 'Llamada inicial gratuita. Identificamos los 3 procesos con m\u00E1s potencial.',
     'serv-item1-title': 'Auditor\u00EDa',
     'serv-item1-desc': 'An\u00E1lisis completo de procesos para identificar oportunidades de automatizaci\u00F3n.',
     'serv-item2-title': 'Automatizaciones',
@@ -859,6 +861,8 @@ const translations = {
     'serv-list-title-before': 'Automation services for ',
     'serv-list-title-accent': 'businesses',
     'serv-list-desc': 'Consolidated list of Nine Gate services: auditing, automations, training and support.',
+    'serv-item0-title': 'Diagnosis',
+    'serv-item0-desc': 'Free initial call. We identify the 3 processes with the highest automation potential.',
     'serv-item1-title': 'Audit',
     'serv-item1-desc': 'Complete analysis of business processes to identify automation opportunities.',
     'serv-item2-title': 'Automations',
@@ -1259,6 +1263,8 @@ function setLang(lang) {
   setText('serv-list-title-before', t['serv-list-title-before']);
   setText('serv-list-title-accent', t['serv-list-title-accent']);
   setText('serv-list-desc', t['serv-list-desc']);
+  setText('serv-item0-title', t['serv-item0-title']);
+  setText('serv-item0-desc', t['serv-item0-desc']);
   setText('serv-item1-title', t['serv-item1-title']);
   setText('serv-item1-desc', t['serv-item1-desc']);
   setText('serv-item2-title', t['serv-item2-title']);

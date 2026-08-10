@@ -117,6 +117,19 @@
         grid-template-columns: 1fr;
       }
     }
+    [data-theme="light"] .solucion-card {
+      background: #fff;
+    }
+    [data-theme="light"] .solucion-card::before {
+      opacity: 0.06;
+    }
+    [data-theme="light"] .solucion-card:hover::before {
+      opacity: 0.12;
+    }
+    [data-theme="light"] .solucion-card__code {
+      background: rgba(255, 177, 0, 0.10);
+      border-color: rgba(255, 177, 0, 0.20);
+    }
   </style>
 </head>
 <body>

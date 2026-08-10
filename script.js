@@ -425,6 +425,20 @@ const translations = {
     'serv-controls-item3': 'Registro de cada ejecuci\u00F3n.',
     'serv-controls-item4': 'Alertas si falla un flujo.',
     'serv-controls-item5': 'Supervisi\u00F3n humana en decisiones comerciales.',
+    'ticker-1': 'Automatizamos todos aquellos procesos repetitivos',
+    'ticker-2': 'Reducimos tiempos operativos',
+    'ticker-3': 'Eliminamos tareas manuales',
+    'ticker-4': 'Conectamos todos tus sistemas',
+    'ticker-5': 'Integramos WhatsApp con tu empresa',
+    'ticker-6': 'Agentes de IA disponibles 24/7',
+    'ticker-7': 'Reducimos errores humanos',
+    'ticker-8': 'Aumentamos la productividad',
+    'ticker-9': 'Automatizamos ventas y atenci\u00F3n',
+    'ticker-10': 'Convertimos conversaciones en acciones',
+    'ticker-11': 'Tu empresa trabaja incluso mientras dorm\u00EDs',
+    'ticker-12': 'Escalamos procesos sin aumentar personal',
+    'ticker-13': 'IA integrada con tu operaci\u00F3n',
+    'ticker-14': 'Automatizaciones pensadas para crecer',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -764,6 +778,20 @@ const translations = {
     'serv-controls-item3': 'Record of every execution.',
     'serv-controls-item4': 'Alerts if a flow fails.',
     'serv-controls-item5': 'Human supervision in commercial decisions.',
+    'ticker-1': 'We automate all those repetitive processes',
+    'ticker-2': 'We reduce operational times',
+    'ticker-3': 'We eliminate manual tasks',
+    'ticker-4': 'We connect all your systems',
+    'ticker-5': 'We integrate WhatsApp with your business',
+    'ticker-6': 'AI agents available 24/7',
+    'ticker-7': 'We reduce human errors',
+    'ticker-8': 'We increase productivity',
+    'ticker-9': 'We automate sales and support',
+    'ticker-10': 'We turn conversations into actions',
+    'ticker-11': 'Your business works even while you sleep',
+    'ticker-12': 'We scale processes without increasing staff',
+    'ticker-13': 'AI integrated with your operations',
+    'ticker-14': 'Automations designed to grow',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -1129,6 +1157,20 @@ function setLang(lang) {
   setText('serv-controls-item3', t['serv-controls-item3']);
   setText('serv-controls-item4', t['serv-controls-item4']);
   setText('serv-controls-item5', t['serv-controls-item5']);
+  setText('ticker-1', t['ticker-1']);
+  setText('ticker-2', t['ticker-2']);
+  setText('ticker-3', t['ticker-3']);
+  setText('ticker-4', t['ticker-4']);
+  setText('ticker-5', t['ticker-5']);
+  setText('ticker-6', t['ticker-6']);
+  setText('ticker-7', t['ticker-7']);
+  setText('ticker-8', t['ticker-8']);
+  setText('ticker-9', t['ticker-9']);
+  setText('ticker-10', t['ticker-10']);
+  setText('ticker-11', t['ticker-11']);
+  setText('ticker-12', t['ticker-12']);
+  setText('ticker-13', t['ticker-13']);
+  setText('ticker-14', t['ticker-14']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

@@ -945,15 +945,22 @@ function setLang(lang) {
 
 /* Init language */
 const langToggles = document.querySelectorAll('.lang-toggle');
-if (langToggles.length) {
+
+function initLanguage() {
   const saved = localStorage.getItem('nine-gate-lang') || 'es';
+
   langToggles.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.onclick = function () {
       const current = document.documentElement.lang === 'en' ? 'es' : 'en';
       setLang(current);
-    });
+    };
   });
+
   setLang(saved);
+}
+
+if (langToggles.length) {
+  initLanguage();
 }
 
 /* Theme toggle */

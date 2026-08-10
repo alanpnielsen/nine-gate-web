@@ -311,6 +311,22 @@ const translations = {
     'serv-case-control-desc': 'Ninguna oferta se env\u00EDa sola. La IA prepara el borrador, el sistema revisa campos y una persona valida antes de enviar.',
     'serv-case-result-title': 'Resultado esperado',
     'serv-case-result-desc': 'M\u00E1s orden comercial, menos informaci\u00F3n perdida y una trazabilidad clara de cada solicitud.',
+    'serv-audit-tag': 'Auditor\u00EDa real',
+    'serv-audit-title-before': 'Recepci\u00F3n de informaci\u00F3n y ',
+    'serv-audit-title-accent': 'documentaci\u00F3n duplicada',
+    'serv-audit-subtitle': 'Una sola fuente de verdad. Menos documentos repetidos, menos errores y m\u00E1s trazabilidad entre departamentos.',
+    'serv-audit-problem-desc': 'En la auditor\u00EDa real se detect\u00F3 duplicidad documental entre departamentos y necesidad de usar plantillas comunes. Varias personas rellenaban datos parecidos en sitios distintos.',
+    'serv-audit-what-desc': 'Sistema \u00FAnico de recepci\u00F3n documental, expedientes y plantillas corporativas conectado con automatizaciones.',
+    'serv-audit-flow1': 'El cliente env\u00EDa formulario, email o documento.',
+    'serv-audit-flow2': 'n8n detecta la entrada.',
+    'serv-audit-flow3': 'La IA extrae cliente, proyecto, fecha, tipo de documento, departamento y prioridad.',
+    'serv-audit-flow4': 'El sistema comprueba si ya existe expediente.',
+    'serv-audit-flow5': 'Si existe, adjunta la informaci\u00F3n. Si no, crea carpeta, registro y tarea.',
+    'serv-audit-flow6': 'Se usan plantillas comunes para calidad, medioambiente, operaciones o proyectos.',
+    'serv-audit-flow7': 'Se avisa al departamento correspondiente y queda registro de qu\u00E9 falta.',
+    'serv-audit-data-desc': 'Cliente, proyecto, fecha, tipo documental, departamento, estado, responsable, archivo original, versi\u00F3n, campos pendientes y trazabilidad de cambios.',
+    'serv-audit-control-desc': 'Validaci\u00F3n de duplicados, campos obligatorios, naming autom\u00E1tico de archivos y revisi\u00F3n humana cuando falten datos.',
+    'serv-audit-result-desc': 'Documentaci\u00F3n m\u00E1s ordenada, menos copia manual y una base com\u00FAn para trabajar entre departamentos.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -536,6 +552,22 @@ const translations = {
     'serv-case-control-desc': 'No quote is sent alone. The AI prepares the draft, the system checks fields and a person validates before sending.',
     'serv-case-result-title': 'Expected result',
     'serv-case-result-desc': 'More commercial order, less lost information and clear traceability of every request.',
+    'serv-audit-tag': 'Real audit',
+    'serv-audit-title-before': 'Information reception and ',
+    'serv-audit-title-accent': 'duplicate documentation',
+    'serv-audit-subtitle': 'A single source of truth. Fewer repeated documents, fewer errors and more traceability between departments.',
+    'serv-audit-problem-desc': 'The real audit detected document duplication between departments and the need to use common templates. Several people were filling in similar data in different places.',
+    'serv-audit-what-desc': 'Unique system for document reception, files and corporate templates connected with automations.',
+    'serv-audit-flow1': 'The client sends a form, email or document.',
+    'serv-audit-flow2': 'n8n detects the entry.',
+    'serv-audit-flow3': 'The AI extracts client, project, date, document type, department and priority.',
+    'serv-audit-flow4': 'The system checks if a file already exists.',
+    'serv-audit-flow5': 'If it exists, it attaches the information. If not, it creates folder, record and task.',
+    'serv-audit-flow6': 'Common templates are used for quality, environment, operations or projects.',
+    'serv-audit-flow7': 'The corresponding department is notified and a record of what is missing is kept.',
+    'serv-audit-data-desc': 'Client, project, date, document type, department, status, responsible person, original file, version, pending fields and change traceability.',
+    'serv-audit-control-desc': 'Duplicate validation, required fields, automatic file naming and human review when data is missing.',
+    'serv-audit-result-desc': 'More organized documentation, less manual copying and a common base for working between departments.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -787,6 +819,22 @@ function setLang(lang) {
   setText('serv-case-control-desc', t['serv-case-control-desc']);
   setText('serv-case-result-title', t['serv-case-result-title']);
   setText('serv-case-result-desc', t['serv-case-result-desc']);
+  setText('serv-audit-tag', t['serv-audit-tag']);
+  setText('serv-audit-title-before', t['serv-audit-title-before']);
+  setText('serv-audit-title-accent', t['serv-audit-title-accent']);
+  setText('serv-audit-subtitle', t['serv-audit-subtitle']);
+  setText('serv-audit-problem-desc', t['serv-audit-problem-desc']);
+  setText('serv-audit-what-desc', t['serv-audit-what-desc']);
+  setText('serv-audit-flow1', t['serv-audit-flow1']);
+  setText('serv-audit-flow2', t['serv-audit-flow2']);
+  setText('serv-audit-flow3', t['serv-audit-flow3']);
+  setText('serv-audit-flow4', t['serv-audit-flow4']);
+  setText('serv-audit-flow5', t['serv-audit-flow5']);
+  setText('serv-audit-flow6', t['serv-audit-flow6']);
+  setText('serv-audit-flow7', t['serv-audit-flow7']);
+  setText('serv-audit-data-desc', t['serv-audit-data-desc']);
+  setText('serv-audit-control-desc', t['serv-audit-control-desc']);
+  setText('serv-audit-result-desc', t['serv-audit-result-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

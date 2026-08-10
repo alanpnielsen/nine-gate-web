@@ -235,6 +235,7 @@ const translations = {
     'footer-link-int': 'Integraciones',
     'footer-link-cons': 'Consultor\u00EDa',
     'footer-link-casos': 'Casos de uso',
+    'footer-link-about': 'Acerca de Nosotros',
     'footer-link-contacto': 'Contacto',
     'footer-link-como': 'C\u00F3mo trabajamos',
     'footer-link-priv': 'Privacidad',
@@ -544,6 +545,7 @@ const translations = {
     'footer-link-int': 'Integrations',
     'footer-link-cons': 'Consulting',
     'footer-link-casos': 'Use Cases',
+    'footer-link-about': 'About Us',
     'footer-link-contacto': 'Contact',
     'footer-link-como': 'How we work',
     'footer-link-priv': 'Privacy',
@@ -860,6 +862,7 @@ function setLang(lang) {
   setText('footer-link-int', t['footer-link-int']);
   setText('footer-link-cons', t['footer-link-cons']);
   setText('footer-link-casos', t['footer-link-casos']);
+  setText('footer-link-about', t['footer-link-about']);
   setText('footer-link-contacto', t['footer-link-contacto']);
   setText('footer-link-como', t['footer-link-como']);
   setText('footer-link-priv', t['footer-link-priv']);

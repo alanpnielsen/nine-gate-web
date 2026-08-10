@@ -1,3 +1,14 @@
+/* i18n element cache — built once at load, used by setText */
+var i18nEls = {};
+document.querySelectorAll('[data-i18n]').forEach(function(el) {
+  i18nEls[el.getAttribute('data-i18n')] = el;
+});
+
+function setText(key, val) {
+  var el = i18nEls[key];
+  if (el) el.textContent = val;
+}
+
 const toggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
@@ -1256,17 +1267,6 @@ function setLang(lang) {
   });
   document.documentElement.lang = lang;
   localStorage.setItem('nine-gate-lang', lang);
-}
-
-/* i18n element cache — built once at load, used by setText */
-const i18nEls = {};
-document.querySelectorAll('[data-i18n]').forEach(function(el) {
-  i18nEls[el.getAttribute('data-i18n')] = el;
-});
-
-function setText(key, val) {
-  var el = i18nEls[key];
-  if (el) el.textContent = val;
 }
 
 /* Init language */

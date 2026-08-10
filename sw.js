@@ -1,10 +1,10 @@
 /**
  * Nine Gate — Service Worker
  * Provides offline support and caching strategy
- * Version: 1.0.0
+ * Version: 3.0.0
  */
 
-const CACHE_NAME = 'nine-gate-v2';
+const CACHE_NAME = 'nine-gate-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -14,14 +14,13 @@ const STATIC_ASSETS = [
   '/privacidad.html',
   '/terminos.html',
   '/cookies.html',
-  '/assets/css/main.css',
-  '/assets/js/main.js',
+  '/servicios.html',
+  '/styles.css',
   '/4-A.png',
   '/favicon.ico',
   '/favicon-32x32.png',
   '/favicon-16x16.png',
-  '/apple-touch-icon.png',
-  '/assets/og-default.jpg'
+  '/apple-touch-icon.png'
 ];
 
 // Cache strategies
@@ -113,26 +112,30 @@ self.addEventListener('fetch', (event) => {
   // Determine strategy based on request type
   let strategy;
   
-  // HTML pages - network first
+  // HTML pages - network first (always fresh)
   if (request.destination === 'document' || 
       request.headers.get('accept')?.includes('text/html')) {
     strategy = CACHE_STRATEGIES.networkFirst;
   }
-  // Static assets (CSS, JS, fonts) - cache first
-  else if (request.destination === 'style' || 
-           request.destination === 'script' ||
-           request.destination === 'font' ||
-           url.pathname.match(/\.(css|js|woff2?|ttf|eot)$/)) {
+  // Scripts (JS) - network first (always get latest translations/code)
+  else if (request.destination === 'script' ||
+           url.pathname.match(/\.js$/)) {
+    strategy = CACHE_STRATEGIES.networkFirst;
+  }
+  // CSS - stale while revalidate (styles change less often)
+  else if (request.destination === 'style' ||
+           url.pathname.match(/\.css$/)) {
+    strategy = CACHE_STRATEGIES.staleWhileRevalidate;
+  }
+  // Fonts - cache first (fonts never change)
+  else if (request.destination === 'font' ||
+           url.pathname.match(/\.(woff2?|ttf|eot)$/)) {
     strategy = CACHE_STRATEGIES.cacheFirst;
   }
   // Images - stale while revalidate
   else if (request.destination === 'image' ||
            url.pathname.match(/\.(png|jpg|jpeg|webp|avif|svg|gif|ico)$/)) {
     strategy = CACHE_STRATEGIES.staleWhileRevalidate;
-  }
-  // API calls - network only (no cache)
-  else if (url.pathname.startsWith('/api/') || url.pathname.startsWith('/.netlify/')) {
-    return; // Let browser handle normally
   }
   // Default - network first
   else {

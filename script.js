@@ -263,6 +263,10 @@ const translations = {
     'serv-card3-desc': 'Conexi\u00F3n entre WhatsApp, CRM, ERP, APIs y herramientas internas.',
     'serv-card4-title': 'Consultor\u00EDa IA',
     'serv-card4-desc': 'Dise\u00F1o e implementaci\u00F3n de estrategias de Inteligencia Artificial.',
+    'serv-list-tag': 'Servicios',
+    'serv-list-title-before': 'Servicios de automatizaci\u00F3n para ',
+    'serv-list-title-accent': 'empresas',
+    'serv-list-desc': 'Listado consolidado de servicios Nine Gate: auditor\u00EDa, automatizaciones, formaci\u00F3n y acompa\u00F1amiento.',
     'ben-label1': 'menos trabajo manual',
     'ben-label2': 'disponibilidad total',
     'ben-label3': 'escalabilidad autom\u00E1tica',
@@ -416,6 +420,10 @@ const translations = {
     'serv-card3-desc': 'Connection between WhatsApp, CRM, ERP, APIs and internal tools.',
     'serv-card4-title': 'AI Consulting',
     'serv-card4-desc': 'Design and implementation of Artificial Intelligence strategies.',
+    'serv-list-tag': 'Services',
+    'serv-list-title-before': 'Automation services for ',
+    'serv-list-title-accent': 'businesses',
+    'serv-list-desc': 'Consolidated list of Nine Gate services: auditing, automations, training and support.',
     'ben-label1': 'less manual work',
     'ben-label2': 'total availability',
     'ben-label3': 'automatic scalability',
@@ -595,6 +603,10 @@ function setLang(lang) {
   setText('serv-card3-desc', t['serv-card3-desc']);
   setText('serv-card4-title', t['serv-card4-title']);
   setText('serv-card4-desc', t['serv-card4-desc']);
+  setText('serv-list-tag', t['serv-list-tag']);
+  setText('serv-list-title-before', t['serv-list-title-before']);
+  setText('serv-list-title-accent', t['serv-list-title-accent']);
+  setText('serv-list-desc', t['serv-list-desc']);
   setText('ben-label1', t['ben-label1']);
   setText('ben-label2', t['ben-label2']);
   setText('ben-label3', t['ben-label3']);

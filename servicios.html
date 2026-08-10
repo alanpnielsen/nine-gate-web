@@ -353,16 +353,18 @@
       color: var(--text-secondary);
       line-height: 1.6;
     }
+    .serv-case__header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
     .serv-case__header {
-      text-align: center;
-      margin-bottom: 0;
-      position: relative;
+      text-align: left;
+      flex: 1;
     }
     .serv-case__toggle {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -375,6 +377,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s, border-color 0.3s;
+      flex-shrink: 0;
     }
     .serv-case__toggle:hover {
       background: rgba(255, 177, 0, 0.14);
@@ -401,6 +404,10 @@
       }
       .serv-case {
         padding: 28px 20px;
+      }
+      .serv-case__header-row {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -563,12 +570,14 @@
     </div>
 
     <div class="serv-case" data-r>
-      <div class="serv-case__header">
-        <span class="tag" data-i18n="serv-case-tag">IA + Humano</span>
-        <h2 class="section__title"><span data-i18n="serv-case-title-before">Alto flujo de llamadas y </span><span class="text--yellow" data-i18n="serv-case-title-accent">solicitudes de clientes</span></h2>
-        <p class="section__desc" data-i18n="serv-case-subtitle">De llamadas sueltas a oportunidades ordenadas. Cada llamada termina convertida en una ficha clara, con responsable, prioridad y siguiente paso.</p>
+      <div class="serv-case__header-row">
+        <div class="serv-case__header">
+          <span class="tag" data-i18n="serv-case-tag">IA + Humano</span>
+          <h2 class="section__title"><span data-i18n="serv-case-title-before">Alto flujo de llamadas y </span><span class="text--yellow" data-i18n="serv-case-title-accent">solicitudes de clientes</span></h2>
+          <p class="section__desc" data-i18n="serv-case-subtitle">De llamadas sueltas a oportunidades ordenadas. Cada llamada termina convertida en una ficha clara, con responsable, prioridad y siguiente paso.</p>
+        </div>
+        <button class="serv-case__toggle" onclick="this.closest('.serv-case').classList.toggle('serv-case--open')" data-i18n="serv-case-more">Ver más</button>
       </div>
-      <button class="serv-case__toggle" onclick="this.closest('.serv-case').classList.toggle('serv-case--open')" data-i18n="serv-case-more">Ver más</button>
       <div class="serv-case__body">
         <div class="serv-case__grid">
           <div class="serv-case__block">

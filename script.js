@@ -486,6 +486,14 @@ const translations = {
     'serv-list-title-before': 'Servicios de automatizaci\u00F3n para ',
     'serv-list-title-accent': 'empresas',
     'serv-list-desc': 'Listado consolidado de servicios Nine Gate: auditor\u00EDa, automatizaciones, formaci\u00F3n y acompa\u00F1amiento.',
+    'serv-item1-title': 'Auditor\u00EDa',
+    'serv-item1-desc': 'An\u00E1lisis completo de procesos para identificar oportunidades de automatizaci\u00F3n.',
+    'serv-item2-title': 'Automatizaciones',
+    'serv-item2-desc': 'Implementaci\u00F3n de flujos automatizados con IA y herramientas como n8n.',
+    'serv-item3-title': 'Formaci\u00F3n',
+    'serv-item3-desc': 'Capacitaci\u00F3n para equipos que quieren usar y entender las automatizaciones.',
+    'serv-item4-title': 'Acompa\u00F1amiento',
+    'serv-item4-desc': 'Soporte continuo y optimizaci\u00F3n de procesos ya implementados.',
     'ben-label1': 'menos trabajo manual',
     'ben-label2': 'disponibilidad total',
     'ben-label3': 'escalabilidad autom\u00E1tica',
@@ -851,6 +859,14 @@ const translations = {
     'serv-list-title-before': 'Automation services for ',
     'serv-list-title-accent': 'businesses',
     'serv-list-desc': 'Consolidated list of Nine Gate services: auditing, automations, training and support.',
+    'serv-item1-title': 'Audit',
+    'serv-item1-desc': 'Complete analysis of business processes to identify automation opportunities.',
+    'serv-item2-title': 'Automations',
+    'serv-item2-desc': 'Implementation of AI-powered automated workflows using tools such as n8n.',
+    'serv-item3-title': 'Training',
+    'serv-item3-desc': 'Training for teams that want to use and understand automation.',
+    'serv-item4-title': 'Ongoing Support',
+    'serv-item4-desc': 'Continuous support and optimization of already implemented processes.',
     'ben-label1': 'less manual work',
     'ben-label2': 'total availability',
     'ben-label3': 'automatic scalability',
@@ -1243,6 +1259,14 @@ function setLang(lang) {
   setText('serv-list-title-before', t['serv-list-title-before']);
   setText('serv-list-title-accent', t['serv-list-title-accent']);
   setText('serv-list-desc', t['serv-list-desc']);
+  setText('serv-item1-title', t['serv-item1-title']);
+  setText('serv-item1-desc', t['serv-item1-desc']);
+  setText('serv-item2-title', t['serv-item2-title']);
+  setText('serv-item2-desc', t['serv-item2-desc']);
+  setText('serv-item3-title', t['serv-item3-title']);
+  setText('serv-item3-desc', t['serv-item3-desc']);
+  setText('serv-item4-title', t['serv-item4-title']);
+  setText('serv-item4-desc', t['serv-item4-desc']);
   setText('ben-label1', t['ben-label1']);
   setText('ben-label2', t['ben-label2']);
   setText('ben-label3', t['ben-label3']);

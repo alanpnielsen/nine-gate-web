@@ -1844,10 +1844,11 @@ img { max-width: 100%; display: block; }
 /* ========== SERVICES LIST ========== */
 .services__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .services__list-item {
@@ -1894,6 +1895,12 @@ img { max-width: 100%; display: block; }
   font-size: 0.85rem;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {

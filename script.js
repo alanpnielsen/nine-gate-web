@@ -263,6 +263,26 @@ const translations = {
     'serv-card3-desc': 'Conexi\u00F3n entre WhatsApp, CRM, ERP, APIs y herramientas internas.',
     'serv-card4-title': 'Consultor\u00EDa IA',
     'serv-card4-desc': 'Dise\u00F1o e implementaci\u00F3n de estrategias de Inteligencia Artificial.',
+    'meth-tag': 'Metodolog\u00EDa',
+    'meth-title-before': 'C\u00F3mo ',
+    'meth-title-accent': 'construimos tu automatizaci\u00F3n',
+    'meth-desc': '8 pasos para pasar de la idea a la producci\u00F3n con datos reales.',
+    'meth-step1': 'Brief',
+    'meth-desc1': 'Mapeamos conversaciones y tareas reales.',
+    'meth-step2': 'Flow map',
+    'meth-desc2': 'Detectamos reglas, datos y excepciones.',
+    'meth-step3': 'State schema',
+    'meth-desc3': 'Dise\u00F1amos el estado del proceso.',
+    'meth-step4': 'n8n',
+    'meth-desc4': 'Creamos el workflow en n8n.',
+    'meth-step5': 'Database',
+    'meth-desc5': 'Integramos bases, APIs y paneles.',
+    'meth-step6': 'QA',
+    'meth-desc6': 'Probamos con casos reales.',
+    'meth-step7': 'Monitoring',
+    'meth-desc7': 'Activamos logs, monitoreo y handoff.',
+    'meth-step8': 'Production',
+    'meth-desc8': 'Iteramos con datos reales.',
     'serv-list-tag': 'Servicios',
     'serv-list-title-before': 'Servicios de automatizaci\u00F3n para ',
     'serv-list-title-accent': 'empresas',
@@ -420,6 +440,26 @@ const translations = {
     'serv-card3-desc': 'Connection between WhatsApp, CRM, ERP, APIs and internal tools.',
     'serv-card4-title': 'AI Consulting',
     'serv-card4-desc': 'Design and implementation of Artificial Intelligence strategies.',
+    'meth-tag': 'Methodology',
+    'meth-title-before': 'How we ',
+    'meth-title-accent': 'build your automation',
+    'meth-desc': '8 steps from idea to production with real data.',
+    'meth-step1': 'Brief',
+    'meth-desc1': 'We map real conversations and tasks.',
+    'meth-step2': 'Flow map',
+    'meth-desc2': 'We detect rules, data and exceptions.',
+    'meth-step3': 'State schema',
+    'meth-desc3': 'We design the process state.',
+    'meth-step4': 'n8n',
+    'meth-desc4': 'We create the workflow in n8n.',
+    'meth-step5': 'Database',
+    'meth-desc5': 'We integrate databases, APIs and dashboards.',
+    'meth-step6': 'QA',
+    'meth-desc6': 'We test with real cases.',
+    'meth-step7': 'Monitoring',
+    'meth-desc7': 'We activate logs, monitoring and handoff.',
+    'meth-step8': 'Production',
+    'meth-desc8': 'We iterate with real data.',
     'serv-list-tag': 'Services',
     'serv-list-title-before': 'Automation services for ',
     'serv-list-title-accent': 'businesses',
@@ -603,6 +643,26 @@ function setLang(lang) {
   setText('serv-card3-desc', t['serv-card3-desc']);
   setText('serv-card4-title', t['serv-card4-title']);
   setText('serv-card4-desc', t['serv-card4-desc']);
+  setText('meth-tag', t['meth-tag']);
+  setText('meth-title-before', t['meth-title-before']);
+  setText('meth-title-accent', t['meth-title-accent']);
+  setText('meth-desc', t['meth-desc']);
+  setText('meth-step1', t['meth-step1']);
+  setText('meth-desc1', t['meth-desc1']);
+  setText('meth-step2', t['meth-step2']);
+  setText('meth-desc2', t['meth-desc2']);
+  setText('meth-step3', t['meth-step3']);
+  setText('meth-desc3', t['meth-desc3']);
+  setText('meth-step4', t['meth-step4']);
+  setText('meth-desc4', t['meth-desc4']);
+  setText('meth-step5', t['meth-step5']);
+  setText('meth-desc5', t['meth-desc5']);
+  setText('meth-step6', t['meth-step6']);
+  setText('meth-desc6', t['meth-desc6']);
+  setText('meth-step7', t['meth-step7']);
+  setText('meth-desc7', t['meth-desc7']);
+  setText('meth-step8', t['meth-step8']);
+  setText('meth-desc8', t['meth-desc8']);
   setText('serv-list-tag', t['serv-list-tag']);
   setText('serv-list-title-before', t['serv-list-title-before']);
   setText('serv-list-title-accent', t['serv-list-title-accent']);

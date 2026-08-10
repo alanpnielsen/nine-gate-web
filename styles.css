@@ -574,15 +574,14 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-lg);
   padding: 24px 20px;
   text-align: center;
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.3s var(--ease);
   position: relative;
-  overflow: hidden;
 }
 
 .process-step:hover {
-  border-color: var(--border-strong);
+  border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 0 40px rgba(255, 177, 0, 0.1), 0 0 80px rgba(255, 177, 0, 0.05);
+  box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
 }
 
 .process-step::before {
@@ -590,7 +589,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: -1px;
   border-radius: inherit;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.15) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
   opacity: 0;
@@ -1197,8 +1196,8 @@ img { max-width: 100%; display: block; }
 }
 
 [data-theme="light"] .process-step:hover {
-  border-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 30px rgba(255, 177, 0, 0.15), 0 16px 48px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent);
+  box-shadow: 0 0 40px rgba(255, 177, 0, 0.25), 0 0 80px rgba(255, 177, 0, 0.10);
 }
 
 [data-theme="light"] .usecase-card {

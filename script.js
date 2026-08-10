@@ -324,6 +324,11 @@ const translations = {
     'serv-case-result-title': 'Resultado esperado',
     'serv-case-result-desc': 'M\u00E1s orden comercial, menos informaci\u00F3n perdida y una trazabilidad clara de cada solicitud.',
     'serv-case-more': 'Ver m\u00E1s',
+    'serv-case-more-1': 'Ver m\u00E1s',
+    'serv-case-more-2': 'Ver m\u00E1s',
+    'serv-case-more-3': 'Ver m\u00E1s',
+    'serv-case-more-4': 'Ver m\u00E1s',
+    'serv-case-more-5': 'Ver m\u00E1s',
     'serv-audit-tag': 'Auditor\u00EDa real',
     'serv-audit-title-before': 'Recepci\u00F3n de informaci\u00F3n y ',
     'serv-audit-title-accent': 'documentaci\u00F3n duplicada',
@@ -699,6 +704,11 @@ const translations = {
     'serv-case-result-title': 'Expected result',
     'serv-case-result-desc': 'More commercial order, less lost information and clear traceability of every request.',
     'serv-case-more': 'See more',
+    'serv-case-more-1': 'See more',
+    'serv-case-more-2': 'See more',
+    'serv-case-more-3': 'See more',
+    'serv-case-more-4': 'See more',
+    'serv-case-more-5': 'See more',
     'serv-audit-tag': 'Real audit',
     'serv-audit-title-before': 'Information reception and ',
     'serv-audit-title-accent': 'duplicate documentation',
@@ -1101,6 +1111,11 @@ function setLang(lang) {
   setText('serv-case-result-title', t['serv-case-result-title']);
   setText('serv-case-result-desc', t['serv-case-result-desc']);
   setText('serv-case-more', t['serv-case-more']);
+  setText('serv-case-more-1', t['serv-case-more-1']);
+  setText('serv-case-more-2', t['serv-case-more-2']);
+  setText('serv-case-more-3', t['serv-case-more-3']);
+  setText('serv-case-more-4', t['serv-case-more-4']);
+  setText('serv-case-more-5', t['serv-case-more-5']);
   setText('serv-audit-tag', t['serv-audit-tag']);
   setText('serv-audit-title-before', t['serv-audit-title-before']);
   setText('serv-audit-title-accent', t['serv-audit-title-accent']);

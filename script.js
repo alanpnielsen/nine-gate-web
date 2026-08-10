@@ -271,6 +271,7 @@ const translations = {
     'flow-step3': 'CRM',
     'flow-step4': 'Validaci\u00F3n',
     'flow-step5': 'Supervisor',
+    'flow-title': 'Flujo Nine Gate',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -456,6 +457,7 @@ const translations = {
     'flow-step3': 'CRM',
     'flow-step4': 'Validation',
     'flow-step5': 'Supervisor',
+    'flow-title': 'Nine Gate Flow',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -667,6 +669,7 @@ function setLang(lang) {
   setText('flow-step3', t['flow-step3']);
   setText('flow-step4', t['flow-step4']);
   setText('flow-step5', t['flow-step5']);
+  setText('flow-title', t['flow-title']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

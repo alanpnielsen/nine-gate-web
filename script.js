@@ -439,6 +439,18 @@ const translations = {
     'ticker-12': 'Escalamos procesos sin aumentar personal',
     'ticker-13': 'IA integrada con tu operaci\u00F3n',
     'ticker-14': 'Automatizaciones pensadas para crecer',
+    'arch-wa-name': 'WhatsApp',
+    'arch-wa-desc': 'Captura consultas, ventas y soporte.',
+    'arch-ia-name': 'Router IA',
+    'arch-ia-desc': 'Analiza mensajes y toma decisiones.',
+    'arch-n8-name': 'n8n Workflows',
+    'arch-n8-desc': 'Ejecuta procesos empresariales.',
+    'arch-db-name': 'Base de datos',
+    'arch-db-desc': 'Almacena informaci\u00F3n estructurada.',
+    'arch-ds-name': 'Dashboard',
+    'arch-ds-desc': 'Genera m\u00E9tricas y reportes.',
+    'arch-hm-name': 'Humano',
+    'arch-hm-desc': 'Interviene \u00FAnicamente cuando es necesario.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -792,6 +804,18 @@ const translations = {
     'ticker-12': 'We scale processes without increasing staff',
     'ticker-13': 'AI integrated with your operations',
     'ticker-14': 'Automations designed to grow',
+    'arch-wa-name': 'WhatsApp',
+    'arch-wa-desc': 'Captures inquiries, sales and support.',
+    'arch-ia-name': 'AI Router',
+    'arch-ia-desc': 'Analyzes messages and makes decisions.',
+    'arch-n8-name': 'n8n Workflows',
+    'arch-n8-desc': 'Runs business processes.',
+    'arch-db-name': 'Database',
+    'arch-db-desc': 'Stores structured information.',
+    'arch-ds-name': 'Dashboard',
+    'arch-ds-desc': 'Generates metrics and reports.',
+    'arch-hm-name': 'Human',
+    'arch-hm-desc': 'Intervenes only when necessary.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -1171,6 +1195,18 @@ function setLang(lang) {
   setText('ticker-12', t['ticker-12']);
   setText('ticker-13', t['ticker-13']);
   setText('ticker-14', t['ticker-14']);
+  setText('arch-wa-name', t['arch-wa-name']);
+  setText('arch-wa-desc', t['arch-wa-desc']);
+  setText('arch-ia-name', t['arch-ia-name']);
+  setText('arch-ia-desc', t['arch-ia-desc']);
+  setText('arch-n8-name', t['arch-n8-name']);
+  setText('arch-n8-desc', t['arch-n8-desc']);
+  setText('arch-db-name', t['arch-db-name']);
+  setText('arch-db-desc', t['arch-db-desc']);
+  setText('arch-ds-name', t['arch-ds-name']);
+  setText('arch-ds-desc', t['arch-ds-desc']);
+  setText('arch-hm-name', t['arch-hm-name']);
+  setText('arch-hm-desc', t['arch-hm-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

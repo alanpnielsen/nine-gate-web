@@ -353,6 +353,39 @@
       color: var(--text-secondary);
       line-height: 1.6;
     }
+    .serv-case__toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 177, 0, 0.08);
+      border: 1px solid rgba(255, 177, 0, 0.2);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s;
+      margin-bottom: 20px;
+    }
+    .serv-case__toggle:hover {
+      background: rgba(255, 177, 0, 0.14);
+      border-color: var(--accent);
+    }
+    .serv-case__toggle::after {
+      content: '↓';
+      font-size: 0.7rem;
+      transition: transform 0.3s;
+    }
+    .serv-case--open .serv-case__toggle::after {
+      transform: rotate(180deg);
+    }
+    .serv-case__body {
+      display: none;
+    }
+    .serv-case--open .serv-case__body {
+      display: block;
+    }
     @media (max-width: 768px) {
       .serv-case__grid {
         grid-template-columns: 1fr;
@@ -526,66 +559,65 @@
         <h2 class="section__title"><span data-i18n="serv-case-title-before">Alto flujo de llamadas y </span><span class="text--yellow" data-i18n="serv-case-title-accent">solicitudes de clientes</span></h2>
         <p class="section__desc" data-i18n="serv-case-subtitle">De llamadas sueltas a oportunidades ordenadas. Cada llamada termina convertida en una ficha clara, con responsable, prioridad y siguiente paso.</p>
       </div>
-
-      <div class="serv-case__grid">
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-problem-title">Problema detectado</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-case-problem-desc">Las llamadas entran durante todo el día y se mezclan consultas comerciales, incidencias, presupuestos y dudas técnicas. Parte de la información queda en notas, correos o memoria de una persona.</p>
-        </div>
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-what-title">Qué automatizamos</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-case-what-desc">Un asistente telefónico conversacional con IA que atiende, recoge datos, clasifica la solicitud y deriva el caso al responsable adecuado.</p>
-        </div>
-      </div>
-
-      <div class="serv-case__flow">
-        <h3 class="serv-case__flow-title" data-i18n="serv-case-flow-title">Cómo funciona el flujo</h3>
-        <div class="serv-case__flow-steps">
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">01</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow1">Entra una llamada.</span>
+      <button class="serv-case__toggle" onclick="this.closest('.serv-case').classList.toggle('serv-case--open')" data-i18n="serv-case-more">Ver más</button>
+      <div class="serv-case__body">
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-problem-title">Problema detectado</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-case-problem-desc">Las llamadas entran durante todo el día y se mezclan consultas comerciales, incidencias, presupuestos y dudas técnicas. Parte de la información queda en notas, correos o memoria de una persona.</p>
           </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">02</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow2">El asistente saluda, explica que recoge datos para el equipo y solicita consentimiento si hay grabación o transcripción.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">03</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow3">Pregunta nombre, empresa, teléfono, email, tipo de solicitud, urgencia, servicio requerido y descripción.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">04</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow4">Si detecta urgencia o sensibilidad, transfiere a una persona o genera aviso inmediato.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">05</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow5">n8n crea registro, resume la llamada, asigna responsable y avisa por email, Teams o Slack.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">06</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow6">La IA prepara un borrador de respuesta u oferta inicial.</span>
-          </div>
-          <div class="serv-case__flow-step">
-            <span class="serv-case__flow-num">07</span>
-            <span class="serv-case__flow-text" data-i18n="serv-case-flow7">El sistema comprueba campos obligatorios y pasa el caso a supervisor humano.</span>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-what-title">Qué automatizamos</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-case-what-desc">Un asistente telefónico conversacional con IA que atiende, recoge datos, clasifica la solicitud y deriva el caso al responsable adecuado.</p>
           </div>
         </div>
-      </div>
-
-      <div class="serv-case__grid">
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-data-title">Datos que se guardan</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-case-data-desc">Nombre, empresa, teléfono, email, motivo, urgencia, resumen, transcripción, responsable, estado, próxima acción, fecha, canal, consentimiento y enlace a oferta o documentación.</p>
+        <div class="serv-case__flow">
+          <h3 class="serv-case__flow-title" data-i18n="serv-case-flow-title">Cómo funciona el flujo</h3>
+          <div class="serv-case__flow-steps">
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">01</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow1">Entra una llamada.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">02</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow2">El asistente saluda, explica que recoge datos para el equipo y solicita consentimiento si hay grabación o transcripción.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">03</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow3">Pregunta nombre, empresa, teléfono, email, tipo de solicitud, urgencia, servicio requerido y descripción.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">04</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow4">Si detecta urgencia o sensibilidad, transfiere a una persona o genera aviso inmediato.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">05</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow5">n8n crea registro, resume la llamada, asigna responsable y avisa por email, Teams o Slack.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">06</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow6">La IA prepara un borrador de respuesta u oferta inicial.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">07</span>
+              <span class="serv-case__flow-text" data-i18n="serv-case-flow7">El sistema comprueba campos obligatorios y pasa el caso a supervisor humano.</span>
+            </div>
+          </div>
         </div>
-        <div class="serv-case__block">
-          <h3 class="serv-case__block-title" data-i18n="serv-case-control-title">Control humano</h3>
-          <p class="serv-case__block-desc" data-i18n="serv-case-control-desc">Ninguna oferta se envía sola. La IA prepara el borrador, el sistema revisa campos y una persona valida antes de enviar.</p>
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-data-title">Datos que se guardan</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-case-data-desc">Nombre, empresa, teléfono, email, motivo, urgencia, resumen, transcripción, responsable, estado, próxima acción, fecha, canal, consentimiento y enlace a oferta o documentación.</p>
+          </div>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-control-title">Control humano</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-case-control-desc">Ninguna oferta se envía sola. La IA prepara el borrador, el sistema revisa campos y una persona valida antes de enviar.</p>
+          </div>
         </div>
-      </div>
-
-      <div class="serv-case__result">
-        <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
-        <p class="serv-case__result-desc" data-i18n="serv-case-result-desc">Más orden comercial, menos información perdida y una trazabilidad clara de cada solicitud.</p>
+        <div class="serv-case__result">
+          <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
+          <p class="serv-case__result-desc" data-i18n="serv-case-result-desc">Más orden comercial, menos información perdida y una trazabilidad clara de cada solicitud.</p>
+        </div>
       </div>
     </div>
 

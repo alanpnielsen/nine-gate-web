@@ -311,6 +311,7 @@ const translations = {
     'serv-case-control-desc': 'Ninguna oferta se env\u00EDa sola. La IA prepara el borrador, el sistema revisa campos y una persona valida antes de enviar.',
     'serv-case-result-title': 'Resultado esperado',
     'serv-case-result-desc': 'M\u00E1s orden comercial, menos informaci\u00F3n perdida y una trazabilidad clara de cada solicitud.',
+    'serv-case-more': 'Ver m\u00E1s',
     'serv-audit-tag': 'Auditor\u00EDa real',
     'serv-audit-title-before': 'Recepci\u00F3n de informaci\u00F3n y ',
     'serv-audit-title-accent': 'documentaci\u00F3n duplicada',
@@ -552,6 +553,7 @@ const translations = {
     'serv-case-control-desc': 'No quote is sent alone. The AI prepares the draft, the system checks fields and a person validates before sending.',
     'serv-case-result-title': 'Expected result',
     'serv-case-result-desc': 'More commercial order, less lost information and clear traceability of every request.',
+    'serv-case-more': 'See more',
     'serv-audit-tag': 'Real audit',
     'serv-audit-title-before': 'Information reception and ',
     'serv-audit-title-accent': 'duplicate documentation',
@@ -819,6 +821,7 @@ function setLang(lang) {
   setText('serv-case-control-desc', t['serv-case-control-desc']);
   setText('serv-case-result-title', t['serv-case-result-title']);
   setText('serv-case-result-desc', t['serv-case-result-desc']);
+  setText('serv-case-more', t['serv-case-more']);
   setText('serv-audit-tag', t['serv-audit-tag']);
   setText('serv-audit-title-before', t['serv-audit-title-before']);
   setText('serv-audit-title-accent', t['serv-audit-title-accent']);

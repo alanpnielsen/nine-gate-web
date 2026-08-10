@@ -364,6 +364,37 @@ const translations = {
     'serv-offer-data-desc': 'Lead, empresa, necesidad, servicio, urgencia, importe orientativo, versi\u00F3n de oferta, estado, aprobador, fecha y documento generado.',
     'serv-offer-control-desc': 'Debe existir siempre human-in-the-loop. La IA nunca firma ni env\u00EDa una oferta final sin aprobaci\u00F3n.',
     'serv-offer-result-desc': 'Menos espera entre solicitud y propuesta, sin perder criterio comercial ni control sobre el env\u00EDo final.',
+    'serv-system-tag': 'Sistema de automatizaci\u00F3n real',
+    'serv-system-title-before': 'As\u00ED convertir\u00EDamos un diagn\u00F3stico en un ',
+    'serv-system-title-accent': 'sistema automatizado',
+    'serv-system-subtitle': 'Ejemplos visuales basados en flujos reales que una pyme puede necesitar. Primero se dise\u00F1a, luego se prueba y solo despu\u00E9s se automatiza.',
+    'serv-system-card1-title': 'Sistema de llamadas y ofertas con IA',
+    'serv-system-card1-desc': 'Las llamadas se pierden o llegan incompletas. El sistema convierte cada conversaci\u00F3n en registro, tarea y borrador revisable.',
+    'serv-system-card1-label': 'Llamadas y ofertas',
+    'serv-system-card1-s1': 'Entrada',
+    'serv-system-card1-s2': 'IA',
+    'serv-system-card1-s3': 'Base de datos',
+    'serv-system-card1-s4': 'Validaci\u00F3n',
+    'serv-system-card1-s5': 'Supervisor',
+    'serv-system-card1-s6': 'Cliente',
+    'serv-system-card2-title': 'Sistema documental para expedientes t\u00E9cnicos',
+    'serv-system-card2-desc': 'Documentos repetidos, carpetas sin criterio y datos dispersos entre departamentos.',
+    'serv-system-card2-label': 'Documentaci\u00F3n centralizada',
+    'serv-system-card2-s1': 'Email',
+    'serv-system-card2-s2': 'Extracci\u00F3n IA',
+    'serv-system-card2-s3': 'Expediente',
+    'serv-system-card2-s4': 'Duplicados',
+    'serv-system-card2-s5': 'Departamento',
+    'serv-system-card2-s6': 'Registro',
+    'serv-system-card3-title': 'Sistema de partes, horas y facturaci\u00F3n preparada',
+    'serv-system-card3-desc': 'Horas, partes y facturaci\u00F3n se registran varias veces y llegan tarde a direcci\u00F3n.',
+    'serv-system-card3-label': 'Partes y facturaci\u00F3n',
+    'serv-system-card3-s1': 'Formulario',
+    'serv-system-card3-s2': 'Validaci\u00F3n',
+    'serv-system-card3-s3': 'Parte PDF',
+    'serv-system-card3-s4': 'ERP',
+    'serv-system-card3-s5': 'Responsable',
+    'serv-system-card3-s6': 'Dashboard',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -642,6 +673,37 @@ const translations = {
     'serv-offer-data-desc': 'Lead, company, need, service, urgency, estimated amount, offer version, status, approver, date and generated document.',
     'serv-offer-control-desc': 'Human-in-the-loop must always exist. The AI never signs or sends a final offer without approval.',
     'serv-offer-result-desc': 'Less wait between request and proposal, without losing commercial criteria or control over final delivery.',
+    'serv-system-tag': 'Real automation system',
+    'serv-system-title-before': 'How we would turn a diagnosis into an ',
+    'serv-system-title-accent': 'automated system',
+    'serv-system-subtitle': 'Visual examples based on real flows that an SME may need. First we design, then we test and only then we automate.',
+    'serv-system-card1-title': 'Calls and offers system with AI',
+    'serv-system-card1-desc': 'Calls are lost or arrive incomplete. The system converts each conversation into a record, task and reviewable draft.',
+    'serv-system-card1-label': 'Calls and offers',
+    'serv-system-card1-s1': 'Entry',
+    'serv-system-card1-s2': 'AI',
+    'serv-system-card1-s3': 'Database',
+    'serv-system-card1-s4': 'Validation',
+    'serv-system-card1-s5': 'Supervisor',
+    'serv-system-card1-s6': 'Client',
+    'serv-system-card2-title': 'Document system for technical files',
+    'serv-system-card2-desc': 'Duplicate documents, folders without criteria and scattered data between departments.',
+    'serv-system-card2-label': 'Centralized documentation',
+    'serv-system-card2-s1': 'Email',
+    'serv-system-card2-s2': 'AI extraction',
+    'serv-system-card2-s3': 'File',
+    'serv-system-card2-s4': 'Duplicates',
+    'serv-system-card2-s5': 'Department',
+    'serv-system-card2-s6': 'Record',
+    'serv-system-card3-title': 'Work reports, hours and prepared invoicing',
+    'serv-system-card3-desc': 'Hours, reports and invoicing are registered several times and arrive late to management.',
+    'serv-system-card3-label': 'Reports and invoicing',
+    'serv-system-card3-s1': 'Form',
+    'serv-system-card3-s2': 'Validation',
+    'serv-system-card3-s3': 'Report PDF',
+    'serv-system-card3-s4': 'ERP',
+    'serv-system-card3-s5': 'Responsible',
+    'serv-system-card3-s6': 'Dashboard',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -946,6 +1008,37 @@ function setLang(lang) {
   setText('serv-offer-data-desc', t['serv-offer-data-desc']);
   setText('serv-offer-control-desc', t['serv-offer-control-desc']);
   setText('serv-offer-result-desc', t['serv-offer-result-desc']);
+  setText('serv-system-tag', t['serv-system-tag']);
+  setText('serv-system-title-before', t['serv-system-title-before']);
+  setText('serv-system-title-accent', t['serv-system-title-accent']);
+  setText('serv-system-subtitle', t['serv-system-subtitle']);
+  setText('serv-system-card1-title', t['serv-system-card1-title']);
+  setText('serv-system-card1-desc', t['serv-system-card1-desc']);
+  setText('serv-system-card1-label', t['serv-system-card1-label']);
+  setText('serv-system-card1-s1', t['serv-system-card1-s1']);
+  setText('serv-system-card1-s2', t['serv-system-card1-s2']);
+  setText('serv-system-card1-s3', t['serv-system-card1-s3']);
+  setText('serv-system-card1-s4', t['serv-system-card1-s4']);
+  setText('serv-system-card1-s5', t['serv-system-card1-s5']);
+  setText('serv-system-card1-s6', t['serv-system-card1-s6']);
+  setText('serv-system-card2-title', t['serv-system-card2-title']);
+  setText('serv-system-card2-desc', t['serv-system-card2-desc']);
+  setText('serv-system-card2-label', t['serv-system-card2-label']);
+  setText('serv-system-card2-s1', t['serv-system-card2-s1']);
+  setText('serv-system-card2-s2', t['serv-system-card2-s2']);
+  setText('serv-system-card2-s3', t['serv-system-card2-s3']);
+  setText('serv-system-card2-s4', t['serv-system-card2-s4']);
+  setText('serv-system-card2-s5', t['serv-system-card2-s5']);
+  setText('serv-system-card2-s6', t['serv-system-card2-s6']);
+  setText('serv-system-card3-title', t['serv-system-card3-title']);
+  setText('serv-system-card3-desc', t['serv-system-card3-desc']);
+  setText('serv-system-card3-label', t['serv-system-card3-label']);
+  setText('serv-system-card3-s1', t['serv-system-card3-s1']);
+  setText('serv-system-card3-s2', t['serv-system-card3-s2']);
+  setText('serv-system-card3-s3', t['serv-system-card3-s3']);
+  setText('serv-system-card3-s4', t['serv-system-card3-s4']);
+  setText('serv-system-card3-s5', t['serv-system-card3-s5']);
+  setText('serv-system-card3-s6', t['serv-system-card3-s6']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

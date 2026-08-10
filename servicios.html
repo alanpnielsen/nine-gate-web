@@ -356,6 +356,138 @@
     .serv-case__block--full {
       margin-bottom: 24px;
     }
+    .serv-system {
+      margin-top: 80px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      position: relative;
+    }
+    .serv-system::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 50% 0%, var(--accent) 0%, transparent 70%);
+      opacity: 0.10;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .serv-system > * {
+      position: relative;
+      z-index: 1;
+    }
+    .serv-system__header {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .serv-system__toggle-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .serv-system__toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 177, 0, 0.08);
+      border: 1px solid rgba(255, 177, 0, 0.2);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .serv-system__toggle:hover {
+      background: rgba(255, 177, 0, 0.14);
+      border-color: var(--accent);
+    }
+    .serv-system__toggle::after {
+      content: '↓';
+      font-size: 0.7rem;
+      transition: transform 0.3s;
+    }
+    .serv-system--open .serv-system__toggle::after {
+      transform: rotate(180deg);
+    }
+    .serv-system__body {
+      display: none;
+      margin-top: 32px;
+    }
+    .serv-system--open .serv-system__body {
+      display: block;
+    }
+    .serv-system__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .serv-system__card {
+      background: rgba(255, 177, 0, 0.04);
+      border: 1px solid rgba(255, 177, 0, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+    }
+    .serv-system__card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .serv-system__card-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .serv-system__card-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+    .serv-system__flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .serv-system__flow-step {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 8px;
+      background: rgba(255, 177, 0, 0.08);
+      border: 1px solid rgba(255, 177, 0, 0.15);
+      border-radius: 6px;
+    }
+    .serv-system__flow-step span {
+      font-size: 0.55rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .serv-system__flow-arrow {
+      width: 14px;
+      height: 7px;
+      color: rgba(255, 177, 0, 0.4);
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .serv-system__grid {
+        grid-template-columns: 1fr;
+      }
+      .serv-system {
+        padding: 28px 20px;
+      }
+    }
     .serv-case__header {
       text-align: left;
       margin-bottom: 0;
@@ -866,6 +998,77 @@
         <div class="serv-case__result">
           <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
           <p class="serv-case__result-desc" data-i18n="serv-offer-result-desc">Menos espera entre solicitud y propuesta, sin perder criterio comercial ni control sobre el envío final.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="serv-system" data-r>
+      <div class="serv-system__header">
+        <span class="tag" data-i18n="serv-system-tag">Sistema de automatización real</span>
+        <h2 class="section__title"><span data-i18n="serv-system-title-before">Así convertiríamos un diagnóstico en un </span><span class="text--yellow" data-i18n="serv-system-title-accent">sistema automatizado</span></h2>
+        <p class="section__desc" data-i18n="serv-system-subtitle">Ejemplos visuales basados en flujos reales que una pyme puede necesitar. Primero se diseña, luego se prueba y solo después se automatiza.</p>
+        <div class="serv-system__toggle-row">
+          <button class="serv-system__toggle" onclick="this.closest('.serv-system').classList.toggle('serv-system--open')" data-i18n="serv-case-more">Ver más</button>
+        </div>
+      </div>
+      <div class="serv-system__body">
+        <div class="serv-system__grid">
+          <div class="serv-system__card">
+            <h3 class="serv-system__card-title" data-i18n="serv-system-card1-title">Sistema de llamadas y ofertas con IA</h3>
+            <p class="serv-system__card-desc" data-i18n="serv-system-card1-desc">Las llamadas se pierden o llegan incompletas. El sistema convierte cada conversación en registro, tarea y borrador revisable.</p>
+            <div class="serv-system__card-label" data-i18n="serv-system-card1-label">Llamadas y ofertas</div>
+            <div class="serv-system__flow">
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card1-s1">Entrada</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card1-s2">IA</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card1-s3">Base de datos</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card1-s4">Validación</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card1-s5">Supervisor</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card1-s6">Cliente</span></div>
+            </div>
+          </div>
+
+          <div class="serv-system__card">
+            <h3 class="serv-system__card-title" data-i18n="serv-system-card2-title">Sistema documental para expedientes técnicos</h3>
+            <p class="serv-system__card-desc" data-i18n="serv-system-card2-desc">Documentos repetidos, carpetas sin criterio y datos dispersos entre departamentos.</p>
+            <div class="serv-system__card-label" data-i18n="serv-system-card2-label">Documentación centralizada</div>
+            <div class="serv-system__flow">
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card2-s1">Email</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card2-s2">Extracción IA</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card2-s3">Expediente</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card2-s4">Duplicados</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card2-s5">Departamento</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card2-s6">Registro</span></div>
+            </div>
+          </div>
+
+          <div class="serv-system__card">
+            <h3 class="serv-system__card-title" data-i18n="serv-system-card3-title">Sistema de partes, horas y facturación preparada</h3>
+            <p class="serv-system__card-desc" data-i18n="serv-system-card3-desc">Horas, partes y facturación se registran varias veces y llegan tarde a dirección.</p>
+            <div class="serv-system__card-label" data-i18n="serv-system-card3-label">Partes y facturación</div>
+            <div class="serv-system__flow">
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s1">Formulario</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s2">Validación</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s3">Parte PDF</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s4">ERP</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s5">Responsable</span></div>
+              <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s6">Dashboard</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

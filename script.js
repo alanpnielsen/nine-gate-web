@@ -881,7 +881,7 @@ function setLang(lang) {
   const t = translations[lang];
   if (!t) return;
 
-  console.log('[i18n] Setting lang:', lang, '| meth-desc1:', t['meth-desc1']);
+  document.documentElement.lang = lang;
   document.documentElement.lang = lang;
 
   setText('nav-servicios', t['nav-servicios']);
@@ -1258,8 +1258,14 @@ function setLang(lang) {
   localStorage.setItem('nine-gate-lang', lang);
 }
 
+/* i18n element cache — built once at load, used by setText */
+const i18nEls = {};
+document.querySelectorAll('[data-i18n]').forEach(function(el) {
+  i18nEls[el.getAttribute('data-i18n')] = el;
+});
+
 function setText(key, val) {
-  const el = document.querySelector(`[data-i18n="${key}"]`);
+  var el = i18nEls[key];
   if (el) el.textContent = val;
 }
 

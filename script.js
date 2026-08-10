@@ -396,6 +396,25 @@ const translations = {
     'serv-system-card3-s4': 'ERP',
     'serv-system-card3-s5': 'Responsable',
     'serv-system-card3-s6': 'Dashboard',
+    'serv-flow-title-before': 'As\u00ED fluye una ',
+    'serv-flow-title-accent': 'automatizaci\u00F3n',
+    'serv-flow-title-after': ' de Nine Gate',
+    'serv-flow-subtitle': 'Automatizamos el trabajo repetitivo, no la responsabilidad de tu empresa.',
+    'serv-flow-note': 'La automatizaci\u00F3n no elimina el criterio humano: elimina el trabajo repetitivo que impide usarlo.',
+    'serv-flow-step1-title': 'Entrada',
+    'serv-flow-step1-desc': 'Llamada, email, formulario, documento, WhatsApp o tarea interna.',
+    'serv-flow-step2-title': 'Captura',
+    'serv-flow-step2-desc': 'n8n recoge el dato y lo env\u00EDa al sistema correcto.',
+    'serv-flow-step3-title': 'IA',
+    'serv-flow-step3-desc': 'Clasifica, resume, extrae campos, redacta borradores o detecta urgencias.',
+    'serv-flow-step4-title': 'Base de datos',
+    'serv-flow-step4-desc': 'Airtable, HubSpot, Supabase, Sheets, SharePoint o CRM existente.',
+    'serv-flow-step5-title': 'Control',
+    'serv-flow-step5-desc': 'Validaci\u00F3n de campos, detecci\u00F3n de errores, reglas de negocio y logs.',
+    'serv-flow-step6-title': 'Humano',
+    'serv-flow-step6-desc': 'Supervisor aprueba, corrige o escala.',
+    'serv-flow-step7-title': 'Salida',
+    'serv-flow-step7-desc': 'Oferta, tarea, email, PDF, dashboard, aviso o expediente.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -706,6 +725,25 @@ const translations = {
     'serv-system-card3-s4': 'ERP',
     'serv-system-card3-s5': 'Responsible',
     'serv-system-card3-s6': 'Dashboard',
+    'serv-flow-title-before': 'How a ',
+    'serv-flow-title-accent': 'automation',
+    'serv-flow-title-after': ' flows at Nine Gate',
+    'serv-flow-subtitle': 'We automate repetitive work, not your company\'s responsibility.',
+    'serv-flow-note': 'Automation doesn\'t eliminate human judgment: it eliminates the repetitive work that prevents using it.',
+    'serv-flow-step1-title': 'Entry',
+    'serv-flow-step1-desc': 'Call, email, form, document, WhatsApp or internal task.',
+    'serv-flow-step2-title': 'Capture',
+    'serv-flow-step2-desc': 'n8n collects the data and sends it to the correct system.',
+    'serv-flow-step3-title': 'AI',
+    'serv-flow-step3-desc': 'Classifies, summarizes, extracts fields, drafts or detects urgencies.',
+    'serv-flow-step4-title': 'Database',
+    'serv-flow-step4-desc': 'Airtable, HubSpot, Supabase, Sheets, SharePoint or existing CRM.',
+    'serv-flow-step5-title': 'Control',
+    'serv-flow-step5-desc': 'Field validation, error detection, business rules and logs.',
+    'serv-flow-step6-title': 'Human',
+    'serv-flow-step6-desc': 'Supervisor approves, corrects or escalates.',
+    'serv-flow-step7-title': 'Output',
+    'serv-flow-step7-desc': 'Offer, task, email, PDF, dashboard, alert or file.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -1042,6 +1080,25 @@ function setLang(lang) {
   setText('serv-system-card3-s4', t['serv-system-card3-s4']);
   setText('serv-system-card3-s5', t['serv-system-card3-s5']);
   setText('serv-system-card3-s6', t['serv-system-card3-s6']);
+  setText('serv-flow-title-before', t['serv-flow-title-before']);
+  setText('serv-flow-title-accent', t['serv-flow-title-accent']);
+  setText('serv-flow-title-after', t['serv-flow-title-after']);
+  setText('serv-flow-subtitle', t['serv-flow-subtitle']);
+  setText('serv-flow-note', t['serv-flow-note']);
+  setText('serv-flow-step1-title', t['serv-flow-step1-title']);
+  setText('serv-flow-step1-desc', t['serv-flow-step1-desc']);
+  setText('serv-flow-step2-title', t['serv-flow-step2-title']);
+  setText('serv-flow-step2-desc', t['serv-flow-step2-desc']);
+  setText('serv-flow-step3-title', t['serv-flow-step3-title']);
+  setText('serv-flow-step3-desc', t['serv-flow-step3-desc']);
+  setText('serv-flow-step4-title', t['serv-flow-step4-title']);
+  setText('serv-flow-step4-desc', t['serv-flow-step4-desc']);
+  setText('serv-flow-step5-title', t['serv-flow-step5-title']);
+  setText('serv-flow-step5-desc', t['serv-flow-step5-desc']);
+  setText('serv-flow-step6-title', t['serv-flow-step6-title']);
+  setText('serv-flow-step6-desc', t['serv-flow-step6-desc']);
+  setText('serv-flow-step7-title', t['serv-flow-step7-title']);
+  setText('serv-flow-step7-desc', t['serv-flow-step7-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

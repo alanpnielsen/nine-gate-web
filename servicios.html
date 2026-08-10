@@ -488,6 +488,71 @@
         padding: 28px 20px;
       }
     }
+    .serv-flow {
+      margin-top: 80px;
+      text-align: center;
+    }
+    .serv-flow__header {
+      margin-bottom: 48px;
+    }
+    .serv-flow__note {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 16px auto 0;
+      font-style: italic;
+    }
+    .serv-flow__steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .serv-flow__step {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .serv-flow__step:last-child {
+      border-bottom: none;
+    }
+    .serv-flow__step-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent);
+      opacity: 0.9;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 50px;
+    }
+    .serv-flow__step-content {
+      flex: 1;
+    }
+    .serv-flow__step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .serv-flow__step-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      .serv-flow__step {
+        gap: 14px;
+        padding: 18px 0;
+      }
+      .serv-flow__step-num {
+        font-size: 1.4rem;
+        width: 40px;
+      }
+    }
     .serv-case__header {
       text-align: left;
       margin-bottom: 0;
@@ -1068,6 +1133,65 @@
               <svg class="serv-system__flow-arrow" viewBox="0 0 24 12" fill="none"><path d="M0 6h20m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <div class="serv-system__flow-step"><span data-i18n="serv-system-card3-s6">Dashboard</span></div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="serv-flow" data-r>
+      <div class="serv-flow__header">
+        <h2 class="section__title"><span data-i18n="serv-flow-title-before">Así fluye una </span><span class="text--yellow" data-i18n="serv-flow-title-accent">automatización</span> <span data-i18n="serv-flow-title-after">de Nine Gate</span></h2>
+        <p class="section__desc" data-i18n="serv-flow-subtitle">Automatizamos el trabajo repetitivo, no la responsabilidad de tu empresa.</p>
+        <p class="serv-flow__note" data-i18n="serv-flow-note">La automatización no elimina el criterio humano: elimina el trabajo repetitivo que impide usarlo.</p>
+      </div>
+      <div class="serv-flow__steps">
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">01</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step1-title">Entrada</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step1-desc">Llamada, email, formulario, documento, WhatsApp o tarea interna.</p>
+          </div>
+        </div>
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">02</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step2-title">Captura</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step2-desc">n8n recoge el dato y lo envía al sistema correcto.</p>
+          </div>
+        </div>
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">03</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step3-title">IA</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step3-desc">Clasifica, resume, extrae campos, redacta borradores o detecta urgencias.</p>
+          </div>
+        </div>
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">04</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step4-title">Base de datos</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step4-desc">Airtable, HubSpot, Supabase, Sheets, SharePoint o CRM existente.</p>
+          </div>
+        </div>
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">05</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step5-title">Control</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step5-desc">Validación de campos, detección de errores, reglas de negocio y logs.</p>
+          </div>
+        </div>
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">06</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step6-title">Humano</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step6-desc">Supervisor aprueba, corrige o escala.</p>
+          </div>
+        </div>
+        <div class="serv-flow__step">
+          <div class="serv-flow__step-num">07</div>
+          <div class="serv-flow__step-content">
+            <h3 class="serv-flow__step-title" data-i18n="serv-flow-step7-title">Salida</h3>
+            <p class="serv-flow__step-desc" data-i18n="serv-flow-step7-desc">Oferta, tarea, email, PDF, dashboard, aviso o expediente.</p>
           </div>
         </div>
       </div>

@@ -90,17 +90,26 @@
       border-radius: var(--radius-lg);
       padding: 36px;
       position: relative;
-      overflow: hidden;
-      box-shadow: 0 0 40px rgba(255, 177, 0, 0.04), 0 0 80px rgba(255, 177, 0, 0.02);
+      transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
     }
     .contact-page__card::before {
       content: '';
       position: absolute;
-      inset: -1px;
+      inset: 0;
       border-radius: inherit;
-      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.05) 0%, transparent 60%);
+      background: radial-gradient(circle at 50% 0%, var(--accent) 0%, transparent 70%);
+      opacity: 0.12;
+      transition: opacity 0.3s;
       pointer-events: none;
       z-index: 0;
+    }
+    .contact-page__card:hover::before {
+      opacity: 0.22;
+    }
+    .contact-page__card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
+      transform: translateY(-2px);
     }
     .contact-page__card > * {
       position: relative;

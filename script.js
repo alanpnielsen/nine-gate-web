@@ -289,6 +289,28 @@ const translations = {
     'serv-problem5-desc': 'Turnos duplicados, disponibilidad incierta y confirmaciones manuales por WhatsApp.',
     'serv-problem6-title': 'Handoff sin contexto',
     'serv-problem6-desc': 'Paso de chat a humano sin resumen, preguntas repetitivas y p\u00E9rdida de informaci\u00F3n.',
+    'serv-case-tag': 'IA + Humano',
+    'serv-case-title-before': 'Alto flujo de llamadas y ',
+    'serv-case-title-accent': 'solicitudes de clientes',
+    'serv-case-subtitle': 'De llamadas sueltas a oportunidades ordenadas. Cada llamada termina convertida en una ficha clara, con responsable, prioridad y siguiente paso.',
+    'serv-case-problem-title': 'Problema detectado',
+    'serv-case-problem-desc': 'Las llamadas entran durante todo el d\u00EDa y se mezclan consultas comerciales, incidencias, presupuestos y dudas t\u00E9cnicas. Parte de la informaci\u00F3n queda en notas, correos o memoria de una persona.',
+    'serv-case-what-title': 'Qu\u00E9 automatizamos',
+    'serv-case-what-desc': 'Un asistente telef\u00F3nico conversacional con IA que atiende, recoge datos, clasifica la solicitud y deriva el caso al responsable adecuado.',
+    'serv-case-flow-title': 'C\u00F3mo funciona el flujo',
+    'serv-case-flow1': 'Entra una llamada.',
+    'serv-case-flow2': 'El asistente saluda, explica que recoge datos para el equipo y solicita consentimiento si hay grabaci\u00F3n o transcripci\u00F3n.',
+    'serv-case-flow3': 'Pregunta nombre, empresa, tel\u00E9fono, email, tipo de solicitud, urgencia, servicio requerido y descripci\u00F3n.',
+    'serv-case-flow4': 'Si detecta urgencia o sensibilidad, transfiere a una persona o genera aviso inmediato.',
+    'serv-case-flow5': 'n8n crea registro, resume la llamada, asigna responsable y avisa por email, Teams o Slack.',
+    'serv-case-flow6': 'La IA prepara un borrador de respuesta u oferta inicial.',
+    'serv-case-flow7': 'El sistema comprueba campos obligatorios y pasa el caso a supervisor humano.',
+    'serv-case-data-title': 'Datos que se guardan',
+    'serv-case-data-desc': 'Nombre, empresa, tel\u00E9fono, email, motivo, urgencia, resumen, transcripci\u00F3n, responsable, estado, pr\u00F3xima acci\u00F3n, fecha, canal, consentimiento y enlace a oferta o documentaci\u00F3n.',
+    'serv-case-control-title': 'Control humano',
+    'serv-case-control-desc': 'Ninguna oferta se env\u00EDa sola. La IA prepara el borrador, el sistema revisa campos y una persona valida antes de enviar.',
+    'serv-case-result-title': 'Resultado esperado',
+    'serv-case-result-desc': 'M\u00E1s orden comercial, menos informaci\u00F3n perdida y una trazabilidad clara de cada solicitud.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -492,6 +514,28 @@ const translations = {
     'serv-problem5-desc': 'Duplicate appointments, uncertain availability and manual WhatsApp confirmations.',
     'serv-problem6-title': 'Handoff without context',
     'serv-problem6-desc': 'Chat to human transfer without summary, repetitive questions and information loss.',
+    'serv-case-tag': 'AI + Human',
+    'serv-case-title-before': 'High volume of calls and ',
+    'serv-case-title-accent': 'customer requests',
+    'serv-case-subtitle': 'From loose calls to organized opportunities. Every call ends up as a clear card, with responsible person, priority and next step.',
+    'serv-case-problem-title': 'Problem detected',
+    'serv-case-problem-desc': 'Calls come in all day and mix commercial inquiries, incidents, quotes and technical questions. Part of the information stays in notes, emails or someone\'s memory.',
+    'serv-case-what-title': 'What we automate',
+    'serv-case-what-desc': 'A conversational AI phone assistant that answers, collects data, classifies the request and routes the case to the appropriate responsible person.',
+    'serv-case-flow-title': 'How the flow works',
+    'serv-case-flow1': 'A call comes in.',
+    'serv-case-flow2': 'The assistant greets, explains it collects data for the team and requests consent if there is recording or transcription.',
+    'serv-case-flow3': 'Asks name, company, phone, email, request type, urgency, required service and description.',
+    'serv-case-flow4': 'If it detects urgency or sensitivity, it transfers to a person or generates an immediate alert.',
+    'serv-case-flow5': 'n8n creates record, summarizes the call, assigns responsible person and notifies via email, Teams or Slack.',
+    'serv-case-flow6': 'The AI prepares a draft response or initial quote.',
+    'serv-case-flow7': 'The system checks required fields and passes the case to a human supervisor.',
+    'serv-case-data-title': 'Data stored',
+    'serv-case-data-desc': 'Name, company, phone, email, reason, urgency, summary, transcription, responsible person, status, next action, date, channel, consent and link to quote or documentation.',
+    'serv-case-control-title': 'Human control',
+    'serv-case-control-desc': 'No quote is sent alone. The AI prepares the draft, the system checks fields and a person validates before sending.',
+    'serv-case-result-title': 'Expected result',
+    'serv-case-result-desc': 'More commercial order, less lost information and clear traceability of every request.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -721,6 +765,28 @@ function setLang(lang) {
   setText('serv-problem5-desc', t['serv-problem5-desc']);
   setText('serv-problem6-title', t['serv-problem6-title']);
   setText('serv-problem6-desc', t['serv-problem6-desc']);
+  setText('serv-case-tag', t['serv-case-tag']);
+  setText('serv-case-title-before', t['serv-case-title-before']);
+  setText('serv-case-title-accent', t['serv-case-title-accent']);
+  setText('serv-case-subtitle', t['serv-case-subtitle']);
+  setText('serv-case-problem-title', t['serv-case-problem-title']);
+  setText('serv-case-problem-desc', t['serv-case-problem-desc']);
+  setText('serv-case-what-title', t['serv-case-what-title']);
+  setText('serv-case-what-desc', t['serv-case-what-desc']);
+  setText('serv-case-flow-title', t['serv-case-flow-title']);
+  setText('serv-case-flow1', t['serv-case-flow1']);
+  setText('serv-case-flow2', t['serv-case-flow2']);
+  setText('serv-case-flow3', t['serv-case-flow3']);
+  setText('serv-case-flow4', t['serv-case-flow4']);
+  setText('serv-case-flow5', t['serv-case-flow5']);
+  setText('serv-case-flow6', t['serv-case-flow6']);
+  setText('serv-case-flow7', t['serv-case-flow7']);
+  setText('serv-case-data-title', t['serv-case-data-title']);
+  setText('serv-case-data-desc', t['serv-case-data-desc']);
+  setText('serv-case-control-title', t['serv-case-control-title']);
+  setText('serv-case-control-desc', t['serv-case-control-desc']);
+  setText('serv-case-result-title', t['serv-case-result-title']);
+  setText('serv-case-result-desc', t['serv-case-result-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

@@ -277,6 +277,7 @@ const translations = {
     'serv-card4-desc': 'Dise\u00F1o e implementaci\u00F3n de estrategias de Inteligencia Artificial.',
     'serv-card5-title': 'Diagn\u00F3stico',
     'serv-card5-desc': 'Llamada inicial gratuita. Identificamos los 3 procesos con m\u00E1s potencial.',
+    'serv-card5-detail': 'Dise\u00F1amos flujos que reciben llamadas, clasifican solicitudes, ordenan documentos, generan presupuestos, avisan al equipo y dejan trazabilidad. Sin promesas vac\u00EDas: partimos de una auditor\u00EDa, construimos con datos reales y dejamos siempre supervisi\u00F3n humana.',
     'flow-step1': 'Llamada',
     'flow-step2': 'IA',
     'flow-step3': 'CRM',
@@ -651,6 +652,7 @@ const translations = {
     'serv-card4-desc': 'Design and implementation of Artificial Intelligence strategies.',
     'serv-card5-title': 'Diagnosis',
     'serv-card5-desc': 'Free initial call. We identify the 3 processes with the highest automation potential.',
+    'serv-card5-detail': 'We design flows that receive calls, classify requests, sort documents, generate quotes, notify the team and leave traceability. No empty promises: we start from an audit, build with real data and always leave human oversight.',
     'flow-step1': 'Call',
     'flow-step2': 'AI',
     'flow-step3': 'CRM',
@@ -1052,6 +1054,7 @@ function setLang(lang) {
   setText('serv-card4-desc', t['serv-card4-desc']);
   setText('serv-card5-title', t['serv-card5-title']);
   setText('serv-card5-desc', t['serv-card5-desc']);
+  setText('serv-card5-detail', t['serv-card5-detail']);
   setText('flow-step1', t['flow-step1']);
   setText('flow-step2', t['flow-step2']);
   setText('flow-step3', t['flow-step3']);

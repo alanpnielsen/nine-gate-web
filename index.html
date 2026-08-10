@@ -312,49 +312,49 @@
     <div class="container">
       <div class="section__header" data-r>
         <span class="tag" data-i18n="meth-tag">Metodología</span>
-        <h2 class="section__title"><span data-i18n="meth-title-before">Cómo </span><span class="text--yellow" data-i18n="meth-title-accent">construimos tu automatización</span></h2>
-        <p class="section__desc" data-i18n="meth-desc">8 pasos para pasar de la idea a la producción con datos reales.</p>
+        <h2 class="section__title"><span data-i18n="meth-title-before" data-en="How we ">Cómo </span><span class="text--yellow" data-i18n="meth-title-accent" data-en="build your automation">construimos tu automatización</span></h2>
+        <p class="section__desc" data-i18n="meth-desc" data-en="8 steps from idea to production with real data.">8 pasos para pasar de la idea a la producción con datos reales.</p>
       </div>
       <div class="meth__grid" data-r>
         <div class="meth-card">
           <div class="meth-card__number">01</div>
           <div class="meth-card__step" data-i18n="meth-step1">Brief</div>
-          <p class="meth-card__desc" data-i18n="meth-desc1">Mapeamos conversaciones y tareas reales.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc1" data-en="We map real conversations and tasks.">Mapeamos conversaciones y tareas reales.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">02</div>
           <div class="meth-card__step" data-i18n="meth-step2">Flow map</div>
-          <p class="meth-card__desc" data-i18n="meth-desc2">Detectamos reglas, datos y excepciones.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc2" data-en="We detect rules, data and exceptions.">Detectamos reglas, datos y excepciones.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">03</div>
           <div class="meth-card__step" data-i18n="meth-step3">State schema</div>
-          <p class="meth-card__desc" data-i18n="meth-desc3">Diseñamos el estado del proceso.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc3" data-en="We design the process state.">Diseñamos el estado del proceso.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">04</div>
           <div class="meth-card__step" data-i18n="meth-step4">n8n</div>
-          <p class="meth-card__desc" data-i18n="meth-desc4">Creamos el workflow en n8n.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc4" data-en="We create the workflow in n8n.">Creamos el workflow en n8n.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">05</div>
           <div class="meth-card__step" data-i18n="meth-step5">Database</div>
-          <p class="meth-card__desc" data-i18n="meth-desc5">Integramos bases, APIs y paneles.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc5" data-en="We integrate databases, APIs and dashboards.">Integramos bases, APIs y paneles.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">06</div>
           <div class="meth-card__step" data-i18n="meth-step6">QA</div>
-          <p class="meth-card__desc" data-i18n="meth-desc6">Probamos con casos reales.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc6" data-en="We test with real cases.">Probamos con casos reales.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">07</div>
           <div class="meth-card__step" data-i18n="meth-step7">Monitoring</div>
-          <p class="meth-card__desc" data-i18n="meth-desc7">Activamos logs, monitoreo y handoff.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc7" data-en="We activate logs, monitoring and handoff.">Activamos logs, monitoreo y handoff.</p>
         </div>
         <div class="meth-card">
           <div class="meth-card__number">08</div>
           <div class="meth-card__step" data-i18n="meth-step8">Production</div>
-          <p class="meth-card__desc" data-i18n="meth-desc8">Iteramos con datos reales.</p>
+          <p class="meth-card__desc" data-i18n="meth-desc8" data-en="We iterate with real data.">Iteramos con datos reales.</p>
         </div>
       </div>
     </div>
@@ -553,5 +553,53 @@
   </div>
 
   <script src="script.js?v=3"></script>
+  <script>
+  (function(){
+    var es = {
+      'meth-title-before':'Cómo ','meth-title-accent':'construimos tu automatización',
+      'meth-desc':'8 pasos para pasar de la idea a la producción con datos reales.',
+      'meth-desc1':'Mapeamos conversaciones y tareas reales.',
+      'meth-desc2':'Detectamos reglas, datos y excepciones.',
+      'meth-desc3':'Diseñamos el estado del proceso.',
+      'meth-desc4':'Creamos el workflow en n8n.',
+      'meth-desc5':'Integramos bases, APIs y paneles.',
+      'meth-desc6':'Probamos con casos reales.',
+      'meth-desc7':'Activamos logs, monitoreo y handoff.',
+      'meth-desc8':'Iteramos con datos reales.'
+    };
+    var en = {
+      'meth-title-before':'How we ','meth-title-accent':'build your automation',
+      'meth-desc':'8 steps from idea to production with real data.',
+      'meth-desc1':'We map real conversations and tasks.',
+      'meth-desc2':'We detect rules, data and exceptions.',
+      'meth-desc3':'We design the process state.',
+      'meth-desc4':'We create the workflow in n8n.',
+      'meth-desc5':'We integrate databases, APIs and dashboards.',
+      'meth-desc6':'We test with real cases.',
+      'meth-desc7':'We activate logs, monitoring and handoff.',
+      'meth-desc8':'We iterate with real data.'
+    };
+    function applyLang(lang){
+      var t = lang === 'en' ? en : es;
+      var keys = Object.keys(t);
+      for (var i = 0; i < keys.length; i++){
+        var k = keys[i];
+        var els = document.querySelectorAll('[data-i18n="'+k+'"]');
+        for (var j = 0; j < els.length; j++){
+          els[j].textContent = t[k];
+        }
+      }
+    }
+    var saved = localStorage.getItem('nine-gate-lang') || 'es';
+    applyLang(saved);
+    var btns = document.querySelectorAll('.lang-toggle');
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var cur = document.documentElement.lang === 'en' ? 'es' : 'en';
+        setTimeout(function(){ applyLang(cur); }, 10);
+      });
+    });
+  })();
+  </script>
 </body>
 </html>

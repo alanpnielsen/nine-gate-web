@@ -345,6 +345,25 @@ const translations = {
     'serv-data-data-desc': 'Empleado, fecha, proyecto, cliente, horas, tarea, estado, validaci\u00F3n, parte generado, responsable y observaciones.',
     'serv-data-control-desc': 'No se factura autom\u00E1ticamente sin revisi\u00F3n. El sistema prepara datos y avisa al responsable.',
     'serv-data-result-desc': 'Menos tiempo administrativo y mejor visibilidad de horas, partes pendientes y trabajos listos para facturar.',
+    'serv-offer-tag': 'IA + Supervisor',
+    'serv-offer-title-before': 'Presupuestos y ofertas autom\u00E1ticas con ',
+    'serv-offer-title-accent': 'revisi\u00F3n humana',
+    'serv-offer-subtitle': 'Ofertas m\u00E1s r\u00E1pidas, pero no autom\u00E1ticas a ciegas. La IA prepara; la empresa decide.',
+    'serv-offer-problem-desc': 'El equipo comercial o t\u00E9cnico recoge informaci\u00F3n en llamadas, emails o formularios y luego debe convertirla manualmente en una oferta.',
+    'serv-offer-what-desc': 'Sistema de generaci\u00F3n asistida de ofertas, con control de campos, coherencia y aprobaci\u00F3n humana.',
+    'serv-offer-flow1': 'Entra lead por llamada, formulario o email.',
+    'serv-offer-flow2': 'La IA clasifica necesidad, urgencia, tama\u00F1o, sector y prioridad.',
+    'serv-offer-flow3': 'n8n guarda el lead en CRM o base de datos.',
+    'serv-offer-flow4': 'La IA genera resumen interno y borrador de oferta.',
+    'serv-offer-flow5': 'El sistema revisa campos obligatorios, precios, servicios, l\u00EDmites y tono.',
+    'serv-offer-flow6': 'Si falta algo, crea tarea para pedir informaci\u00F3n.',
+    'serv-offer-flow7': 'Si est\u00E1 completo, pasa a supervisor.',
+    'serv-offer-flow8': 'Tras aprobar, se genera PDF y se env\u00EDa al cliente.',
+    'serv-offer-tools-title': 'Herramientas posibles',
+    'serv-offer-tools-desc': 'n8n, OpenAI o IA configurada por API, Airtable, HubSpot, Holded, Google Docs, Word, generador PDF, Gmail, Outlook.',
+    'serv-offer-data-desc': 'Lead, empresa, necesidad, servicio, urgencia, importe orientativo, versi\u00F3n de oferta, estado, aprobador, fecha y documento generado.',
+    'serv-offer-control-desc': 'Debe existir siempre human-in-the-loop. La IA nunca firma ni env\u00EDa una oferta final sin aprobaci\u00F3n.',
+    'serv-offer-result-desc': 'Menos espera entre solicitud y propuesta, sin perder criterio comercial ni control sobre el env\u00EDo final.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -604,6 +623,25 @@ const translations = {
     'serv-data-data-desc': 'Employee, date, project, client, hours, task, status, validation, generated report, responsible person and observations.',
     'serv-data-control-desc': 'No automatic invoicing without review. The system prepares data and notifies the responsible person.',
     'serv-data-result-desc': 'Less administrative time and better visibility of hours, pending reports and jobs ready to invoice.',
+    'serv-offer-tag': 'AI + Supervisor',
+    'serv-offer-title-before': 'Automatic quotes and offers with ',
+    'serv-offer-title-accent': 'human review',
+    'serv-offer-subtitle': 'Faster offers, but not blindly automatic. The AI prepares; the company decides.',
+    'serv-offer-problem-desc': 'The sales or technical team collects information in calls, emails or forms and then must manually convert it into an offer.',
+    'serv-offer-what-desc': 'Assisted offer generation system, with field control, coherence and human approval.',
+    'serv-offer-flow1': 'Lead enters via call, form or email.',
+    'serv-offer-flow2': 'The AI classifies need, urgency, size, sector and priority.',
+    'serv-offer-flow3': 'n8n saves the lead in CRM or database.',
+    'serv-offer-flow4': 'The AI generates internal summary and offer draft.',
+    'serv-offer-flow5': 'The system checks required fields, prices, services, limits and tone.',
+    'serv-offer-flow6': 'If something is missing, it creates a task to request information.',
+    'serv-offer-flow7': 'If complete, it passes to supervisor.',
+    'serv-offer-flow8': 'After approval, PDF is generated and sent to the client.',
+    'serv-offer-tools-title': 'Possible tools',
+    'serv-offer-tools-desc': 'n8n, OpenAI or API-configured AI, Airtable, HubSpot, Holded, Google Docs, Word, PDF generator, Gmail, Outlook.',
+    'serv-offer-data-desc': 'Lead, company, need, service, urgency, estimated amount, offer version, status, approver, date and generated document.',
+    'serv-offer-control-desc': 'Human-in-the-loop must always exist. The AI never signs or sends a final offer without approval.',
+    'serv-offer-result-desc': 'Less wait between request and proposal, without losing commercial criteria or control over final delivery.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -889,6 +927,25 @@ function setLang(lang) {
   setText('serv-data-data-desc', t['serv-data-data-desc']);
   setText('serv-data-control-desc', t['serv-data-control-desc']);
   setText('serv-data-result-desc', t['serv-data-result-desc']);
+  setText('serv-offer-tag', t['serv-offer-tag']);
+  setText('serv-offer-title-before', t['serv-offer-title-before']);
+  setText('serv-offer-title-accent', t['serv-offer-title-accent']);
+  setText('serv-offer-subtitle', t['serv-offer-subtitle']);
+  setText('serv-offer-problem-desc', t['serv-offer-problem-desc']);
+  setText('serv-offer-what-desc', t['serv-offer-what-desc']);
+  setText('serv-offer-flow1', t['serv-offer-flow1']);
+  setText('serv-offer-flow2', t['serv-offer-flow2']);
+  setText('serv-offer-flow3', t['serv-offer-flow3']);
+  setText('serv-offer-flow4', t['serv-offer-flow4']);
+  setText('serv-offer-flow5', t['serv-offer-flow5']);
+  setText('serv-offer-flow6', t['serv-offer-flow6']);
+  setText('serv-offer-flow7', t['serv-offer-flow7']);
+  setText('serv-offer-flow8', t['serv-offer-flow8']);
+  setText('serv-offer-tools-title', t['serv-offer-tools-title']);
+  setText('serv-offer-tools-desc', t['serv-offer-tools-desc']);
+  setText('serv-offer-data-desc', t['serv-offer-data-desc']);
+  setText('serv-offer-control-desc', t['serv-offer-control-desc']);
+  setText('serv-offer-result-desc', t['serv-offer-result-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

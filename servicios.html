@@ -353,6 +353,9 @@
       color: var(--text-secondary);
       line-height: 1.6;
     }
+    .serv-case__block--full {
+      margin-bottom: 24px;
+    }
     .serv-case__header {
       text-align: left;
       margin-bottom: 0;
@@ -785,6 +788,84 @@
         <div class="serv-case__result">
           <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
           <p class="serv-case__result-desc" data-i18n="serv-data-result-desc">Menos tiempo administrativo y mejor visibilidad de horas, partes pendientes y trabajos listos para facturar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="serv-case" data-r>
+      <div class="serv-case__header">
+        <span class="tag" data-i18n="serv-offer-tag">IA + Supervisor</span>
+        <h2 class="section__title"><span data-i18n="serv-offer-title-before">Presupuestos y ofertas automáticas con </span><span class="text--yellow" data-i18n="serv-offer-title-accent">revisión humana</span></h2>
+        <p class="section__desc" data-i18n="serv-offer-subtitle">Ofertas más rápidas, pero no automáticas a ciegas. La IA prepara; la empresa decide.</p>
+        <div class="serv-case__toggle-row">
+          <button class="serv-case__toggle" onclick="this.closest('.serv-case').classList.toggle('serv-case--open')" data-i18n="serv-case-more">Ver más</button>
+        </div>
+      </div>
+      <div class="serv-case__body">
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-problem-title">Problema detectado</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-offer-problem-desc">El equipo comercial o técnico recoge información en llamadas, emails o formularios y luego debe convertirla manualmente en una oferta.</p>
+          </div>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-what-title">Qué automatizamos</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-offer-what-desc">Sistema de generación asistida de ofertas, con control de campos, coherencia y aprobación humana.</p>
+          </div>
+        </div>
+        <div class="serv-case__flow">
+          <h3 class="serv-case__flow-title" data-i18n="serv-case-flow-title">Cómo funciona el flujo</h3>
+          <div class="serv-case__flow-steps">
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">01</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow1">Entra lead por llamada, formulario o email.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">02</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow2">La IA clasifica necesidad, urgencia, tamaño, sector y prioridad.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">03</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow3">n8n guarda el lead en CRM o base de datos.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">04</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow4">La IA genera resumen interno y borrador de oferta.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">05</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow5">El sistema revisa campos obligatorios, precios, servicios, límites y tono.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">06</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow6">Si falta algo, crea tarea para pedir información.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">07</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow7">Si está completo, pasa a supervisor.</span>
+            </div>
+            <div class="serv-case__flow-step">
+              <span class="serv-case__flow-num">08</span>
+              <span class="serv-case__flow-text" data-i18n="serv-offer-flow8">Tras aprobar, se genera PDF y se envía al cliente.</span>
+            </div>
+          </div>
+        </div>
+        <div class="serv-case__block serv-case__block--full">
+          <h3 class="serv-case__block-title" data-i18n="serv-offer-tools-title">Herramientas posibles</h3>
+          <p class="serv-case__block-desc" data-i18n="serv-offer-tools-desc">n8n, OpenAI o IA configurada por API, Airtable, HubSpot, Holded, Google Docs, Word, generador PDF, Gmail, Outlook.</p>
+        </div>
+        <div class="serv-case__grid">
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-data-title">Datos que se guardan</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-offer-data-desc">Lead, empresa, necesidad, servicio, urgencia, importe orientativo, versión de oferta, estado, aprobador, fecha y documento generado.</p>
+          </div>
+          <div class="serv-case__block">
+            <h3 class="serv-case__block-title" data-i18n="serv-case-control-title">Control humano</h3>
+            <p class="serv-case__block-desc" data-i18n="serv-offer-control-desc">Debe existir siempre human-in-the-loop. La IA nunca firma ni envía una oferta final sin aprobación.</p>
+          </div>
+        </div>
+        <div class="serv-case__result">
+          <h3 class="serv-case__result-title" data-i18n="serv-case-result-title">Resultado esperado</h3>
+          <p class="serv-case__result-desc" data-i18n="serv-offer-result-desc">Menos espera entre solicitud y propuesta, sin perder criterio comercial ni control sobre el envío final.</p>
         </div>
       </div>
     </div>

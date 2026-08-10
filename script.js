@@ -263,6 +263,14 @@ const translations = {
     'serv-card3-desc': 'Conexi\u00F3n entre WhatsApp, CRM, ERP, APIs y herramientas internas.',
     'serv-card4-title': 'Consultor\u00EDa IA',
     'serv-card4-desc': 'Dise\u00F1o e implementaci\u00F3n de estrategias de Inteligencia Artificial.',
+    'serv-card5-title': 'Automatizaciones con IA',
+    'serv-card5-desc': 'Automatizaciones con IA para empresas que ya no pueden depender del trabajo manual.',
+    'serv-card5-detail': 'Dise\u00F1amos flujos que reciben llamadas, clasifican solicitudes, ordenan documentos, generan presupuestos, avisan al equipo y dejan trazabilidad.',
+    'flow-step1': 'Llamada',
+    'flow-step2': 'IA',
+    'flow-step3': 'CRM',
+    'flow-step4': 'Validaci\u00F3n',
+    'flow-step5': 'Supervisor',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -440,6 +448,14 @@ const translations = {
     'serv-card3-desc': 'Connection between WhatsApp, CRM, ERP, APIs and internal tools.',
     'serv-card4-title': 'AI Consulting',
     'serv-card4-desc': 'Design and implementation of Artificial Intelligence strategies.',
+    'serv-card5-title': 'AI Automations',
+    'serv-card5-desc': 'AI automations for businesses that can no longer rely on manual work.',
+    'serv-card5-detail': 'We design flows that receive calls, classify requests, sort documents, generate quotes, notify the team and leave traceability.',
+    'flow-step1': 'Call',
+    'flow-step2': 'AI',
+    'flow-step3': 'CRM',
+    'flow-step4': 'Validation',
+    'flow-step5': 'Supervisor',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -643,6 +659,14 @@ function setLang(lang) {
   setText('serv-card3-desc', t['serv-card3-desc']);
   setText('serv-card4-title', t['serv-card4-title']);
   setText('serv-card4-desc', t['serv-card4-desc']);
+  setText('serv-card5-title', t['serv-card5-title']);
+  setText('serv-card5-desc', t['serv-card5-desc']);
+  setText('serv-card5-detail', t['serv-card5-detail']);
+  setText('flow-step1', t['flow-step1']);
+  setText('flow-step2', t['flow-step2']);
+  setText('flow-step3', t['flow-step3']);
+  setText('flow-step4', t['flow-step4']);
+  setText('flow-step5', t['flow-step5']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

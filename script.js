@@ -272,6 +272,23 @@ const translations = {
     'flow-step4': 'Validaci\u00F3n',
     'flow-step5': 'Supervisor',
     'flow-title': 'Flujo Nine Gate',
+    'serv-problems-tag': 'Problemas',
+    'serv-problems-title-before': 'Problemas reales que ',
+    'serv-problems-title-accent': 'automatizamos',
+    'serv-problems-subtitle': 'De fricci\u00F3n operativa a sistema trazable.',
+    'serv-problems-note': 'Estos ejemplos combinan problemas detectados en una auditor\u00EDa real de ingenier\u00EDa t\u00E9cnica con automatizaciones habituales en pymes. Cuando el caso procede de la auditor\u00EDa, lo tratamos como propuesta dise\u00F1ada a partir del diagn\u00F3stico, no como implementaci\u00F3n ya ejecutada.',
+    'serv-problem1-title': 'Documentos sin clasificar',
+    'serv-problem1-desc': 'PDFs, planillas y formularios que llegan por email o WhatsApp sin orden ni trazabilidad.',
+    'serv-problem2-title': 'Seguimiento manual de leads',
+    'serv-problem2-desc': 'Ventas que se pierden por falta de recordatorios, estados desactualizados y falta de contexto.',
+    'serv-problem3-title': 'Presupuestos lentos',
+    'serv-problem3-desc': 'C\u00E1lculos manuales, copiar pegar entre planillas y demora en respuestas al cliente.',
+    'serv-problem4-title': 'Alertas ignoradas',
+    'serv-problem4-desc': 'Eventos cr\u00EDticos que nadie monitorea, faltantes detectados tarde y desv\u00EDos sin aviso.',
+    'serv-problem5-title': 'Agenda desorganizada',
+    'serv-problem5-desc': 'Turnos duplicados, disponibilidad incierta y confirmaciones manuales por WhatsApp.',
+    'serv-problem6-title': 'Handoff sin contexto',
+    'serv-problem6-desc': 'Paso de chat a humano sin resumen, preguntas repetitivas y p\u00E9rdida de informaci\u00F3n.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -458,6 +475,23 @@ const translations = {
     'flow-step4': 'Validation',
     'flow-step5': 'Supervisor',
     'flow-title': 'Nine Gate Flow',
+    'serv-problems-tag': 'Problems',
+    'serv-problems-title-before': 'Real problems we ',
+    'serv-problems-title-accent': 'automate',
+    'serv-problems-subtitle': 'From operational friction to traceable systems.',
+    'serv-problems-note': 'These examples combine problems detected in a real technical engineering audit with common SME automations. When the case comes from the audit, we treat it as a proposal designed from the diagnosis, not an already executed implementation.',
+    'serv-problem1-title': 'Unclassified documents',
+    'serv-problem1-desc': 'PDFs, spreadsheets and forms arriving by email or WhatsApp without order or traceability.',
+    'serv-problem2-title': 'Manual lead tracking',
+    'serv-problem2-desc': 'Sales lost due to lack of reminders, outdated statuses and missing context.',
+    'serv-problem3-title': 'Slow quotes',
+    'serv-problem3-desc': 'Manual calculations, copy-pasting between spreadsheets and delayed client responses.',
+    'serv-problem4-title': 'Ignored alerts',
+    'serv-problem4-desc': 'Critical events nobody monitors, late-detected shortages and unnoticed deviations.',
+    'serv-problem5-title': 'Disorganized schedule',
+    'serv-problem5-desc': 'Duplicate appointments, uncertain availability and manual WhatsApp confirmations.',
+    'serv-problem6-title': 'Handoff without context',
+    'serv-problem6-desc': 'Chat to human transfer without summary, repetitive questions and information loss.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -670,6 +704,23 @@ function setLang(lang) {
   setText('flow-step4', t['flow-step4']);
   setText('flow-step5', t['flow-step5']);
   setText('flow-title', t['flow-title']);
+  setText('serv-problems-tag', t['serv-problems-tag']);
+  setText('serv-problems-title-before', t['serv-problems-title-before']);
+  setText('serv-problems-title-accent', t['serv-problems-title-accent']);
+  setText('serv-problems-subtitle', t['serv-problems-subtitle']);
+  setText('serv-problems-note', t['serv-problems-note']);
+  setText('serv-problem1-title', t['serv-problem1-title']);
+  setText('serv-problem1-desc', t['serv-problem1-desc']);
+  setText('serv-problem2-title', t['serv-problem2-title']);
+  setText('serv-problem2-desc', t['serv-problem2-desc']);
+  setText('serv-problem3-title', t['serv-problem3-title']);
+  setText('serv-problem3-desc', t['serv-problem3-desc']);
+  setText('serv-problem4-title', t['serv-problem4-title']);
+  setText('serv-problem4-desc', t['serv-problem4-desc']);
+  setText('serv-problem5-title', t['serv-problem5-title']);
+  setText('serv-problem5-desc', t['serv-problem5-desc']);
+  setText('serv-problem6-title', t['serv-problem6-title']);
+  setText('serv-problem6-desc', t['serv-problem6-desc']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

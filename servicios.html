@@ -155,6 +155,93 @@
         gap: 6px;
       }
     }
+    .serv-problems {
+      margin-top: 80px;
+    }
+    .serv-problems__header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .serv-problems__note {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 16px auto 0;
+      opacity: 0.8;
+    }
+    .serv-problems__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .serv-problems__card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+      position: relative;
+    }
+    .serv-problems__card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 50% 0%, var(--accent) 0%, transparent 70%);
+      opacity: 0.12;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .serv-problems__card:hover::before {
+      opacity: 0.22;
+    }
+    .serv-problems__card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
+      transform: translateY(-2px);
+    }
+    .serv-problems__card > * {
+      position: relative;
+      z-index: 1;
+    }
+    .serv-problems__card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 177, 0, 0.08);
+      border: 1px solid rgba(255, 177, 0, 0.12);
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .serv-problems__card-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+    .serv-problems__card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .serv-problems__card-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 768px) {
+      .serv-problems__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      .serv-problems__grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -257,6 +344,59 @@
           <div class="serv-featured__flow-step">
             <span class="serv-featured__flow-label" data-i18n="flow-step5">Supervisor</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="serv-problems" data-r>
+      <div class="serv-problems__header">
+        <span class="tag" data-i18n="serv-problems-tag">Problemas</span>
+        <h2 class="section__title"><span data-i18n="serv-problems-title-before">Problemas reales que </span><span class="text--yellow" data-i18n="serv-problems-title-accent">automatizamos</span></h2>
+        <p class="section__desc" data-i18n="serv-problems-subtitle">De fricción operativa a sistema trazable.</p>
+        <p class="serv-problems__note" data-i18n="serv-problems-note">Estos ejemplos combinan problemas detectados en una auditoría real de ingeniería técnica con automatizaciones habituales en pymes. Cuando el caso procede de la auditoría, lo tratamos como propuesta diseñada a partir del diagnóstico, no como implementación ya ejecutada.</p>
+      </div>
+      <div class="serv-problems__grid">
+        <div class="serv-problems__card">
+          <div class="serv-problems__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="serv-problems__card-title" data-i18n="serv-problem1-title">Documentos sin clasificar</h3>
+          <p class="serv-problems__card-desc" data-i18n="serv-problem1-desc">PDFs, planillas y formularios que llegan por email o WhatsApp sin orden ni trazabilidad.</p>
+        </div>
+        <div class="serv-problems__card">
+          <div class="serv-problems__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="serv-problems__card-title" data-i18n="serv-problem2-title">Seguimiento manual de leads</h3>
+          <p class="serv-problems__card-desc" data-i18n="serv-problem2-desc">Ventas que se pierden por falta de recordatorios, estados desactualizados y falta de contexto.</p>
+        </div>
+        <div class="serv-problems__card">
+          <div class="serv-problems__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="serv-problems__card-title" data-i18n="serv-problem3-title">Presupuestos lentos</h3>
+          <p class="serv-problems__card-desc" data-i18n="serv-problem3-desc">Cálculos manuales, copiar pegar entre planillas y demora en respuestas al cliente.</p>
+        </div>
+        <div class="serv-problems__card">
+          <div class="serv-problems__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3 class="serv-problems__card-title" data-i18n="serv-problem4-title">Alertas ignoradas</h3>
+          <p class="serv-problems__card-desc" data-i18n="serv-problem4-desc">Eventos críticos que nadie monitorea, faltantes detectados tarde y desvíos sin aviso.</p>
+        </div>
+        <div class="serv-problems__card">
+          <div class="serv-problems__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="serv-problems__card-title" data-i18n="serv-problem5-title">Agenda desorganizada</h3>
+          <p class="serv-problems__card-desc" data-i18n="serv-problem5-desc">Turnos duplicados, disponibilidad incierta y confirmaciones manuales por WhatsApp.</p>
+        </div>
+        <div class="serv-problems__card">
+          <div class="serv-problems__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="serv-problems__card-title" data-i18n="serv-problem6-title">Handoff sin contexto</h3>
+          <p class="serv-problems__card-desc" data-i18n="serv-problem6-desc">Paso de/chat a humano sin resumen, repetitive questions y pérdida de información.</p>
         </div>
       </div>
     </div>

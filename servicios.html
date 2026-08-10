@@ -580,6 +580,90 @@
         grid-template-columns: 1fr;
       }
     }
+    .serv-controls {
+      margin-top: 80px;
+      text-align: center;
+    }
+    .serv-controls__header {
+      margin-bottom: 40px;
+    }
+    .serv-controls__note {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 16px auto 0;
+    }
+    .serv-controls__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .serv-controls__item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 16px;
+      text-align: center;
+      transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+      position: relative;
+    }
+    .serv-controls__item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 50% 0%, var(--accent) 0%, transparent 70%);
+      opacity: 0.12;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .serv-controls__item:hover::before {
+      opacity: 0.22;
+    }
+    .serv-controls__item:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
+      transform: translateY(-2px);
+    }
+    .serv-controls__item > * {
+      position: relative;
+      z-index: 1;
+    }
+    .serv-controls__icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 177, 0, 0.08);
+      border: 1px solid rgba(255, 177, 0, 0.12);
+      color: var(--accent);
+      margin: 0 auto 12px;
+    }
+    .serv-controls__icon svg {
+      width: 18px;
+      height: 18px;
+    }
+    .serv-controls__text {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 768px) {
+      .serv-controls__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .serv-controls__grid {
+        grid-template-columns: 1fr;
+      }
+    }
     .serv-case__header {
       text-align: left;
       margin-bottom: 0;
@@ -1220,6 +1304,47 @@
             <h3 class="serv-flow__step-title" data-i18n="serv-flow-step7-title">Salida</h3>
             <p class="serv-flow__step-desc" data-i18n="serv-flow-step7-desc">Oferta, tarea, email, PDF, dashboard, aviso o expediente.</p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="serv-controls" data-r>
+      <div class="serv-controls__header">
+        <span class="tag" data-i18n="serv-controls-tag">Controles</span>
+        <h2 class="section__title"><span data-i18n="serv-controls-title-before">Controles, seguridad y </span><span class="text--yellow" data-i18n="serv-controls-title-accent">supervisión humana</span></h2>
+        <p class="section__desc" data-i18n="serv-controls-subtitle">Automatizaciones con control</p>
+        <p class="serv-controls__note" data-i18n="serv-controls-note">Un flujo serio debe poder revisarse, pausarse y corregirse. Diseñamos automatizaciones con trazabilidad y criterios de supervisión desde el principio.</p>
+      </div>
+      <div class="serv-controls__grid">
+        <div class="serv-controls__item">
+          <div class="serv-controls__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <p class="serv-controls__text" data-i18n="serv-controls-item1">Pruebas con datos reales anonimizados.</p>
+        </div>
+        <div class="serv-controls__item">
+          <div class="serv-controls__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <p class="serv-controls__text" data-i18n="serv-controls-item2">Campos obligatorios antes de generar una oferta.</p>
+        </div>
+        <div class="serv-controls__item">
+          <div class="serv-controls__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <p class="serv-controls__text" data-i18n="serv-controls-item3">Registro de cada ejecución.</p>
+        </div>
+        <div class="serv-controls__item">
+          <div class="serv-controls__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <p class="serv-controls__text" data-i18n="serv-controls-item4">Alertas si falla un flujo.</p>
+        </div>
+        <div class="serv-controls__item">
+          <div class="serv-controls__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <p class="serv-controls__text" data-i18n="serv-controls-item5">Supervisión humana en decisiones comerciales.</p>
         </div>
       </div>
     </div>

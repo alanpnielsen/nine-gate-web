@@ -415,6 +415,16 @@ const translations = {
     'serv-flow-step6-desc': 'Supervisor aprueba, corrige o escala.',
     'serv-flow-step7-title': 'Salida',
     'serv-flow-step7-desc': 'Oferta, tarea, email, PDF, dashboard, aviso o expediente.',
+    'serv-controls-tag': 'Controles',
+    'serv-controls-title-before': 'Controles, seguridad y ',
+    'serv-controls-title-accent': 'supervisi\u00F3n humana',
+    'serv-controls-subtitle': 'Automatizaciones con control',
+    'serv-controls-note': 'Un flujo serio debe poder revisarse, pausarse y corregirse. Dise\u00F1amos automatizaciones con trazabilidad y criterios de supervisi\u00F3n desde el principio.',
+    'serv-controls-item1': 'Pruebas con datos reales anonimizados.',
+    'serv-controls-item2': 'Campos obligatorios antes de generar una oferta.',
+    'serv-controls-item3': 'Registro de cada ejecuci\u00F3n.',
+    'serv-controls-item4': 'Alertas si falla un flujo.',
+    'serv-controls-item5': 'Supervisi\u00F3n humana en decisiones comerciales.',
     'meth-tag': 'Metodolog\u00EDa',
     'meth-title-before': 'C\u00F3mo ',
     'meth-title-accent': 'construimos tu automatizaci\u00F3n',
@@ -744,6 +754,16 @@ const translations = {
     'serv-flow-step6-desc': 'Supervisor approves, corrects or escalates.',
     'serv-flow-step7-title': 'Output',
     'serv-flow-step7-desc': 'Offer, task, email, PDF, dashboard, alert or file.',
+    'serv-controls-tag': 'Controls',
+    'serv-controls-title-before': 'Controls, security and ',
+    'serv-controls-title-accent': 'human supervision',
+    'serv-controls-subtitle': 'Automations with control',
+    'serv-controls-note': 'A serious flow must be reviewable, pausable and correctable. We design automations with traceability and supervision criteria from the start.',
+    'serv-controls-item1': 'Tests with anonymized real data.',
+    'serv-controls-item2': 'Required fields before generating an offer.',
+    'serv-controls-item3': 'Record of every execution.',
+    'serv-controls-item4': 'Alerts if a flow fails.',
+    'serv-controls-item5': 'Human supervision in commercial decisions.',
     'meth-tag': 'Methodology',
     'meth-title-before': 'How we ',
     'meth-title-accent': 'build your automation',
@@ -1099,6 +1119,16 @@ function setLang(lang) {
   setText('serv-flow-step6-desc', t['serv-flow-step6-desc']);
   setText('serv-flow-step7-title', t['serv-flow-step7-title']);
   setText('serv-flow-step7-desc', t['serv-flow-step7-desc']);
+  setText('serv-controls-tag', t['serv-controls-tag']);
+  setText('serv-controls-title-before', t['serv-controls-title-before']);
+  setText('serv-controls-title-accent', t['serv-controls-title-accent']);
+  setText('serv-controls-subtitle', t['serv-controls-subtitle']);
+  setText('serv-controls-note', t['serv-controls-note']);
+  setText('serv-controls-item1', t['serv-controls-item1']);
+  setText('serv-controls-item2', t['serv-controls-item2']);
+  setText('serv-controls-item3', t['serv-controls-item3']);
+  setText('serv-controls-item4', t['serv-controls-item4']);
+  setText('serv-controls-item5', t['serv-controls-item5']);
   setText('meth-tag', t['meth-tag']);
   setText('meth-title-before', t['meth-title-before']);
   setText('meth-title-accent', t['meth-title-accent']);

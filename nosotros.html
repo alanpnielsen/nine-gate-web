@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nine Gate — Automatizaciones pensadas para operación real.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nuestra visión: Nine Gate construye sistemas de IA y automatización que trabajan junto a las personas, potenciando sus capacidades." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
@@ -14,121 +14,62 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <title>Nine Gate — Soluciones</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <title>Acerca de Nosotros — Nine Gate</title>
+  <link rel="stylesheet" href="styles.css?v=3" />
   <style>
-    .back-link {
+    .about-page {
+      padding: 150px 0 96px;
+    }
+    .about-page__inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .about-page .back-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       color: var(--accent);
       font-size: 0.9rem;
       font-weight: 500;
-      margin-bottom: 32px;
+      margin-bottom: 40px;
       transition: opacity 0.2s;
     }
-    .back-link:hover {
+    .about-page .back-link:hover {
       opacity: 0.8;
     }
-    .soluciones__header-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .soluciones-page {
-      padding: 140px 0 80px;
-    }
-    .soluciones__grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .solucion-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 24px 16px;
-      text-align: center;
-      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
-      position: relative;
-    }
-    .solucion-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-      box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
-    }
-    .solucion-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: radial-gradient(circle at 50% 0%, var(--accent) 0%, transparent 70%);
-      opacity: 0.12;
-      transition: opacity 0.3s;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .solucion-card:hover::before {
-      opacity: 0.22;
-    }
-    .solucion-card > * {
-      position: relative;
-      z-index: 1;
-    }
-    .solucion-card__code {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(255, 177, 0, 0.08);
-      border: 1px solid rgba(255, 177, 0, 0.12);
-      color: var(--accent);
-      font-size: 0.75rem;
+    .about-page h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 700;
-      letter-spacing: 0.02em;
-      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 40px;
     }
-    .solucion-card__title {
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 6px;
-      line-height: 1.3;
-    }
-    .solucion-card__desc {
-      font-size: 0.7rem;
+    .about-page p {
+      font-size: 1.02rem;
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.8;
+      margin-bottom: 24px;
     }
-    @media (max-width: 1024px) {
-      .soluciones__grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    .about-page .lead {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .about-page .statement {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.6;
+      margin-top: 40px;
+    }
+    .about-page .statement--muted {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
     }
     @media (max-width: 768px) {
-      .soluciones__grid {
-        grid-template-columns: 1fr 1fr;
+      .about-page {
+        padding: 110px 0 72px;
       }
-    }
-    @media (max-width: 480px) {
-      .soluciones__grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    [data-theme="light"] .solucion-card {
-      background: #fff;
-    }
-    [data-theme="light"] .solucion-card::before {
-      opacity: 0.06;
-    }
-    [data-theme="light"] .solucion-card:hover::before {
-      opacity: 0.12;
-    }
-    [data-theme="light"] .solucion-card__code {
-      background: rgba(255, 177, 0, 0.10);
-      border-color: rgba(255, 177, 0, 0.20);
     }
   </style>
 </head>
@@ -149,7 +90,7 @@
         </div>
       </div>
       <div class="nav__right">
-        <button class="lang-toggle lang-toggle--nav" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
+        <button class="lang-toggle lang-toggle--nav" id="langToggleNav" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
           <svg class="theme-toggle__icon theme-toggle__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="theme-toggle__icon theme-toggle__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -162,66 +103,27 @@
     </div>
   </nav>
 
-  <div class="container soluciones-page">
-<div class="soluciones__header-wrap">
-      <a href="index.html" class="back-link">&larr; Volver al inicio</a>
-      <div class="section__header" data-r>
-        <span class="tag" data-i18n="sol-tag">Soluciones</span>
-        <h2 class="section__title"><span data-i18n="sol-title-before">Procesos </span><span class="text--yellow" data-i18n="sol-title-accent">concretos</span></h2>
-        <p class="section__desc" data-i18n="sol-desc">Automatizaciones pensadas para operación real.</p>
-      </div>
-    </div>
-    <div class="soluciones__grid" data-r>
-      <div class="solucion-card">
-        <div class="solucion-card__code">TR</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-0-title">Turnos y reservas</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-0-desc">Agenda, disponibilidad, confirmaciones y seguimiento.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">CP</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-1-title">Compras y proveedores</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-1-desc">Búsqueda, cotizaciones, comparación y ranking.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">VW</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-2-title">Ventas por WhatsApp</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-2-desc">Pedidos, upsells, totales y estados.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">EM</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-3-title">Emails administrativos</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-3-desc">Lectura, clasificación y respuestas asistidas.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">LD</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-4-title">Seguimiento de leads</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-4-desc">Tareas, recordatorios y cambios de estado.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">AL</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-5-title">Alertas internas</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-5-desc">Eventos críticos, faltantes y desvíos.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">DB</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-6-title">Dashboards operativos</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-6-desc">Conversaciones, reservas y próximas acciones.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">SC</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-7-title">Scraping controlado</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-7-desc">Datos públicos, monitoreo y enriquecimiento.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">DC</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-8-title">Clasificación de documentos</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-8-desc">PDFs, campos y registros ordenados.</p>
-      </div>
-      <div class="solucion-card">
-        <div class="solucion-card__code">HH</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-9-title">Handoff humano</h3>
-        <p class="solucion-card__desc" data-i18n="sol-items-9-desc">Resumen, contexto y derivación segura.</p>
-      </div>
+  <div class="container about-page">
+    <div class="about-page__inner">
+      <a href="index.html" class="back-link" data-i18n="back-link">&larr; Volver al inicio</a>
+      <h1 data-i18n="about-title">Nuestra visión</h1>
+
+      <p class="lead" data-i18n="about-p1">Creemos que el futuro no consiste en reemplazar a las personas. Consiste en devolverles aquello que nunca debieron perder: tiempo para pensar, crear y decidir.</p>
+
+      <p data-i18n="about-p2">La inteligencia artificial está cambiando la forma en que trabajamos. Pero para nosotros, la verdadera transformación no está en hacer que una máquina haga más cosas. Está en conseguir que las personas puedan dedicar menos tiempo a las tareas repetitivas y más tiempo a las que realmente necesitan criterio, creatividad, experiencia y sensibilidad humana.</p>
+
+      <p data-i18n="about-p3">En Nine Gate construimos sistemas de inteligencia artificial y automatización que trabajan dentro de las empresas para hacer posible ese cambio.</p>
+
+      <p data-i18n="about-p4">No buscamos automatizar por automatizar. Primero entendemos cómo funciona una organización, dónde se pierde tiempo, dónde existen fricciones y qué tareas pueden ser realizadas de una manera más inteligente. Después diseñamos sistemas que trabajan junto a las personas, potenciando sus capacidades en lugar de reemplazarlas.</p>
+
+      <p data-i18n="about-p5">Porque creemos que la tecnología alcanza su verdadero valor cuando amplifica lo que nos hace humanos.</p>
+
+      <p data-i18n="about-p6">Queremos construir empresas más eficientes, pero también más humanas. Empresas donde la tecnología se encargue de lo repetitivo, mientras las personas recuperan espacio para imaginar, resolver problemas, construir relaciones y tomar mejores decisiones.</p>
+
+      <p class="statement" data-i18n="about-s1">El futuro que imaginamos no es un mundo donde la inteligencia artificial trabaja en lugar de nosotros.</p>
+      <p class="statement--muted" data-i18n="about-s2">Es un mundo donde la inteligencia artificial nos permite trabajar mejor.</p>
+      <p class="statement--muted" data-i18n="about-s3">Y creemos que ese futuro no está tan lejos.</p>
+      <p class="statement" data-i18n="about-s4">Lo estamos construyendo ahora.</p>
     </div>
   </div>
 
@@ -230,13 +132,13 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <img src="4-A.png" alt="Nine Gate" class="footer__logo" width="auto" height="64">
-          <p data-i18n="footer-brand">Automatización inteligente para empresas.</p>
+          <p data-i18n="footer-brand">Automatización inteligente para negocios argentinos.</p>
         </div>
         <div>
           <h4 class="footer__heading" data-i18n="footer-servicios">Servicios</h4>
           <div class="footer__links">
-            <a href="servicios.html" data-i18n="footer-link-ia">Agentes de IA</a>
-            <a href="servicios.html" data-i18n="footer-link-auto">Automatización</a>
+            <a href="servicios.html" data-i18n="footer-link-ia">WhatsApp con IA</a>
+            <a href="servicios.html" data-i18n="footer-link-auto">Operaciones</a>
             <a href="servicios.html" data-i18n="footer-link-int">Integraciones</a>
             <a href="servicios.html" data-i18n="footer-link-cons">Consultoría</a>
           </div>
@@ -273,13 +175,13 @@
         </div>
       </div>
       <div class="footer__bottom footer__bottom--flex">
-        <p data-i18n="footer-copy">&copy; 2026 Nine Gate. Todos los derechos reservados.</p>
+        <p data-i18n="footer-copy">© 2026 Nine Gate. Todos los derechos reservados.</p>
         <div class="footer__credit">
           <span class="footer__credit-text" data-i18n="footer-credit">Hecho con</span>
           <span class="footer__credit-heart">❤️</span>
           <span class="footer__credit-text" data-i18n="footer-opencode">con OpenCode</span>
         </div>
-        <button class="lang-toggle" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
       </div>
     </div>
   </footer>

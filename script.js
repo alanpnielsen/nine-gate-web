@@ -943,16 +943,22 @@ function setLang(lang) {
 const langToggles = document.querySelectorAll('.lang-toggle');
 
 function initLanguage() {
+  const params = new URLSearchParams(window.location.search);
+  const urlLang = params.get('lang');
   const saved = localStorage.getItem('nine-gate-lang') || 'es';
+  const initialLang = urlLang === 'en' || urlLang === 'es' ? urlLang : saved;
 
   langToggles.forEach(btn => {
     btn.onclick = function () {
       const current = document.documentElement.lang === 'en' ? 'es' : 'en';
       setLang(current);
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', current);
+      window.history.replaceState({}, '', url);
     };
   });
 
-  setLang(saved);
+  setLang(initialLang);
 }
 
 if (langToggles.length) {

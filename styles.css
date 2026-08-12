@@ -1467,14 +1467,6 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 20px color-mix(in srgb, var(--node-color, #38bdf8) 30%, transparent), 0 0 40px color-mix(in srgb, var(--node-color, #38bdf8) 12%, transparent);
 }
 
-[data-theme="light"] .arch-flow__line {
-  background: rgba(0, 0, 0, 0.08);
-}
-
-[data-theme="light"] .arch-flow.in .arch-flow__line {
-  background: rgba(0, 0, 0, 0.15);
-}
-
 /* ========== WHATSAPP FLOATING ========== */
 .float-wa {
   position: fixed;
@@ -1724,24 +1716,6 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
-.arch-flow__line {
-  display: none;
-  position: absolute;
-  top: 28px;
-  left: 8%;
-  right: 8%;
-  height: 2px;
-  z-index: 0;
-  background: linear-gradient(90deg, #25d366, #38bdf8, #f97316, #a78bfa, #FFB100, #ef4444);
-  opacity: 0;
-  border-radius: 2px;
-  transition: opacity 0.8s ease;
-}
-
-.arch-flow.in .arch-flow__line {
-  opacity: 0.45;
-}
-
 .arch-flow__nodes {
   display: flex;
   flex-direction: column;
@@ -1857,10 +1831,6 @@ img { max-width: 100%; display: block; }
 }
 
 @media (min-width: 769px) {
-  .arch-flow__line {
-    display: block;
-  }
-
   .arch-flow__nodes {
     flex-direction: row;
     align-items: flex-start;

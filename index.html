@@ -56,85 +56,32 @@
     <div class="hero__scene" aria-hidden="true">
       <svg class="hero__scene-svg" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="hs-gold" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#FFC94D" stop-opacity="0.9"/>
+          <radialGradient id="hs-glow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#FFC94D" stop-opacity="0.22"/>
+            <stop offset="0.55" stop-color="#FFB100" stop-opacity="0.08"/>
+            <stop offset="1" stop-color="#FFB100" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="hs-node" cx="0.35" cy="0.3" r="0.9">
+            <stop offset="0" stop-color="#FFE08A" stop-opacity="1"/>
             <stop offset="1" stop-color="#B87E00" stop-opacity="0.55"/>
-          </linearGradient>
-          <linearGradient id="hs-gold-2" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#FFDD80" stop-opacity="0.8"/>
-            <stop offset="1" stop-color="#8F6200" stop-opacity="0.5"/>
-          </linearGradient>
-          <linearGradient id="hs-orange" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#FB923C" stop-opacity="0.85"/>
-            <stop offset="1" stop-color="#C2410C" stop-opacity="0.5"/>
-          </linearGradient>
-          <linearGradient id="hs-violet" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#A78BFA" stop-opacity="0.8"/>
-            <stop offset="1" stop-color="#6D28D9" stop-opacity="0.45"/>
-          </linearGradient>
-          <linearGradient id="hs-violet-2" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#C4B5FD" stop-opacity="0.7"/>
-            <stop offset="1" stop-color="#5B21B6" stop-opacity="0.4"/>
-          </linearGradient>
-          <linearGradient id="hs-blue" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#38BDF8" stop-opacity="0.75"/>
-            <stop offset="1" stop-color="#0369A1" stop-opacity="0.4"/>
-          </linearGradient>
-          <radialGradient id="hs-orb" cx="0.35" cy="0.3" r="0.9">
-            <stop offset="0" stop-color="#7DD3FC" stop-opacity="0.9"/>
-            <stop offset="1" stop-color="#0EA5E9" stop-opacity="0.35"/>
+          </radialGradient>
+          <radialGradient id="hs-node-blue" cx="0.35" cy="0.3" r="0.9">
+            <stop offset="0" stop-color="#BAE6FD" stop-opacity="0.95"/>
+            <stop offset="1" stop-color="#0369A1" stop-opacity="0.5"/>
           </radialGradient>
         </defs>
 
-        <!-- orbit rings -->
-        <g class="hs-spin">
-          <ellipse class="hs-ring hs-ring--gold" cx="600" cy="340" rx="235" ry="98" transform="rotate(-14 600 340)" stroke="#FFB100" stroke-opacity="0.5" stroke-width="1.4" stroke-dasharray="5 12"/>
-        </g>
-        <g class="hs-spin hs-spin--rev">
-          <ellipse class="hs-ring hs-ring--violet" cx="600" cy="340" rx="150" ry="62" transform="rotate(24 600 340)" stroke="#A78BFA" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="4 10"/>
-        </g>
-
-        <!-- core cube (gold) -->
-        <g class="hs-float">
-          <path d="M600 300 L658 330 L600 360 L542 330 Z" fill="url(#hs-gold)"/>
-          <path d="M658 330 L600 360 L600 415 L658 385 Z" fill="url(#hs-gold-2)" fill-opacity="0.85"/>
-          <path d="M542 330 L600 360 L600 415 L542 385 Z" fill="url(#hs-gold-2)" fill-opacity="0.55"/>
-          <circle cx="600" cy="330" r="26" fill="#FFB100" fill-opacity="0.06" stroke="#FFB100" stroke-opacity="0.35"/>
-        </g>
-
-        <!-- violet prism -->
-        <g class="hs-float hs-float--2">
-          <path d="M825 175 L780 225 L825 225 Z" fill="url(#hs-violet)"/>
-          <path d="M825 175 L825 225 L870 225 Z" fill="url(#hs-violet-2)" fill-opacity="0.85"/>
-          <path d="M780 225 L825 225 L870 225 L780 255 L825 255 L870 255 L780 255" fill="none"/>
-        </g>
-
-        <!-- orange diamond -->
-        <g class="hs-float hs-float--3">
-          <rect x="464" y="458" width="26" height="26" rx="4" transform="rotate(45 477 471)" fill="url(#hs-orange)"/>
-          <circle cx="477" cy="471" r="34" stroke="#FB923C" stroke-opacity="0.22" stroke-width="1"/>
-        </g>
-
-        <!-- blue orb -->
-        <g class="hs-float hs-float--4">
-          <circle cx="835" cy="505" r="20" fill="url(#hs-orb)"/>
-          <circle cx="828" cy="498" r="5" fill="#E0F2FE" fill-opacity="0.8"/>
-        </g>
-
-        <!-- small accents / dots -->
-        <g class="hs-float hs-float--2">
-          <circle cx="730" cy="120" r="3" fill="#FFD88A" fill-opacity="0.7"/>
-          <circle cx="780" cy="560" r="2.5" fill="#FFB100" fill-opacity="0.5"/>
-          <circle cx="520" cy="160" r="2.5" fill="#A78BFA" fill-opacity="0.6"/>
-          <circle cx="880" cy="300" r="2" fill="#FFB100" fill-opacity="0.45"/>
-          <circle cx="680" cy="620" r="2" fill="#38BDF8" fill-opacity="0.5"/>
-        </g>
-
-        <!-- connecting tech lines -->
-        <g class="hs-lines">
-          <path d="M600 330 L477 471" stroke="#FFB100" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 6"/>
-          <path d="M658 330 L835 505" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="2 6"/>
-          <path d="M600 330 L825 225" stroke="#A78BFA" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="2 6"/>
+        <g class="hs-core">
+          <circle class="hs-glow" cx="600" cy="340" r="265" fill="url(#hs-glow)"/>
+          <circle class="hs-ring" cx="600" cy="340" r="158" stroke="#FFB100" stroke-opacity="0.5" stroke-width="1.6"/>
+          <circle class="hs-ring-sub" cx="600" cy="340" r="134" stroke="#FFC94D" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 12"/>
+          <circle class="hs-sweep" cx="600" cy="340" r="158" stroke="#FFC94D" stroke-opacity="0.9" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="48 945"/>
+          <g class="hs-nodes">
+            <circle class="hs-node hs-node--1" cx="600" cy="196" r="7" fill="url(#hs-node)"/>
+            <circle class="hs-node hs-node--2" cx="706" cy="388" r="5" fill="url(#hs-node)"/>
+            <circle class="hs-node hs-node--3" cx="498" cy="446" r="5.5" fill="url(#hs-node)"/>
+            <circle class="hs-node hs-node--4" cx="540" cy="238" r="4" fill="url(#hs-node-blue)"/>
+          </g>
         </g>
       </svg>
     </div>

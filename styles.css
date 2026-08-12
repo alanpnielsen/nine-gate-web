@@ -356,31 +356,34 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
-.hero__scene .hs-float,
-.hero__scene .hs-float--2,
-.hero__scene .hs-float--3,
-.hero__scene .hs-float--4 {
+.hero__scene .hs-glow,
+.hero__scene .hs-sweep,
+.hero__scene .hs-node {
   transform-box: fill-box;
   transform-origin: center;
-  will-change: transform;
+  will-change: transform, opacity;
 }
 
-.hero__scene .hs-float { animation: heroFloat 7s ease-in-out infinite alternate; }
-.hero__scene .hs-float--2 { animation: heroFloat2 8.5s ease-in-out infinite alternate; }
-.hero__scene .hs-float--3 { animation: heroFloat3 7.5s ease-in-out infinite alternate; }
-.hero__scene .hs-float--4 { animation: heroFloat4 6.5s ease-in-out infinite alternate; }
-.hero__scene .hs-lines { opacity: 0.8; }
-
-.hero__scene .hs-spin {
-  transform-box: fill-box;
-  transform-origin: center;
+.hero__scene .hs-glow {
+  animation: heroPulse 8s ease-in-out infinite alternate;
 }
-.hero__scene .hs-spin { animation: heroSpin 48s linear infinite; }
-.hero__scene .hs-spin--rev { animation: heroSpinRev 60s linear infinite; }
+
+.hero__scene .hs-sweep {
+  animation: heroSpin 60s linear infinite;
+}
+
+.hero__scene .hs-node--1 { animation: heroFloat 7s ease-in-out infinite alternate; }
+.hero__scene .hs-node--2 { animation: heroFloat2 8.5s ease-in-out infinite alternate; }
+.hero__scene .hs-node--3 { animation: heroFloat3 7.5s ease-in-out infinite alternate; }
+.hero__scene .hs-node--4 { animation: heroFloat4 6.5s ease-in-out infinite alternate; }
 
 @keyframes heroSceneFloat {
   0%   { transform: translateY(0) translateX(0); }
   100% { transform: translateY(10px) translateX(-6px); }
+}
+@keyframes heroPulse {
+  from { opacity: 0.55; }
+  to   { opacity: 1; }
 }
 @keyframes heroFloat {
   from { transform: translateY(-6px); }
@@ -391,30 +394,23 @@ img { max-width: 100%; display: block; }
   to   { transform: translateY(-8px); }
 }
 @keyframes heroFloat3 {
-  from { transform: translateY(-10px); }
-  to   { transform: translateY(6px); }
+  from { transform: translate(-10px, 6px); }
+  to   { transform: translate(10px, -6px); }
 }
 @keyframes heroFloat4 {
-  from { transform: translateY(6px); }
-  to   { transform: translateY(-6px); }
+  from { transform: translate(6px, -10px); }
+  to   { transform: translate(-6px, 10px); }
 }
 @keyframes heroSpin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-@keyframes heroSpinRev {
-  from { transform: rotate(360deg); }
-  to   { transform: rotate(0deg); }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .hero__scene,
-  .hero__scene .hs-float,
-  .hero__scene .hs-float--2,
-  .hero__scene .hs-float--3,
-  .hero__scene .hs-float--4,
-  .hero__scene .hs-spin,
-  .hero__scene .hs-spin--rev {
+  .hero__scene .hs-glow,
+  .hero__scene .hs-sweep,
+  .hero__scene .hs-node {
     animation: none;
   }
 }

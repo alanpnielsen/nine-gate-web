@@ -65,10 +65,7 @@
             <stop offset="0" stop-color="#FFE08A" stop-opacity="1"/>
             <stop offset="1" stop-color="#B87E00" stop-opacity="0.55"/>
           </radialGradient>
-          <radialGradient id="hs-node-blue" cx="0.35" cy="0.3" r="0.9">
-            <stop offset="0" stop-color="#BAE6FD" stop-opacity="0.95"/>
-            <stop offset="1" stop-color="#0369A1" stop-opacity="0.5"/>
-          </radialGradient>
+          <path id="hs-orbit-path" d="M 600 182 A 158 158 0 1 1 600 182 Z" fill="none"/>
         </defs>
 
         <g class="hs-core">
@@ -76,12 +73,26 @@
           <circle class="hs-ring" cx="600" cy="340" r="158" stroke="#FFB100" stroke-opacity="0.5" stroke-width="1.6"/>
           <circle class="hs-ring-sub" cx="600" cy="340" r="134" stroke="#FFC94D" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 12"/>
           <circle class="hs-sweep" cx="600" cy="340" r="158" stroke="#FFC94D" stroke-opacity="0.9" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="48 945"/>
-          <g class="hs-nodes">
-            <circle class="hs-node hs-node--1" cx="600" cy="196" r="7" fill="url(#hs-node)"/>
-            <circle class="hs-node hs-node--2" cx="706" cy="388" r="5" fill="url(#hs-node)"/>
-            <circle class="hs-node hs-node--3" cx="498" cy="446" r="5.5" fill="url(#hs-node)"/>
-            <circle class="hs-node hs-node--4" cx="540" cy="238" r="4" fill="url(#hs-node-blue)"/>
-          </g>
+          <circle class="hs-node hs-node--1" r="6" fill="url(#hs-node)">
+            <animateMotion dur="28s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#hs-orbit-path"/>
+            </animateMotion>
+          </circle>
+          <circle class="hs-node hs-node--2" r="5" fill="url(#hs-node)">
+            <animateMotion dur="32s" repeatCount="indefinite" rotate="auto" begin="-7s">
+              <mpath href="#hs-orbit-path"/>
+            </animateMotion>
+          </circle>
+          <circle class="hs-node hs-node--3" r="5.5" fill="url(#hs-node)">
+            <animateMotion dur="26s" repeatCount="indefinite" rotate="auto" begin="-14s">
+              <mpath href="#hs-orbit-path"/>
+            </animateMotion>
+          </circle>
+          <circle class="hs-node hs-node--4" r="4.5" fill="url(#hs-node)">
+            <animateMotion dur="36s" repeatCount="indefinite" rotate="auto" begin="-21s">
+              <mpath href="#hs-orbit-path"/>
+            </animateMotion>
+          </circle>
         </g>
       </svg>
     </div>

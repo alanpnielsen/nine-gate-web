@@ -357,8 +357,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero__scene .hs-glow,
-.hero__scene .hs-sweep,
-.hero__scene .hs-node {
+.hero__scene .hs-sweep {
   transform-box: fill-box;
   transform-origin: center;
   will-change: transform, opacity;
@@ -372,10 +371,9 @@ img { max-width: 100%; display: block; }
   animation: heroSpin 60s linear infinite;
 }
 
-.hero__scene .hs-node--1 { animation: heroFloat 7s ease-in-out infinite alternate; }
-.hero__scene .hs-node--2 { animation: heroFloat2 8.5s ease-in-out infinite alternate; }
-.hero__scene .hs-node--3 { animation: heroFloat3 7.5s ease-in-out infinite alternate; }
-.hero__scene .hs-node--4 { animation: heroFloat4 6.5s ease-in-out infinite alternate; }
+.hero__scene .hs-node {
+  will-change: transform;
+}
 
 @keyframes heroSceneFloat {
   0%   { transform: translateY(0) translateX(0); }
@@ -384,22 +382,6 @@ img { max-width: 100%; display: block; }
 @keyframes heroPulse {
   from { opacity: 0.55; }
   to   { opacity: 1; }
-}
-@keyframes heroFloat {
-  from { transform: translateY(-6px); }
-  to   { transform: translateY(8px); }
-}
-@keyframes heroFloat2 {
-  from { transform: translateY(8px); }
-  to   { transform: translateY(-8px); }
-}
-@keyframes heroFloat3 {
-  from { transform: translate(-10px, 6px); }
-  to   { transform: translate(10px, -6px); }
-}
-@keyframes heroFloat4 {
-  from { transform: translate(6px, -10px); }
-  to   { transform: translate(-6px, 10px); }
 }
 @keyframes heroSpin {
   from { transform: rotate(0deg); }
@@ -412,6 +394,9 @@ img { max-width: 100%; display: block; }
   .hero__scene .hs-sweep,
   .hero__scene .hs-node {
     animation: none;
+  }
+  .hero__scene .hs-node {
+    display: none;
   }
 }
 

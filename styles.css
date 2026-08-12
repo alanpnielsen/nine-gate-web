@@ -356,8 +356,7 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
-.hero__scene .hs-glow,
-.hero__scene .hs-sweep {
+.hero__scene .hs-glow {
   transform-box: fill-box;
   transform-origin: center;
   will-change: transform, opacity;
@@ -367,12 +366,29 @@ img { max-width: 100%; display: block; }
   animation: heroPulse 8s ease-in-out infinite alternate;
 }
 
-.hero__scene .hs-sweep {
-  animation: heroSpin 60s linear infinite;
+/* single yellow sphere crossing the hero left to right */
+.hero__orb {
+  position: absolute;
+  top: 52%;
+  left: -90px;
+  width: 90px;
+  height: 90px;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #FFE9B0 0%, #FFC94D 40%, #FFB100 60%, rgba(255, 177, 0, 0) 75%);
+  filter: blur(1px);
+  will-change: transform, opacity;
+  animation: heroOrbCross 22s ease-in-out infinite;
 }
 
-.hero__scene .hs-node {
-  will-change: transform;
+@keyframes heroOrbCross {
+  0%   { transform: translateX(0) translateY(0); opacity: 0; }
+  6%   { opacity: 0.9; }
+  30%  { transform: translateX(34vw) translateY(-18px); opacity: 0.9; }
+  55%  { transform: translateX(58vw) translateY(12px); opacity: 0.75; }
+  80%  { transform: translateX(82vw) translateY(-14px); opacity: 0.55; }
+  100% { transform: translateX(110vw) translateY(8px); opacity: 0; }
 }
 
 @keyframes heroSceneFloat {
@@ -383,19 +399,13 @@ img { max-width: 100%; display: block; }
   from { opacity: 0.55; }
   to   { opacity: 1; }
 }
-@keyframes heroSpin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .hero__scene,
-  .hero__scene .hs-glow,
-  .hero__scene .hs-sweep,
-  .hero__scene .hs-node {
+  .hero__scene .hs-glow {
     animation: none;
   }
-  .hero__scene .hs-node {
+  .hero__orb {
     display: none;
   }
 }
@@ -2402,6 +2412,12 @@ img { max-width: 100%; display: block; }
     right: 4%;
     top: 8px;
     opacity: 0.32;
+  }
+
+  .hero__orb {
+    width: 60px;
+    height: 60px;
+    top: 58%;
   }
 
   .hero__stats {

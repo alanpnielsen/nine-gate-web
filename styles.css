@@ -335,6 +335,90 @@ img { max-width: 100%; display: block; }
     radial-gradient(ellipse 50% 30% at 30% 70%, rgba(255, 255, 255, 0.015) 0%, transparent 50%);
 }
 
+/* 3D abstract scene */
+.hero__scene {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  bottom: 0;
+  width: min(56%, 640px);
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+  opacity: 0.85;
+  animation: heroSceneFloat 11s ease-in-out infinite alternate;
+}
+
+.hero__scene-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero__scene .hs-float,
+.hero__scene .hs-float--2,
+.hero__scene .hs-float--3,
+.hero__scene .hs-float--4 {
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.hero__scene .hs-float { animation: heroFloat 7s ease-in-out infinite alternate; }
+.hero__scene .hs-float--2 { animation: heroFloat2 8.5s ease-in-out infinite alternate; }
+.hero__scene .hs-float--3 { animation: heroFloat3 7.5s ease-in-out infinite alternate; }
+.hero__scene .hs-float--4 { animation: heroFloat4 6.5s ease-in-out infinite alternate; }
+.hero__scene .hs-lines { opacity: 0.8; }
+
+.hero__scene .hs-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.hero__scene .hs-spin { animation: heroSpin 48s linear infinite; }
+.hero__scene .hs-spin--rev { animation: heroSpinRev 60s linear infinite; }
+
+@keyframes heroSceneFloat {
+  0%   { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(10px) translateX(-6px); }
+}
+@keyframes heroFloat {
+  from { transform: translateY(-6px); }
+  to   { transform: translateY(8px); }
+}
+@keyframes heroFloat2 {
+  from { transform: translateY(8px); }
+  to   { transform: translateY(-8px); }
+}
+@keyframes heroFloat3 {
+  from { transform: translateY(-10px); }
+  to   { transform: translateY(6px); }
+}
+@keyframes heroFloat4 {
+  from { transform: translateY(6px); }
+  to   { transform: translateY(-6px); }
+}
+@keyframes heroSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes heroSpinRev {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__scene,
+  .hero__scene .hs-float,
+  .hero__scene .hs-float--2,
+  .hero__scene .hs-float--3,
+  .hero__scene .hs-float--4,
+  .hero__scene .hs-spin,
+  .hero__scene .hs-spin--rev {
+    animation: none;
+  }
+}
+
 .hero__inner {
   position: relative;
   z-index: 1;
@@ -2330,6 +2414,13 @@ img { max-width: 100%; display: block; }
 
   .hero__inner {
     gap: 36px;
+  }
+
+  .hero__scene {
+    width: 92%;
+    right: 4%;
+    top: 8px;
+    opacity: 0.32;
   }
 
   .hero__stats {

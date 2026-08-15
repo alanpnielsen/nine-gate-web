@@ -376,7 +376,7 @@ img { max-width: 100%; display: block; }
   z-index: 0;
   pointer-events: none;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #FFFFFF 0%, #F5F5F5 35%, #E0E0E0 55%, #A6A6A6 68%, rgba(255, 255, 255, 0) 75%);
+  background: radial-gradient(circle at 35% 30%, #FFE9B0 0%, #FFC94D 40%, #FFB100 60%, rgba(255, 177, 0, 0) 75%);
   filter: blur(1px);
   will-change: transform, opacity;
   animation: heroOrbCross 22s ease-in-out infinite;

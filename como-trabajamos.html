@@ -76,7 +76,7 @@
       position: absolute;
       inset: 0;
       border-radius: inherit;
-      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.04) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 50% 50%, rgba(255, 177, 0, 0.04) 0%, transparent 60%);
       pointer-events: none;
       z-index: 0;
       opacity: 0;
@@ -84,7 +84,7 @@
     }
     .como-step:hover::before {
       opacity: 1;
-      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.35) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 50% 50%, rgba(255, 177, 0, 0.35) 0%, transparent 60%);
     }
     .como-step > * {
       position: relative;
@@ -199,7 +199,7 @@
       position: absolute;
       inset: 0;
       border-radius: inherit;
-      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.06) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 50% 50%, rgba(255, 177, 0, 0.06) 0%, transparent 60%);
       pointer-events: none;
       opacity: 0;
       transition: opacity 0.3s ease;
@@ -213,7 +213,12 @@
 
     .flow__card:hover::before {
       opacity: 1;
-      background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.25) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 50% 50%, rgba(255, 177, 0, 0.25) 0%, transparent 60%);
+    }
+
+    .flow__card > * {
+      position: relative;
+      z-index: 1;
     }
 
     .flow__icon {

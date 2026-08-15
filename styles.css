@@ -1988,12 +1988,8 @@ img { max-width: 100%; display: block; }
   transition: opacity 0.3s;
 }
 
-.meth-card.active::before {
-  opacity: 0.25;
-}
-
-.meth-card.active {
-  border-color: var(--accent);
+.meth-card:hover::before {
+  opacity: 0.22;
 }
 
 .meth-card:hover {
@@ -2025,12 +2021,12 @@ img { max-width: 100%; display: block; }
   line-height: 1.5;
 }
 
-[data-theme="light"] .meth-card.active::before {
-  opacity: 0.18;
+[data-theme="light"] .meth-card::before {
+  opacity: 0;
 }
 
-[data-theme="light"] .meth-card.active {
-  border-color: var(--accent);
+[data-theme="light"] .meth-card:hover::before {
+  opacity: 0.15;
 }
 
 [data-theme="light"] .meth-card:hover {

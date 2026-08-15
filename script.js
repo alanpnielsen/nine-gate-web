@@ -39,6 +39,13 @@ const revealObserver = new IntersectionObserver(entries => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
+/* Methodology cards: yellow glow only on click, centered */
+document.querySelectorAll('.meth-card').forEach(function(card) {
+  card.addEventListener('click', function() {
+    card.classList.toggle('active');
+  });
+});
+
 /* Architecture sequential node animation */
 (function() {
   var flow = document.querySelector('.arch-flow');

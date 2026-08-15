@@ -2081,7 +2081,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(255, 177, 0, 0.08) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
   opacity: 0;
@@ -2090,7 +2090,7 @@ img { max-width: 100%; display: block; }
 
 .benefit-card:hover::before {
   opacity: 1;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 177, 0, 0.25) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(255, 177, 0, 0.25) 0%, transparent 60%);
 }
 
 .benefit-card > * {

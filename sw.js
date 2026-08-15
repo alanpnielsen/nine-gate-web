@@ -1,22 +1,15 @@
 /**
  * Nine Gate — Service Worker
  * Provides offline support and caching strategy
- * Version: 3.0.0
+ * Version: 4.0.0
  */
 
-const CACHE_NAME = 'nine-gate-v3';
+const CACHE_NAME = 'nine-gate-v4';
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/soluciones.html',
-  '/como-trabajamos.html',
-  '/contacto.html',
-  '/privacidad.html',
-  '/terminos.html',
-  '/cookies.html',
-  '/servicios.html',
   '/styles.css',
+  '/script.js',
   '/4-A.png',
+  '/favicon.png',
   '/favicon.ico',
   '/favicon-32x32.png',
   '/favicon-16x16.png',

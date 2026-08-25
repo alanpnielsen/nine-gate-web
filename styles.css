@@ -2243,6 +2243,7 @@ img { max-width: 100%; display: block; }
 }
 
 .usecase-card {
+  display: block;
   text-align: center;
   padding: 28px 16px 24px;
   border-radius: var(--radius-lg);

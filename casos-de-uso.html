@@ -236,18 +236,10 @@
       margin: 0 auto;
       position: relative;
     }
-    .cd-flow::before {
-      content: '';
-      position: absolute;
-      left: 17px;
-      top: 14px;
-      bottom: 14px;
-      width: 2px;
-      background: linear-gradient(180deg, rgba(255, 177, 0, 0.45), rgba(255, 177, 0, 0.15));
-    }
+    .cd-flow::before { display: none; }
     .cd-fstep {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 18px;
       padding-bottom: 14px;
       position: relative;

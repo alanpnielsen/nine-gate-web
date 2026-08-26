@@ -31,6 +31,21 @@
   <title>Casos de uso | IA aplicada a procesos reales | Nine Gate</title>
   <link rel="stylesheet" href="styles.css?v=15">
   <style>
+    /* ===== Back link (same as servicios.html) ===== */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 32px;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover {
+      opacity: 0.8;
+    }
+
     /* ===== Page hero ===== */
     .cd-hero {
       padding: 150px 0 80px;
@@ -466,8 +481,8 @@
   <!-- HERO -->
   <section class="cd-hero">
     <div class="container">
+      <a href="index.html" class="back-link">&larr; Volver al inicio</a>
       <div class="cd-hero__inner" data-r>
-        <a href="index.html" class="back-link">&larr; Volver al inicio</a>
         <span class="tag" data-i18n="cu-tag">Casos de uso</span>
         <h1 class="section__title"><span data-i18n="cu-hero-title-before">IA aplicada a </span><span class="text--yellow" data-i18n="cu-hero-title-accent">procesos reales.</span></h1>
         <p class="section__desc" data-i18n="cu-hero-desc">Descubrí cómo la inteligencia artificial, la automatización y los sistemas inteligentes pueden transformar distintas áreas de tu empresa.</p>

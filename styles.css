@@ -913,7 +913,7 @@ img { max-width: 100%; display: block; }
 
 /* ========== CTA ========== */
 .cta {
-  padding: 0 0 var(--section-space);
+  padding: var(--section-space) 0 var(--section-space);
 }
 
 .cta__box {

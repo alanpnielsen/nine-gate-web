@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Automatización de turnos y reservas, ventas por WhatsApp, seguimiento de leads, documentos y dashboards. Elegí el proceso que querés automatizar.">
+  <meta name="description" content="Automatizamos procesos con IA para empresas: turnos, ventas por WhatsApp, seguimiento de leads, clasificación de documentos y dashboards. Elegí qué proceso querés automatizar.">
   <link rel="canonical" href="https://ninegate.me/soluciones.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
@@ -20,15 +20,12 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <title>Soluciones de IA y automatización | Turnos, ventas, leads | Nine Gate</title>
+  <title>Soluciones de automatización de procesos con IA para empresas | Nine Gate</title>
   <link rel="stylesheet" href="styles.css?v=15">
   <style>
     .back-link {
@@ -43,6 +40,20 @@
     }
     .back-link:hover {
       opacity: 0.8;
+    }
+    .sol-list-link {
+      margin-top: 8px;
+      text-align: center;
+    }
+    .sol-list-link a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .sol-list-link a:hover {
+      text-decoration: underline;
+    }
+    .sol-list-link--after {
+      margin-top: 32px;
     }
     .soluciones__header-wrap {
       max-width: 1100px;
@@ -145,6 +156,29 @@
       border-color: rgba(255, 177, 0, 0.20);
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Soluciones de automatización de procesos con IA para empresas",
+    "url": "https://ninegate.me/soluciones.html",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": 10,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@type": "Service", "name": "Turnos y reservas", "description": "Agenda, disponibilidad, confirmaciones y seguimiento." } },
+      { "@type": "ListItem", "position": 2, "item": { "@type": "Service", "name": "Compras y proveedores", "description": "Búsqueda, cotizaciones, comparación y ranking." } },
+      { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "Ventas por WhatsApp", "description": "Pedidos, upsells, totales y estados." } },
+      { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "Emails administrativos", "description": "Lectura, clasificación y respuestas asistidas." } },
+      { "@type": "ListItem", "position": 5, "item": { "@type": "Service", "name": "Seguimiento de leads", "description": "Tareas, recordatorios y cambios de estado." } },
+      { "@type": "ListItem", "position": 6, "item": { "@type": "Service", "name": "Alertas internas", "description": "Eventos críticos, faltantes y desvíos." } },
+      { "@type": "ListItem", "position": 7, "item": { "@type": "Service", "name": "Dashboards operativos", "description": "Conversaciones, reservas y próximas acciones." } },
+      { "@type": "ListItem", "position": 8, "item": { "@type": "Service", "name": "Scraping controlado", "description": "Datos públicos, monitoreo y enriquecimiento." } },
+      { "@type": "ListItem", "position": 9, "item": { "@type": "Service", "name": "Clasificación de documentos", "description": "PDFs, campos y registros ordenados." } },
+      { "@type": "ListItem", "position": 10, "item": { "@type": "Service", "name": "Handoff humano", "description": "Resumen, contexto y derivación segura." } }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -183,60 +217,62 @@
         <span class="tag" data-i18n="sol-tag">Soluciones</span>
         <h1 class="section__title"><span data-i18n="sol-title-before">Procesos </span><span class="text--yellow" data-i18n="sol-title-accent">concretos</span></h1>
         <p class="section__desc" data-i18n="sol-desc">Automatizaciones pensadas para operación real.</p>
+        <p class="sol-list-link"><a href="servicios.html" data-i18n="sol-list-link">Ver cómo se implementan estos servicios</a></p>
       </div>
     </div>
     <div class="soluciones__grid" data-r>
       <div class="solucion-card">
         <div class="solucion-card__code">TR</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-0-title">Turnos y reservas</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-0-title">Turnos y reservas</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-0-desc">Agenda, disponibilidad, confirmaciones y seguimiento.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">CP</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-1-title">Compras y proveedores</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-1-title">Compras y proveedores</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-1-desc">Búsqueda, cotizaciones, comparación y ranking.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">VW</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-2-title">Ventas por WhatsApp</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-2-title">Ventas por WhatsApp</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-2-desc">Pedidos, upsells, totales y estados.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">EM</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-3-title">Emails administrativos</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-3-title">Emails administrativos</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-3-desc">Lectura, clasificación y respuestas asistidas.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">LD</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-4-title">Seguimiento de leads</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-4-title">Seguimiento de leads</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-4-desc">Tareas, recordatorios y cambios de estado.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">AL</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-5-title">Alertas internas</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-5-title">Alertas internas</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-5-desc">Eventos críticos, faltantes y desvíos.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">DB</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-6-title">Dashboards operativos</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-6-title">Dashboards operativos</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-6-desc">Conversaciones, reservas y próximas acciones.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">SC</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-7-title">Scraping controlado</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-7-title">Scraping controlado</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-7-desc">Datos públicos, monitoreo y enriquecimiento.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">DC</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-8-title">Clasificación de documentos</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-8-title">Clasificación de documentos</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-8-desc">PDFs, campos y registros ordenados.</p>
       </div>
       <div class="solucion-card">
         <div class="solucion-card__code">HH</div>
-        <h3 class="solucion-card__title" data-i18n="sol-items-9-title">Handoff humano</h3>
+        <h2 class="solucion-card__title" data-i18n="sol-items-9-title">Handoff humano</h2>
         <p class="solucion-card__desc" data-i18n="sol-items-9-desc">Resumen, contexto y derivación segura.</p>
       </div>
     </div>
+    <p class="sol-list-link sol-list-link--after"><a href="casos-de-uso" data-i18n="sol-cases-link">Ver casos de uso aplicados por área</a></p>
   </div>
 
   <footer class="footer">
@@ -314,6 +350,6 @@
       });
     }
   </script>
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
 </body>
 </html>

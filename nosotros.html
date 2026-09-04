@@ -20,9 +20,6 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -81,12 +78,41 @@
       color: var(--text-secondary);
       font-size: 1.1rem;
     }
+    .about-list-link {
+      margin-top: 24px;
+      text-align: center;
+    }
+    .about-list-link a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .about-list-link a:hover {
+      text-decoration: underline;
+    }
     @media (max-width: 768px) {
       .about-page {
         padding: 110px 0 72px;
       }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://ninegate.me/nosotros.html#about",
+    "name": "Acerca de Nine Gate",
+    "url": "https://ninegate.me/nosotros.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "@id": "https://ninegate.me/#organization",
+      "name": "Nine Gate",
+      "url": "https://ninegate.me",
+      "logo": "https://ninegate.me/4-A.png",
+      "description": "Somos Nine Gate: construimos sistemas de IA y automatización que potencian a las personas, no las reemplazan. Conocé nuestra visión.",
+      "sameAs": ["https://www.linkedin.com/company/nine-gate/"]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -130,6 +156,8 @@
       <p data-i18n="about-p3">En Nine Gate construimos sistemas de inteligencia artificial y automatización que trabajan dentro de las empresas para hacer posible ese cambio.</p>
 
       <p data-i18n="about-p4">No buscamos automatizar por automatizar. Primero entendemos cómo funciona una organización, dónde se pierde tiempo, dónde existen fricciones y qué tareas pueden ser realizadas de una manera más inteligente. Después diseñamos sistemas que trabajan junto a las personas, potenciando sus capacidades en lugar de reemplazarlas.</p>
+
+      <p class="about-list-link"><a href="como-trabajamos.html" data-i18n="about-link">Así trabajamos en cada proyecto</a></p>
 
       <p data-i18n="about-p5">Porque creemos que la tecnología alcanza su verdadero valor cuando amplifica lo que nos hace humanos.</p>
 
@@ -217,6 +245,6 @@
       });
     }
   </script>
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
 </body>
 </html>

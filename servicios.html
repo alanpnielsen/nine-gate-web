@@ -20,9 +20,6 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -43,6 +40,17 @@
     }
     .back-link:hover {
       opacity: 0.8;
+    }
+    .serv-list-link {
+      margin-top: 8px;
+      text-align: center;
+    }
+    .serv-list-link a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .serv-list-link a:hover {
+      text-decoration: underline;
     }
     .servicios-page {
       padding: 140px 0 80px;
@@ -837,6 +845,35 @@
       border-color: rgba(255, 177, 0, 0.18);
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Nine Gate",
+    "url": "https://ninegate.me/servicios.html",
+    "description": "Servicios de automatización de procesos y agentes de inteligencia artificial para empresas: diagnóstico, auditoría, automatizaciones y acompañamiento.",
+    "areaServed": "Argentina",
+    "serviceType": "Automatización de procesos con IA, agentes de IA para empresas, integración de sistemas",
+    "sameAs": [
+      "https://www.linkedin.com/company/nine-gate/"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Automatización de procesos", "description": "Implementación de flujos automatizados con IA para empresas." }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Agentes de IA para empresas", "description": "Asistentes conversacionales con inteligencia artificial y supervisión humana." }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Automatización empresarial", "description": "Integración de sistemas y reducción de tareas manuales." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -874,6 +911,7 @@
       <span class="tag" data-i18n="serv-list-tag">Servicios</span>
       <h1 class="section__title"><span data-i18n="serv-list-title-before">Servicios de automatización para </span><span class="text--yellow" data-i18n="serv-list-title-accent">empresas</span></h1>
       <p class="section__desc" data-i18n="serv-list-desc">Listado de servicios Nine Gate: diagnóstico, auditoría, automatizaciones y acompañamiento.</p>
+      <p class="serv-list-link"><a href="casos-de-uso.html" data-i18n="serv-list-link">Ver casos de uso de automatización por área</a></p>
     </div>
     <div class="services__list" data-r>
       <div class="services__list-item">
@@ -1370,6 +1408,7 @@
         <h2 class="section__title"><span data-i18n="serv-flow-title-before">Así fluye una </span><span class="text--yellow" data-i18n="serv-flow-title-accent">automatización</span> <span data-i18n="serv-flow-title-after">de Nine Gate</span></h2>
         <p class="section__desc" data-i18n="serv-flow-subtitle">Automatizamos el trabajo repetitivo, no la responsabilidad de tu empresa.</p>
         <p class="serv-flow__note" data-i18n="serv-flow-note">La automatización no elimina el criterio humano: elimina el trabajo repetitivo que impide usarlo.</p>
+        <p class="serv-list-link"><a href="como-trabajamos.html" data-i18n="serv-flow-link">Conocé cómo trabajamos en cada proyecto</a></p>
       </div>
       <div class="serv-flow__steps">
         <div class="serv-flow__step">
@@ -1541,6 +1580,6 @@
       });
     }
   </script>
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
 </body>
 </html>

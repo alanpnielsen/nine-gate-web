@@ -20,9 +20,6 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -150,6 +147,17 @@
       line-height: 1.7;
       margin-bottom: 6px;
     }
+    .contact-list-link {
+      margin-top: 16px;
+      text-align: center;
+    }
+    .contact-list-link a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .contact-list-link a:hover {
+      text-decoration: underline;
+    }
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -245,6 +253,7 @@
           <li data-i18n="contact-prepare-2">Indicá qué herramientas usa hoy tu equipo.</li>
           <li data-i18n="contact-prepare-3">Contá qué datos entran, qué decisiones se toman y qué salida esperás.</li>
         </ul>
+        <p class="contact-list-link"><a href="casos-de-uso" data-i18n="contact-link">Ver casos de uso de automatización</a></p>
       </div>
     </div>
   </div>
@@ -324,6 +333,6 @@
       });
     }
   </script>
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
 </body>
 </html>

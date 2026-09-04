@@ -20,9 +20,6 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -43,6 +40,17 @@
     }
     .back-link:hover {
       opacity: 0.8;
+    }
+    .como-list-link {
+      margin-top: 24px;
+      text-align: center;
+    }
+    .como-list-link a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .como-list-link a:hover {
+      text-decoration: underline;
     }
     .como__header-wrap {
       max-width: 1000px;
@@ -489,49 +497,49 @@
       <div class="como-step">
         <div class="como-step__tag">BRIEF</div>
         <div class="como-step__num">01</div>
-        <h3 class="como-step__title" data-i18n="step-0-title">Brief</h3>
+        <h2 class="como-step__title" data-i18n="step-0-title">Brief</h2>
         <p class="como-step__desc" data-i18n="step-0-desc">Mapeamos conversaciones y tareas reales</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">FLOW MAP</div>
         <div class="como-step__num">02</div>
-        <h3 class="como-step__title" data-i18n="step-1-title">Flow map</h3>
+        <h2 class="como-step__title" data-i18n="step-1-title">Flow map</h2>
         <p class="como-step__desc" data-i18n="step-1-desc">Detectamos reglas, datos y excepciones</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">STATE SCHEMA</div>
         <div class="como-step__num">03</div>
-        <h3 class="como-step__title" data-i18n="step-2-title">State schema</h3>
+        <h2 class="como-step__title" data-i18n="step-2-title">State schema</h2>
         <p class="como-step__desc" data-i18n="step-2-desc">Diseñamos el estado del proceso</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">N8N</div>
         <div class="como-step__num">04</div>
-        <h3 class="como-step__title" data-i18n="step-3-title">n8n</h3>
+        <h2 class="como-step__title" data-i18n="step-3-title">n8n</h2>
         <p class="como-step__desc" data-i18n="step-3-desc">Creamos el workflow en n8n</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">DATABASE</div>
         <div class="como-step__num">05</div>
-        <h3 class="como-step__title" data-i18n="step-4-title">Database</h3>
+        <h2 class="como-step__title" data-i18n="step-4-title">Database</h2>
         <p class="como-step__desc" data-i18n="step-4-desc">Integramos bases, APIs y paneles</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">QA</div>
         <div class="como-step__num">06</div>
-        <h3 class="como-step__title" data-i18n="step-5-title">QA</h3>
+        <h2 class="como-step__title" data-i18n="step-5-title">QA</h2>
         <p class="como-step__desc" data-i18n="step-5-desc">Probamos con casos reales</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">MONITORING</div>
         <div class="como-step__num">07</div>
-        <h3 class="como-step__title" data-i18n="step-6-title">Monitoring</h3>
+        <h2 class="como-step__title" data-i18n="step-6-title">Monitoring</h2>
         <p class="como-step__desc" data-i18n="step-6-desc">Activamos logs, monitoreo y handoff</p>
       </div>
       <div class="como-step">
         <div class="como-step__tag">PRODUCTION</div>
         <div class="como-step__num">08</div>
-        <h3 class="como-step__title" data-i18n="step-7-title">Production</h3>
+        <h2 class="como-step__title" data-i18n="step-7-title">Production</h2>
         <p class="como-step__desc" data-i18n="step-7-desc">Iteramos con datos reales</p>
       </div>
     </div>
@@ -626,6 +634,7 @@
         <span class="flow-tags__arrow" aria-hidden="true">→</span>
         <span class="flow-tags__item" role="listitem" data-i18n="tag-salida">Salida</span>
       </div>
+      <p class="como-list-link"><a href="servicios.html" data-i18n="como-list-link">Conocé los servicios que implementamos con esta metodología</a></p>
     </div>
   </div>
 
@@ -704,7 +713,7 @@
       });
     }
   </script>
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
   <script>
     (function() {
       var flow = document.querySelector('.flow');

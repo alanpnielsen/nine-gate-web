@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automatización del proceso de ventas con IA: captá leads, calificá oportunidades, automatizá seguimientos y conectá tu proceso comercial con tu CRM.">
+  <link rel="canonical" href="https://ninegate.me/automatizacion-de-ventas.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Nine Gate">
+  <meta property="og:url" content="https://ninegate.me/automatizacion-de-ventas.html">
+  <meta property="og:title" content="Automatización del proceso de ventas con IA | Nine Gate">
+  <meta property="og:description" content="Automatización de ventas con IA: captá leads, calificá oportunidades, automatizá seguimientos y conectá tu proceso comercial con tu CRM.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ninegate.me/automatizacion-de-ventas.html">
+  <meta name="twitter:title" content="Automatización del proceso de ventas con IA | Nine Gate">
+  <meta name="twitter:description" content="Automatización de ventas con IA: captá leads, calificá oportunidades, automatizá seguimientos y conectá tu proceso comercial con tu CRM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>Automatización del proceso de ventas con IA | Nine Gate</title>
+  <link rel="stylesheet" href="styles.css?v=15">
+  <style>
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 32px;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover {
+      opacity: 0.8;
+    }
+    .sales-page {
+      padding: 140px 0 80px;
+    }
+    .sales__header-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .sales-list-link {
+      margin-top: 8px;
+      text-align: center;
+    }
+    .sales-list-link a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .sales-list-link a:hover {
+      text-decoration: underline;
+    }
+    .sales-list-link--after {
+      margin-top: 40px;
+    }
+    .sales-intro {
+      max-width: 760px;
+      margin: 16px auto 0;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .sales__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .solucion-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 16px;
+      text-align: center;
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+      position: relative;
+    }
+    .solucion-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
+    }
+    .solucion-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 50% 50%, var(--accent) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .solucion-card:hover::before {
+      opacity: 0.22;
+    }
+    .solucion-card > * {
+      position: relative;
+      z-index: 1;
+    }
+    .solucion-card__code {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(255, 177, 0, 0.08);
+      border: 1px solid rgba(255, 177, 0, 0.12);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+    .solucion-card__title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .solucion-card__desc {
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 1024px) {
+      .sales__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .sales__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .sales__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    [data-theme="light"] .solucion-card {
+      background: #fff;
+    }
+    [data-theme="light"] .solucion-card::before {
+      opacity: 0;
+    }
+    [data-theme="light"] .solucion-card:hover::before {
+      opacity: 0.12;
+    }
+    [data-theme="light"] .solucion-card__code {
+      background: rgba(255, 177, 0, 0.10);
+      border-color: rgba(255, 177, 0, 0.20);
+    }
+    .sales-flow__steps {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 12px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .sales-flow__step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 14px;
+      text-align: center;
+      transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+      position: relative;
+    }
+    .sales-flow__step::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at 50% 0%, var(--accent) 0%, transparent 70%);
+      opacity: 0.12;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .sales-flow__step:hover::before {
+      opacity: 0.22;
+    }
+    .sales-flow__step:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.35), 0 0 100px rgba(255, 177, 0, 0.15);
+      transform: translateY(-2px);
+    }
+    .sales-flow__step > * {
+      position: relative;
+      z-index: 1;
+    }
+    .sales-flow__step-num {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--accent);
+      opacity: 0.9;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .sales-flow__step-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .sales-flow__step-desc {
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .sales-flow__steps {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .sales-flow__steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .sales-flow__steps {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sales-benefits__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .benefit-card {
+      text-align: center;
+      padding: 32px 20px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s var(--ease), border-color 0.3s var(--ease), transform 0.3s var(--ease);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 140px;
+    }
+    .benefit-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(255, 177, 0, 0.30), 0 0 100px rgba(255, 177, 0, 0.12);
+    }
+    .benefit-card__title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .benefit-card__desc {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    @media (max-width: 1024px) {
+      .sales-benefits__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .sales-benefits__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 420px) {
+      .sales-benefits__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sales-integrations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .sales-integration {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 14px 26px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+    }
+    .sales-integration:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .sales-context {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    .sales-closing {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://ninegate.me/automatizacion-de-ventas.html#service",
+    "name": "Automatización del proceso de ventas con IA",
+    "url": "https://ninegate.me/automatizacion-de-ventas.html",
+    "description": "Automatización de ventas con IA: captación de leads, calificación de oportunidades, seguimiento automático, actualización del CRM y derivación al equipo comercial.",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://ninegate.me/#organization",
+      "name": "Nine Gate",
+      "url": "https://ninegate.me",
+      "logo": "https://ninegate.me/4-A.png"
+    },
+    "areaServed": "Argentina",
+    "serviceType": "Automatización del proceso de ventas, automatización de ventas con IA, CRM y automatización de ventas"
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html">
+        <img src="4-A.png" alt="Nine Gate" class="nav__logo-img" width="148" height="72">
+      </a>
+      <div class="nav__center" id="navMenu">
+        <div class="nav__links">
+          <a href="servicios.html" data-i18n="nav-servicios">Servicios</a>
+          <a href="soluciones.html" data-i18n="nav-soluciones">Soluciones</a>
+          <a href="como-trabajamos.html" data-i18n="nav-como">Cómo trabajamos</a>
+          <a href="casos-de-uso.html" data-i18n="nav-casos">Casos de uso</a>
+          <a href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+        </div>
+      </div>
+      <div class="nav__right">
+        <button class="lang-toggle lang-toggle--nav" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="theme-toggle__icon theme-toggle__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="contacto.html" class="btn btn--nav" data-i18n="nav-empezar">Empezar</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container sales-page">
+    <div class="sales__header-wrap">
+      <a href="index.html" class="back-link">&larr; Volver al inicio</a>
+      <div class="section__header" data-r>
+        <span class="tag" data-i18n="sales-tag">Automatización de ventas</span>
+        <h1 class="section__title" data-i18n="sales-title">Automatización del proceso de ventas con IA</h1>
+      </div>
+      <p class="sales-intro" data-i18n="sales-intro">Los equipos comerciales pierden tiempo respondiendo consultas, calificando leads, actualizando el CRM y haciendo seguimientos manuales. En Nine Gate automatizamos esas etapas del proceso de ventas con inteligencia artificial e integración con los sistemas que ya usás, manteniendo supervisión humana cuando hace falta.</p>
+      <p class="sales-list-link" style="margin-top: 28px;"><a href="contacto.html" class="btn btn--primary" data-i18n="sales-cta-top">Solicitar diagnóstico</a></p>
+      <p class="sales-list-link"><a href="servicios.html" data-i18n="sales-link-servicios">Conocé nuestros servicios de automatización</a></p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header" data-r>
+        <h2 class="section__title" data-i18n="sales-what-title">¿Qué podemos automatizar en tu proceso de ventas?</h2>
+      </div>
+      <div class="sales__grid" data-r>
+        <div class="solucion-card">
+          <div class="solucion-card__code">01</div>
+          <h3 class="solucion-card__title" data-i18n="sales-step1-title">Captura de leads</h3>
+          <p class="solucion-card__desc" data-i18n="sales-step1-desc">Captación desde WhatsApp, formularios y otros canales.</p>
+        </div>
+        <div class="solucion-card">
+          <div class="solucion-card__code">02</div>
+          <h3 class="solucion-card__title" data-i18n="sales-step2-title">Calificación automática</h3>
+          <p class="solucion-card__desc" data-i18n="sales-step2-desc">La IA analiza consultas y clasifica oportunidades según criterios definidos.</p>
+        </div>
+        <div class="solucion-card">
+          <div class="solucion-card__code">03</div>
+          <h3 class="solucion-card__title" data-i18n="sales-step3-title">Seguimiento</h3>
+          <p class="solucion-card__desc" data-i18n="sales-step3-desc">Recordatorios y acciones de seguimiento automatizados.</p>
+        </div>
+        <div class="solucion-card">
+          <div class="solucion-card__code">04</div>
+          <h3 class="solucion-card__title" data-i18n="sales-step4-title">Actualización del CRM</h3>
+          <p class="solucion-card__desc" data-i18n="sales-step4-desc">Los datos de conversaciones y oportunidades se registran automáticamente.</p>
+        </div>
+        <div class="solucion-card">
+          <div class="solucion-card__code">05</div>
+          <h3 class="solucion-card__title" data-i18n="sales-step5-title">Derivación al equipo comercial</h3>
+          <p class="solucion-card__desc" data-i18n="sales-step5-desc">Las conversaciones que requieren criterio humano pasan al equipo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header" data-r>
+        <h2 class="section__title" data-i18n="sales-flow-title">Cómo funciona</h2>
+        <p class="section__desc" data-i18n="sales-flow-desc">De la consulta a la oportunidad, un flujo que coordina canales, IA, CRM y tu equipo.</p>
+      </div>
+      <div class="sales-flow__steps" data-r>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">01</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f1">Lead</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f1-desc">Ingresa una consulta o un nuevo contacto.</div>
+        </div>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">02</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f2">WhatsApp / Web</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f2-desc">Llega por el canal que prefiera tu cliente.</div>
+        </div>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">03</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f3">IA</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f3-desc">Interpreta la consulta y extrae la información.</div>
+        </div>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">04</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f4">Calificación</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f4-desc">Clasifica la oportunidad según tus criterios.</div>
+        </div>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">05</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f5">CRM</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f5-desc">Registra y actualiza el contacto automáticamente.</div>
+        </div>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">06</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f6">Seguimiento</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f6-desc">Dispara recordatorios y próximas acciones.</div>
+        </div>
+        <div class="sales-flow__step">
+          <div class="sales-flow__step-num">07</div>
+          <div class="sales-flow__step-title" data-i18n="sales-f7">Vendedor</div>
+          <div class="sales-flow__step-desc" data-i18n="sales-f7-desc">Interviene cuando se necesita criterio humano.</div>
+        </div>
+      </div>
+      <p class="sales-list-link sales-list-link--after" data-i18n="sales-flow-note">Ventas, atención, operación y sistemas conectados en un solo recorrido.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header" data-r>
+        <h2 class="section__title" data-i18n="sales-ai-title">Automatización de ventas con IA</h2>
+        <p class="section__desc" data-i18n="sales-ai-desc">No se trata de un simple chatbot: es un sistema que coordina las etapas del proceso comercial.</p>
+      </div>
+      <p class="sales-context" data-r data-i18n="sales-ai-p1">Una solución de automatización de ventas con IA puede conversar con tus clientes, clasificar consultas, extraer información clave, preparar respuestas y aplicar reglas de negocio. Se integra con tu CRM, dispara automatizaciones y deja lugar a la intervención humana cuando hace falta criterio.</p>
+      <p class="sales-context" data-r style="margin-top: 20px;" data-i18n="sales-ai-p2">El foco está en que cada etapa del proceso de ventas se ejecute de forma ordenada: reunir la información, procesarla con IA y conectarla con el resto de tu operación.</p>
+      <p class="sales-list-link sales-list-link--after"><a href="como-trabajamos.html" data-i18n="sales-link-como">Conocé cómo trabajamos</a></p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header" data-r>
+        <h2 class="section__title" data-i18n="sales-ben-title">Beneficios para tu equipo comercial</h2>
+      </div>
+      <div class="sales-benefits__grid" data-r>
+        <div class="benefit-card">
+          <div class="benefit-card__title" data-i18n="sales-ben1-title">Menos trabajo manual</div>
+          <div class="benefit-card__desc" data-i18n="sales-ben1-desc">El sistema se ocupa de las tareas repetitivas.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__title" data-i18n="sales-ben2-title">Respuesta más rápida</div>
+          <div class="benefit-card__desc" data-i18n="sales-ben2-desc">Cada consulta se atiende sin demoras.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__title" data-i18n="sales-ben3-title">Menos oportunidades perdidas</div>
+          <div class="benefit-card__desc" data-i18n="sales-ben3-desc">Ningún lead queda sin seguimiento.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__title" data-i18n="sales-ben4-title">Información ordenada</div>
+          <div class="benefit-card__desc" data-i18n="sales-ben4-desc">Todo queda registrado y accionable.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__title" data-i18n="sales-ben5-title">Más control del proceso</div>
+          <div class="benefit-card__desc" data-i18n="sales-ben5-desc">Ves cada etapa y sabés qué sigue.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header" data-r>
+        <h2 class="section__title" data-i18n="sales-for-title">¿Para qué empresas sirve?</h2>
+        <p class="section__desc" data-i18n="sales-for-desc">Una solución de automatización de ventas puede adaptarse, en especial, a empresas que reciben consultas y oportunidades comerciales por WhatsApp, formularios u otros canales.</p>
+      </div>
+      <p class="sales-list-link"><a href="casos-de-uso" data-i18n="sales-link-casos">Ver casos de uso aplicados por área</a></p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header" data-r>
+        <h2 class="section__title" data-i18n="sales-int-title">Integraciones</h2>
+        <p class="section__desc" data-i18n="sales-int-desc">Simple y conectado con tu stack: viene a ordenar tu proceso comercial.</p>
+      </div>
+      <div class="sales-integrations" data-r>
+        <span class="sales-integration" data-i18n="sales-int-1">WhatsApp</span>
+        <span class="sales-integration">+</span>
+        <span class="sales-integration" data-i18n="sales-int-2">IA</span>
+        <span class="sales-integration">+</span>
+        <span class="sales-integration" data-i18n="sales-int-3">CRM</span>
+        <span class="sales-integration">+</span>
+        <span class="sales-integration" data-i18n="sales-int-4">n8n</span>
+        <span class="sales-integration">+</span>
+        <span class="sales-integration" data-i18n="sales-int-5">Bases de datos</span>
+        <span class="sales-integration">+</span>
+        <span class="sales-integration" data-i18n="sales-int-6">Dashboards</span>
+      </div>
+      <p class="sales-list-link sales-list-link--after"><a href="soluciones.html" data-i18n="sales-link-soluciones">Explorar otras soluciones de automatización</a></p>
+    </div>
+  </section>
+
+  <section class="cta" style="padding-top: var(--section-space);">
+    <div class="container">
+      <div class="cta__box" data-r>
+        <h2 class="cta__title" data-i18n="sales-cta-title">¿Querés automatizar tu proceso de ventas?</h2>
+        <p class="cta__desc" data-i18n="sales-cta-desc">Contanos cómo funciona actualmente tu proceso comercial y detectamos qué tareas pueden automatizarse.</p>
+        <a href="contacto.html" class="btn btn--primary">
+          <span data-i18n="sales-cta-btn">Solicitar diagnóstico</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="4-A.png" alt="Nine Gate" class="footer__logo" width="164" height="80">
+          <p data-i18n="footer-brand">Automatización inteligente para empresas.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-servicios">Servicios</h4>
+          <div class="footer__links">
+            <a href="servicios.html" data-i18n="footer-link-ia">Agentes de IA</a>
+            <a href="servicios.html" data-i18n="footer-link-auto">Automatización</a>
+            <a href="servicios.html" data-i18n="footer-link-int">Integraciones</a>
+            <a href="servicios.html" data-i18n="footer-link-cons">Consultoría</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-empresa">Empresa</h4>
+          <div class="footer__links">
+            <a href="nosotros.html" data-i18n="footer-link-about">Acerca de Nosotros</a>
+            <a href="casos-de-uso.html" data-i18n="footer-link-casos">Casos de uso</a>
+            <a href="contacto.html" data-i18n="footer-link-contacto">Contacto</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-legal">Legal</h4>
+          <div class="footer__links">
+            <a href="privacidad.html" data-i18n="footer-link-priv">Privacidad</a>
+            <a href="terminos.html" data-i18n="footer-link-term">Términos</a>
+            <a href="cookies.html" data-i18n="footer-link-cookies">Cookies</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer-redes">Redes</h4>
+          <div class="footer__social">
+            <a href="mailto:hello@ninegate.me" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M22 6l-10 7L2 6"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/nine-gate/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://wa.me/5492915052439?text=Hola%20Nine%20Gate,%20estuve%20viendo%20su%20web%20y%20me%20gustar%C3%ADa%20saber%20qu%C3%A9%20procesos%20de%20mi%20empresa%20podr%C3%ADan%20automatizar." target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom footer__bottom--flex">
+        <p data-i18n="footer-copy">&copy; 2026 Nine Gate. Todos los derechos reservados.</p>
+        <div class="footer__credit">
+          <span class="footer__credit-text" data-i18n="footer-credit">Hecho con</span>
+          <span class="footer__credit-heart">❤️</span>
+          <span class="footer__credit-text" data-i18n="footer-opencode">con OpenCode</span>
+        </div>
+        <button class="lang-toggle" aria-label="Cambiar idioma"><span class="lang-toggle__option lang-toggle__option--active">ES</span><span class="lang-toggle__option">EN</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-wa">
+    <a href="https://wa.me/5492915052439?text=Hola%20Nine%20Gate,%20estuve%20viendo%20su%20web%20y%20me%20gustar%C3%ADa%20saber%20qu%C3%A9%20procesos%20de%20mi%20empresa%20podr%C3%ADan%20automatizar." class="float-wa__btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        regs.forEach(function(r) { r.unregister(); });
+      });
+      caches.keys().then(function(names) {
+        names.forEach(function(name) { caches.delete(name); });
+      });
+    }
+  </script>
+  <script src="script.js?v=16"></script>
+</body>
+</html>
